@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "California (statewide baseline)",
+  "state": "CA",
+  "last_verified_at": "2025-09-15",
+  "source_note": "Statewide baseline derived from public program guidance; local rules may be stricter.",
+  "rules": {
+    "organics": {
+      "guidance": "Residential and commercial organics separation program required statewide. Use green bin where available; check city for accepted items (food scraps, yard trimmings, soiled paper).",
+      "bin": "Green (Organics)",
+      "notes": "Some cities accept meat/dairy; others do not.",
+      "provenance": ["CalRecycle program guidance (SB 1383)"]
+    },
+    "paper_cardboard": {
+      "guidance": "Clean paper and flattened cardboard generally accepted in curbside recycling.",
+      "bin": "Blue (Recycling)",
+      "notes": "No food-soiled pizza boxes unless your city allows in organics.",
+      "provenance": ["Common statewide curbside guidance"]
+    },
+    "glass_containers": {
+      "guidance": "Glass bottles and jars generally accepted curbside if empty and rinsed.",
+      "bin": "Blue (Recycling)",
+      "notes": "Caps and lids rules vary by city.",
+      "provenance": ["Common statewide curbside guidance"]
+    },
+    "metal_containers": {
+      "guidance": "Aluminum and steel/tin cans generally accepted curbside if empty and rinsed.",
+      "bin": "Blue (Recycling)",
+      "notes": "Aerosols: check local program; often HHW if not fully empty.",
+      "provenance": ["Common statewide curbside guidance"]
+    },
+    "plastics": {
+      "guidance": "Bottles, jugs, and tubs commonly accepted. Other plastics vary by city; check local list.",
+      "bin": "Blue (Recycling)",
+      "notes": "Plastic bags/film NOT curbside; take-back at participating stores.",
+      "provenance": ["Common statewide curbside guidance"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "CRV-eligible beverage containers can be redeemed at CRV sites; also typically recyclable curbside.",
+      "bin": "Blue (Recycling)",
+      "notes": "Redeem for deposit where available.",
+      "provenance": ["CA container redemption program"]
+    },
+    "household_batteries": {
+      "guidance": "Do NOT place in trash or curbside recycling. Use HHW collection or retail take-back.",
+      "bin": "HHW / Special Collection",
+      "notes": "Tape terminals for lithium batteries.",
+      "provenance": ["Hazardous waste handling guidance"]
+    },
+    "e_waste": {
+      "guidance": "Electronics are NOT curbside. Use e-waste collection events or certified drop-off.",
+      "bin": "HHW / Special Collection",
+      "notes": "Remove data where possible.",
+      "provenance": ["Hazardous waste handling guidance"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "NOT accepted in curbside recycling. Use retail store drop-off (if offered) or landfill.",
+      "bin": "Store Drop-off / Landfill",
+      "notes": "Film tangles MRF equipment.",
+      "provenance": ["Common statewide curbside guidance"]
+    },
+    "bulky_items": {
+      "guidance": "Schedule bulky pickup with your hauler or take to approved facility.",
+      "bin": "Special Collection",
+      "notes": "Fees or limits may apply.",
+      "provenance": ["Hauler program guidance"]
+    }
+  }
+}
