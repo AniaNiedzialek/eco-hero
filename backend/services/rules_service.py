@@ -7,6 +7,7 @@ import pgeocode
 # -------- Paths --------
 DATA_DIR = Path(__file__).resolve().parents[1] / "data"
 CA_BASELINE_PATH = DATA_DIR / "state_baselines" / "CA.json"
+OR_baseline_PATH = DATA_DIR / "state_baselines" / "OR.json"
 
 # -------- Models --------
 class RegionInfo:
@@ -21,6 +22,16 @@ def _load_ca_baseline() -> Dict[str, Any]:
     if not CA_BASELINE_PATH.exists():
         raise FileNotFoundError(f"CA baseline not found at {CA_BASELINE_PATH}")
     return json.loads(CA_BASELINE_PATH.read_text(encoding="utf-8"))
+
+# for OR
+@lru_cache(maxsize=1)
+def _load_or_baseline() -> Dict[str, Any]:
+    if not OR_baseline_PATH.exists():
+        raise FileNotFoundError(f"OR baseline not found at {OR_baseline_PATH}")
+    return json.loads(OR_baseline_PATH.read_text(encoding="utf-8"))
+
+# TODO - add other states here
+
 
 def resolve_region(zip_code: str) -> Optional[RegionInfo]:
     z = zip_code.strip()
@@ -80,8 +91,21 @@ def extract_rules_for_zip(zip_code: str) -> Dict[str, Any]:
                 summary_parts.append("Applied California statewide baseline.") # Add to summary
                 match_level = "state" # Set match level
                 match_name = "CA" # Set match name
+        case "OR": # Oregon
+            ore = _load_or_baseline()
+            if ore and ore.get("rules"):
+                _merge_rules(merged_rules, ca["rules"]) # Merge or rules to merged_rules
+                summary_parts.append("Applied Oregon statewide bsaeline.") # Add to summary
+                match_level = "state" # Set match level
+                match_name = "OR" # Set match name
+        # TODO: Add other states here
+
+
+
         case _: # Invalid state code
             summary_parts.append(f"No baseline rules for state {region.state_code}.")
+
+        
 
     # Final payload
     return {
