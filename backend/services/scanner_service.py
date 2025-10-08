@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 import os
 from dotenv import load_dotenv
-from typing import Optional, Dict, Any
+from typing import Dict
 from urllib.parse import urlencode
 
 # -------- Mock --------
@@ -26,29 +26,27 @@ class BarcodeInfo:
         self.category = 'None'
 
 # -------- Helpers --------
-def scan_barcode(img_path=CA_BASELINE_PATH) -> list:
-    img = cv2.imread(img_path)
+# TODO: fix to only take in one barcode (to align with get_recycling_resources)
+def scan_barcode(img_source=CA_BASELINE_PATH) -> list:
+    img = cv2.imread(img_source) if isinstance(img_source, Path) else img_source
     barcode_data = zxingcpp.read_barcodes(img)
-    barcodes = set()
+    if barcode_data:
+        barcode = barcode_data[0]
+        barcodeInfo = BarcodeInfo(barcode.text, barcode.format, barcode.position)
+        _set_category(barcodeInfo)
+        return barcodeInfo
 
-    for barcode in barcode_data:
-        barcodes.add(BarcodeInfo(barcode.text, barcode.format, barcode.position))
-    
-    return barcodes
+    return None
 
-# Webscrape
-def set_category(barcodes=None):
-    if not barcodes:
-        _scrape_cat('5449000009067')
-    else:
-        for barcode in barcodes:
-            barcode.category = _scrape_cat(barcode.text)
-    return True
-
-def get_recycling_resources(cat: str) -> Dict[str, str]:
+def get_recycling_resources(cat: str, zipcode: int) -> Dict[str, str]:
     if cat == 'None':
         return None
-    return _scrape_resources(cat, 95051)
+    return _scrape_resources(cat, zipcode)
+
+# Webscrape
+def _set_category(barcode: BarcodeInfo):
+    barcode.category = _scrape_cat(barcode.text) if not MOCK else _scrape_cat('5449000009067')
+
 
 def _scrape_cat(code: str) -> str:
     url = f"https://www.barcodelookup.com/{code}"
@@ -62,7 +60,6 @@ def _scrape_cat(code: str) -> str:
     for div in category_div:
         if div.get_text(strip=True).startswith('Category:'):
             category = div.find('span', class_='product-text').get_text(strip=True)
-            print(category)
             return category
     return 'None'
 
@@ -106,6 +103,5 @@ def _scrape_resources(category: str, zipcode: int) -> Dict[str, str]:
         ref = div.find('a')['href']
         if not MOCK:
             ref = 'https://search.earth911.com' + ref
-        print('Title:', title, 'Ref:', ref)
         resources[title] = ref
     return resources
