@@ -3,7 +3,15 @@
 ## Setup
 ```
 cd backend && pip install -r requirements.txt
+python -m playwright install chromium
 ```
+
+## Set environment variables
+```
+cd backend && touch .env
+echo "RESEND_API_KEY=YOUR_API_KEY" > .env 
+```
+Change YOUR_API_KEY to your resend api key (https://resend.com/)
 
 ## Run the backend
 
@@ -13,7 +21,7 @@ uvicorn main:app --reload --port 8000
 
 ## Rules API
 
--   **GET api/rules/{zip_code}**
+-   **GET /api/rules/{zip_code}**
     ```
     curl -s http://127.0.0.1:8000/api/rules/94103 
     ```
@@ -44,3 +52,45 @@ uvicorn main:app --reload --port 8000
             }
         }
         ```
+## Schedule API (Only works with San Jose)
+
+-   **GET /api/collection/schedule?address=...&zip_code=...**
+    ```
+    curl -sG 'http://127.0.0.1:8000/api/collection/schedule' \
+    --data-urlencode 'address=200 E Santa Clara St' \
+    --data-urlencode 'zip_code=95112'
+    ```
+    -   **Example response:**
+        ```
+        {
+        "address": "200 E Santa Clara St",
+        "schedule": [
+            {
+            "date": "2025-10-06",
+            "type": "Yard waste"
+            },
+            {
+            "date": "2025-10-13",
+            "type": "Yard waste"
+            },
+            {
+            "date": "2025-10-20",
+            "type": "Yard waste"
+            },
+            {
+            "date": "2025-10-27",
+            "type": "Yard waste"
+            }
+        ],
+        "city": "San Jose",
+        "state": "CA"
+        }
+        ```
+
+-   **POST /api/collection/notify?email=...&address=...&zip_code=...**
+    ```
+    curl -s -X POST 'http://127.0.0.1:8000/api/collection/notify' \
+    -H 'Content-Type: application/json' \
+    -d '{"email":"you@example.com","address":"200 E Santa Clara St","zip_code":"95112"}'
+    ```
+    -   Send collection schedule to email

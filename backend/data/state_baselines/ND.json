@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "ND",
+  "state": "ND",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from North Dakota Department of Environmental Quality (NDDEQ) Solid Waste Program and local municipal recycling programs.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting of yard waste and food waste is allowed under NDDEQ guidelines; household composting is exempt from permitting.",
+      "bin": "Yard waste bin or compost drop-off center.",
+      "notes": "Few curbside compost programs; home composting encouraged.",
+      "provenance": ["North Dakota DEQ Solid Waste Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper and cardboard; flatten boxes before placing in bin.",
+      "bin": "Blue or mixed recycling bin.",
+      "notes": "Waxed or wet cardboard not accepted.",
+      "provenance": ["City of Fargo recycling", "NDDEQ recycling info"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars if accepted; rinse and remove lids.",
+      "bin": "Drop-off or separate glass bin; not widely accepted curbside.",
+      "notes": "Broken glass or ceramics not accepted.",
+      "provenance": ["City of Bismarck and Fargo recycling programs"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle clean aluminum and steel cans.",
+      "bin": "Mixed recycling bin.",
+      "notes": "No scrap metal or pressurized containers.",
+      "provenance": ["NDDEQ recycling information"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles, jugs, and tubs labeled #1–#2; acceptance of other types varies locally.",
+      "bin": "Mixed recycling bin (loose, not bagged).",
+      "notes": "No plastic bags, film, or Styrofoam.",
+      "provenance": ["Fargo recycling list", "NDDEQ Solid Waste guidelines"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "North Dakota does not have a statewide container deposit or refund program.",
+      "bin": "Recycle in local curbside or drop-off bin.",
+      "notes": "No CRV or deposit refund system.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries through HHW events or collection sites.",
+      "bin": "Battery drop-off or HHW collection facility.",
+      "notes": "Do not place batteries in household trash.",
+      "provenance": ["NDDEQ Household Hazardous Waste program"]
+    },
+    "e_waste": {
+      "guidance": "E-waste accepted at local drop-offs or special collection events; NDDEQ supports recycling partnerships.",
+      "bin": "Drop-off at e-waste site or HHW event.",
+      "notes": "Accepted items vary by city or county.",
+      "provenance": ["NDDEQ e-waste recycling info"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted in curbside recycling.",
+      "bin": "Return to retail drop-off bins.",
+      "notes": "Keep out of blue bins to prevent contamination.",
+      "provenance": ["NDDEQ recycling contamination prevention guide"]
+    },
+    "bulky_items": {
+      "guidance": "Large items must be scheduled for special pickup or dropped at landfill/transfer station.",
+      "bin": "Not accepted in standard carts.",
+      "notes": "Fees and policies vary by locality.",
+      "provenance": ["Fargo bulky waste guidelines", "Bismarck Solid Waste Division"]
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+    "jurisdiction": "NV",
+    "state": "NV",
+    "last_verified_at": "2024-05-20",
+    "source_note": "State baseline derived from Nevada NDEP, NAC/NRS statutes; local rules may vary.",
+    "rules": {
+        "organics": {
+            "guidance": "No statewide mandate for organics diversion; yard waste composting generally allowed under local programs.",
+            "bin": "Green or compost cart where service exists.",
+            "notes": "Local jurisdictions may restrict compostable packaging or require source separation.",
+            "provenance": ["Nevada recycling & compost guidance", "Local municipal solid waste programs"]
+        },
+        "paper_cardboard": {
+            "guidance": "Recycle clean paper, cardboard, and cartons; flatten boxes.",
+            "bin": "Blue or mixed recycling bin or drop-off center.",
+            "notes": "Soiled or waxed cardboard often excluded.",
+            "provenance": ["Nevada Recycles program", "County recycling guides"] 
+        },
+        "glass_containers": {
+            "guidance": "Recycle glass bottles and jars (empty and rinsed).",
+            "bin": "Mixed recycling bin or glass drop-off bin if available.",
+            "notes": "Broken glass, ceramics, or non-container glass often not accepted.",
+            "provenance": ["Nevada Recycles", "Local recycling program rules"] 
+        },
+        "metal_containers": {
+            "guidance": "Recycle aluminum, steel, tin cans (emptied and rinsed).",
+            "bin": "Mixed recycling bin.",
+            "notes": "No large scrap metal or hazardous containers in curbside bins.",
+            "provenance": ["Nevada Recycles", "Local recycling guidelines"] 
+        },
+        "plastics": {
+            "guidance": "Recycle rigid plastic containers (bottles, jugs, tubs) as accepted locally.",
+            "bin": "Mixed recycling bin (loose, not bagged).",
+            "notes": "Plastic film, bags, and foam often not accepted curbside.",
+            "provenance": ["Nevada Recycles", "County recycling programs"] 
+        },
+        "beverage_containers_crv": {
+            "guidance": "Nevada does not have a statewide beverage container refund (CRV) program.",
+            "bin": "Include with recycling if accepted locally.",
+            "notes": "No state-level deposit/refund requirement.",
+            "provenance": ["State policy summaries"] 
+        },
+        "household_batteries": {
+            "guidance": "Manage batteries as universal waste under Nevada rules (per NAC 444.8801-444.9071). :contentReference[oaicite:0]{index=0}",
+            "bin": "Drop off at approved battery or hazardous waste collection sites.",
+            "notes": "Do not place batteries in regular trash or recycling bins.",
+            "provenance": ["Nevada Universal Waste Rules (adoption of federal 40 CFR 273) :contentReference[oaicite:1]{index=1}", "NDEP Hazardous Waste Guide :contentReference[oaicite:2]{index=2}"] 
+        },
+        "e_waste": {
+            "guidance": "Electronic waste is defined under NRS 444A and subject to recycling or proper disposal (state encourages but not mandates consumer recycling). :contentReference[oaicite:3]{index=3}",
+            "bin": "Drop off at e-waste collection centers or manufacturer take-back programs.",
+            "notes": "State agencies must wipe data before disposal; local programs vary widely. :contentReference[oaicite:4]{index=4}",
+            "provenance": ["Nevada NRS 444A (electronics definitions) :contentReference[oaicite:5]{index=5}", "NDEP e-waste fact sheet :contentReference[oaicite:6]{index=6}"] 
+        },
+        "plastic_bags_and_film": {
+            "guidance": "Plastic bags and film are generally **not** accepted in curbside recycling in Nevada.",
+            "bin": "Return to store drop-off bins if available.",
+            "notes": "They contaminate recycling streams and clog equipment.",
+            "provenance": ["Nevada Recycles drop-off guidelines :contentReference[oaicite:7]{index=7}", "Local recycling program rules"] 
+        },
+        "bulky_items": {
+            "guidance": "Bulky items (furniture, mattresses, appliances) must be scheduled for special pickup or hauled to transfer/drop-off sites.",
+            "bin": "Not allowed in regular carts.",
+            "notes": "Fees or appointment may be required depending on jurisdiction.",
+            "provenance": ["NDEP solid waste disposal guidance", "County waste program rules"] 
+        }
+    }
+
+
+}

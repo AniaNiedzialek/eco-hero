@@ -1,0 +1,69 @@
+{
+    "jurisdiction": "OR",
+    "state": "OR",
+    "last_verified_at": "2024-05-20",
+    "source_note": "Statewide baseline derived from Oregon DEQ guidelines; local rules may vary.",
+    "rules": {
+        "organics": {
+            "guidance": "Oregon DEQ allows composting of food scraps and yard debris under OAR 340-096; local haulers may restrict items like compostable plastics.",
+            "bin": "Green organics or compost bin; no plastic bags.",
+            "notes": "Home composting is exempt; Metro region requires some businesses to separate food scraps.",
+            "provenance": ["Oregon DEQ Composting Rules (OAR 340-096)", "Oregon Metro Food Scraps Policy"]
+        },
+        "paper_cardboard": {
+            "guidance": "Recycle clean paper, cardboard, and cartons; flatten boxes and keep dry.",
+            "bin": "Blue recycling bin.",
+            "notes": "No greasy pizza boxes or waxed cardboard.",
+            "provenance": ["Oregon DEQ Recycling Guidelines", "Metro Regional Recycling Guide"]
+        },
+        "glass_containers": {
+            "guidance": "Recycle glass bottles and jars only; remove lids.",
+            "bin": "Separate glass bin or drop-off per local rules.",
+            "notes": "No broken glass, ceramics, or Pyrex.",
+            "provenance": ["Oregon Metro Glass Recycling Rules"]
+        },
+        "metal_containers": {
+            "guidance": "Recycle empty aluminum and steel cans; rinse if needed.",
+            "bin": "Blue recycling bin.",
+            "notes": "Do not crush cans; no scrap metal or aerosol cans.",
+            "provenance": ["Oregon DEQ Recycling Guide"]
+        },
+        "plastics": {
+            "guidance": "Recycle plastic bottles, tubs, and jugs labeled #1–#2; keep them clean and dry.",
+            "bin": "Blue recycling bin.",
+            "notes": "No plastic bags, film, or Styrofoam.",
+            "provenance": ["Oregon DEQ Plastic Recycling Guidelines"]
+        },
+        "beverage_containers_crv": {
+            "guidance": "Beverage containers with the OR 10¢ refund logo can be redeemed at BottleDrop.",
+            "bin": "Return to BottleDrop or include in curbside recycling if accepted.",
+            "notes": "Includes most plastic, metal, and glass drink containers.",
+            "provenance": ["Oregon Bottle Bill (ORS 459A.700)"]
+        },
+        "household_batteries": {
+            "guidance": "Recycle rechargeable and single-use batteries at drop-off sites.",
+            "bin": "Take to local collection sites or hazardous waste events.",
+            "notes": "Do not place in trash or recycling bins.",
+            "provenance": ["Oregon DEQ Household Hazardous Waste Program"]
+        },
+        "e_waste": {
+            "guidance": "Recycle computers, monitors, TVs, and printers through Oregon E-Cycles.",
+            "bin": "Drop off at an E-Cycles collection site.",
+            "notes": "Up to seven devices accepted per visit for free.",
+            "provenance": ["Oregon E-Cycles Program (ORS 459A.300)"]
+        },
+        "plastic_bags_and_film": {
+            "guidance": "Do not place plastic bags or film in curbside recycling.",
+            "bin": "Return to store drop-offs if accepted.",
+            "notes": "Bag bans apply statewide; reuse or avoid where possible.",
+            "provenance": ["Oregon DEQ Plastic Reduction Rules", "ORS 459A.911"]
+        },
+        "bulky_items": {
+            "guidance": "Large items like furniture or mattresses require special pickup or drop-off.",
+            "bin": "Schedule pickup with hauler or take to transfer station.",
+            "notes": "Fees may apply; reuse or donate when possible.",
+            "provenance": ["Oregon Metro Bulky Waste Disposal Guide"]
+        }
+
+    }
+}

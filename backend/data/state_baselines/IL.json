@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "IL",
+  "state": "IL",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Illinois EPA Solid Waste and Recycling Program and major municipal programs.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting and yard waste recycling encouraged under Illinois EPA rules; commercial food scrap composting expanding.",
+      "bin": "Green/organics bin or compost drop-off site.",
+      "notes": "Chicago and Urbana-Champaign support pilot food scrap collection.",
+      "provenance": ["Illinois EPA Composting Program", "City of Chicago recycling info"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper and cardboard; flatten boxes.",
+      "bin": "Blue recycling cart.",
+      "notes": "Exclude food-soiled or waxed paper.",
+      "provenance": ["Illinois EPA recycling guide", "Chicago Streets & Sanitation recycling rules"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle glass bottles and jars (rinsed, no lids).",
+      "bin": "Blue/mixed recycling bin.",
+      "notes": "No window or broken glass.",
+      "provenance": ["City of Chicago recycling materials list"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel/tin cans; rinse before recycling.",
+      "bin": "Blue bin.",
+      "notes": "No aerosol cans or scrap metal.",
+      "provenance": ["Illinois EPA recycling information"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles, jugs, and containers labeled #1–#5; check local rules for others.",
+      "bin": "Blue bin (loose, not bagged).",
+      "notes": "Plastic bags and foam not accepted curbside.",
+      "provenance": ["Illinois EPA recycling list", "City of Chicago guidance"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Illinois does not have a container deposit program.",
+      "bin": "Recycle in curbside or drop-off bin.",
+      "notes": "No CRV or refund law in place.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries through collection sites or HHW programs.",
+      "bin": "Battery drop-off or HHW event.",
+      "notes": "Keep batteries out of household trash.",
+      "provenance": ["Illinois EPA HHW and battery recycling"]
+    },
+    "e_waste": {
+      "guidance": "Electronics recycling required under Illinois Electronic Products Recycling and Reuse Act.",
+      "bin": "Drop-off at registered e-waste recycler.",
+      "notes": "Includes TVs, monitors, printers, and computers.",
+      "provenance": ["Illinois E-Waste Law (415 ILCS 150)"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted curbside.",
+      "bin": "Return to retail store collection bins.",
+      "notes": "Film clogs recycling equipment.",
+      "provenance": ["Illinois EPA recycling contamination prevention"]
+    },
+    "bulky_items": {
+      "guidance": "Bulky waste must be scheduled for pickup or taken to a landfill.",
+      "bin": "Not accepted in blue bins.",
+      "notes": "Rules and fees depend on hauler or city.",
+      "provenance": ["Chicago Streets & Sanitation bulky item info"]
+    }
+  }
+}

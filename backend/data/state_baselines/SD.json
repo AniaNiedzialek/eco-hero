@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "SD",
+  "state": "SD",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from South Dakota DENR Solid Waste Program and municipal recycling programs; local rules vary widely.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting and mulching of yard waste allowed under DENR guidelines; home composting exempt from regulation.",
+      "bin": "Green waste bin or drop-off site if offered locally.",
+      "notes": "Few curbside compost programs; some landfills accept yard waste separately.",
+      "provenance": ["South Dakota DENR Solid Waste Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper and cardboard; flatten boxes.",
+      "bin": "Blue recycling bin or local drop-off center.",
+      "notes": "Exclude waxed or food-soiled cardboard.",
+      "provenance": ["City of Sioux Falls recycling info", "DENR recycling guidance"]
+    },
+    "glass_containers": {
+      "guidance": "Glass accepted at limited drop-off locations; rinse bottles and jars.",
+      "bin": "Separate glass bin or drop-off only.",
+      "notes": "Most curbside programs do not collect glass.",
+      "provenance": ["City of Sioux Falls and Rapid City recycling programs"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and tin cans; rinse and empty.",
+      "bin": "Blue bin or drop-off center.",
+      "notes": "No large scrap metal or hazardous containers.",
+      "provenance": ["South Dakota DENR recycling info"]
+    },
+    "plastics": {
+      "guidance": "Recycle plastic bottles, jugs, and tubs labeled #1–#2; other types depend on local programs.",
+      "bin": "Blue bin or local drop-off (loose, not bagged).",
+      "notes": "Plastic film and foam not accepted curbside.",
+      "provenance": ["City of Sioux Falls recycling materials list"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "South Dakota does not have a statewide deposit/refund system.",
+      "bin": "Recycle in curbside or drop-off bins if accepted.",
+      "notes": "No container refund program.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries through HHW programs or collection sites.",
+      "bin": "Drop-off at HHW or recycling facility.",
+      "notes": "Do not place batteries in trash or recycling carts.",
+      "provenance": ["DENR Household Hazardous Waste information"]
+    },
+    "e_waste": {
+      "guidance": "E-waste accepted at local drop-offs and events; state encourages recycling through DENR partners.",
+      "bin": "Drop-off at e-waste site or collection event.",
+      "notes": "Accepted items vary by site.",
+      "provenance": ["South Dakota DENR e-waste guidance"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not recyclable curbside.",
+      "bin": "Return to store drop-offs if available.",
+      "notes": "Plastic film often causes recycling contamination.",
+      "provenance": ["DENR recycling contamination guidance"]
+    },
+    "bulky_items": {
+      "guidance": "Schedule special collection or drop off bulky waste at landfill or transfer station.",
+      "bin": "Not allowed in curbside bins.",
+      "notes": "Fees and limits apply by city.",
+      "provenance": ["Sioux Falls bulky waste collection", "Rapid City solid waste services"]
+    }
+  }
+}

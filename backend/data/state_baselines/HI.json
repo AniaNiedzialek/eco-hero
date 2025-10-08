@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "HI",
+  "state": "HI",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Hawaii DOH Solid Waste Branch and county recycling programs; local rules vary by island.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting and green waste recycling encouraged under DOH Solid Waste rules; many islands operate green waste drop-offs.",
+      "bin": "Green waste bin or compost drop-off site.",
+      "notes": "Oahu and Maui accept yard trimmings; food waste programs limited to commercial sectors.",
+      "provenance": ["Hawaii DOH Solid Waste Branch", "City & County of Honolulu Recycling Division"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper and cardboard; flatten boxes.",
+      "bin": "Blue recycling bin (where available).",
+      "notes": "Do not include waxed, greasy, or wet cardboard.",
+      "provenance": ["Honolulu Department of Environmental Services", "Maui County Recycling Guide"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle glass bottles and jars with HI-5 deposit symbol.",
+      "bin": "Redemption center or curbside bin (varies by island).",
+      "notes": "Non-HI-5 glass may go to local reuse or recycling drop-offs.",
+      "provenance": ["Hawaii Deposit Beverage Container Program"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel cans; HI-5 aluminum beverage cans are redeemable.",
+      "bin": "Recycling or redemption bin.",
+      "notes": "Empty and rinse before recycling.",
+      "provenance": ["HI-5 Deposit Beverage Container Program"]
+    },
+    "plastics": {
+      "guidance": "Plastic bottles and containers with HI-5 label or #1/#2 accepted by island programs.",
+      "bin": "Blue recycling bin or redemption center.",
+      "notes": "Plastic bags, film, and foam are not accepted curbside.",
+      "provenance": ["Hawaii DOH Recycling Program", "County Recycling Programs"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Hawaii has a statewide HI-5 deposit program (5¢ refund per eligible container).",
+      "bin": "Return to HI-5 redemption center.",
+      "notes": "Covers most glass, aluminum, and plastic drink containers under 68 oz.",
+      "provenance": ["Hawaii Deposit Beverage Container Program (HRS 342G)"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries through collection sites or HHW events.",
+      "bin": "Drop-off at battery or HHW collection site.",
+      "notes": "Keep batteries out of regular trash or blue bins.",
+      "provenance": ["Hawaii DOH HHW guidelines"]
+    },
+    "e_waste": {
+      "guidance": "Manufacturers must offer recycling under the Hawaii Electronic Device Recycling and Recovery Law.",
+      "bin": "Take to approved e-waste collection sites.",
+      "notes": "Accepted devices include TVs, monitors, printers, and computers.",
+      "provenance": ["Hawaii Electronic Device Recycling Law (HRS 339D)"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "All counties restrict or ban single-use plastic checkout bags.",
+      "bin": "Reusable or paper bags required; some retailers accept film drop-offs.",
+      "notes": "Plastic film is not recyclable curbside.",
+      "provenance": ["County bag ordinances (Oahu, Maui, Kauai, Hawaii County)"]
+    },
+    "bulky_items": {
+      "guidance": "Bulky items require scheduled curbside pickup or landfill drop-off.",
+      "bin": "Not accepted in standard bins.",
+      "notes": "Appointments required in most counties; fees may apply.",
+      "provenance": ["Honolulu Bulky Item Collection Program", "County waste management rules"]
+    }
+  }
+}

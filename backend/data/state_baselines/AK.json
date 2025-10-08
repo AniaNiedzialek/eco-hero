@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "AK",
+  "state": "AK",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Alaska DEC Solid Waste Program and local municipal recycling guides; local rules may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting of yard and food waste is encouraged but not required statewide; regulated under DEC solid waste permits for larger sites.",
+      "bin": "Green or compost drop-off bin where available.",
+      "notes": "Limited curbside composting; backyard composting allowed without permit.",
+      "provenance": ["Alaska DEC Solid Waste Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper and cardboard; flatten boxes.",
+      "bin": "Blue or mixed recycling bin or drop-off center.",
+      "notes": "Exclude waxed or greasy cardboard.",
+      "provenance": ["Anchorage Solid Waste Services", "Fairbanks North Star Borough recycling info"]
+    },
+    "glass_containers": {
+      "guidance": "Glass accepted in some communities; rinse bottles and jars.",
+      "bin": "Drop-off or designated glass bin if available.",
+      "notes": "Many areas do not collect glass curbside due to transport cost.",
+      "provenance": ["Anchorage Recycle Center guidance"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel cans, clean and empty.",
+      "bin": "Blue/mixed recycling bin or drop-off.",
+      "notes": "No aerosol cans or large scrap metal.",
+      "provenance": ["Anchorage SWS recycling list"]
+    },
+    "plastics": {
+      "guidance": "Recycle plastic bottles and jugs (#1–#2) where accepted.",
+      "bin": "Blue bin or drop-off (loose, not bagged).",
+      "notes": "Plastic bags, film, and foam not accepted in curbside bins.",
+      "provenance": ["Anchorage and Juneau recycling guides"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Alaska has a 5¢ refundable deposit on eligible beverage containers (Alaska Bottle Bill).",
+      "bin": "Return to BottleDrop or redemption center.",
+      "notes": "Applies to most aluminum, glass, and plastic drink containers.",
+      "provenance": ["Alaska Bottle Deposit Program (AS 46.06.080)"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable batteries; drop-offs at HHW events or collection sites.",
+      "bin": "Take to hazardous waste facility or recycling drop-off.",
+      "notes": "Keep batteries out of curbside bins.",
+      "provenance": ["Alaska DEC HHW Program"]
+    },
+    "e_waste": {
+      "guidance": "Electronics recycling through local collection events or facilities; no statewide mandate.",
+      "bin": "Drop-off at e-waste collection or landfill reuse area.",
+      "notes": "Accepted devices vary by region.",
+      "provenance": ["Alaska DEC electronics recycling guidance"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted in curbside recycling.",
+      "bin": "Return to retail drop-off if available.",
+      "notes": "Some municipalities restrict single-use plastic bags.",
+      "provenance": ["Anchorage bag ordinance", "Alaska DEC waste reduction page"]
+    },
+    "bulky_items": {
+      "guidance": "Large items require special pickup or landfill drop-off.",
+      "bin": "Not allowed in standard carts.",
+      "notes": "Fees may apply for furniture, appliances, or mattresses.",
+      "provenance": ["Local borough landfill and SWS guidance"]
+    }
+  }
+}

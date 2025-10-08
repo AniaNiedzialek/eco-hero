@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "KS",
+  "state": "KS",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Kansas Department of Health and Environment (KDHE) Solid Waste Program and city recycling guides; local rules may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting of yard and food waste is encouraged and regulated under KDHE Solid Waste rules; home composting is exempt from permits.",
+      "bin": "Green/yard waste cart or compost drop-off site.",
+      "notes": "Curbside organics collection available in limited cities like Lawrence.",
+      "provenance": ["Kansas Department of Health and Environment Solid Waste Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper and cardboard; flatten boxes before placing in bins.",
+      "bin": "Blue/mixed recycling bin or drop-off center.",
+      "notes": "Exclude greasy, wet, or waxed cardboard.",
+      "provenance": ["KDHE recycling resources", "City of Lawrence and Wichita recycling guides"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle glass bottles and jars; rinse and remove lids.",
+      "bin": "Glass-only bin or community drop-off (not accepted curbside in most cities).",
+      "notes": "Broken glass and ceramics not accepted.",
+      "provenance": ["City of Wichita recycling program", "Kansas Recycling Program"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel/tin cans; rinse before recycling.",
+      "bin": "Blue/mixed recycling bin.",
+      "notes": "No aerosol or paint cans in curbside bins.",
+      "provenance": ["KDHE recycling rules", "City of Topeka waste services"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles, jugs, and tubs labeled #1–#2; other plastics depend on local rules.",
+      "bin": "Blue/mixed recycling bin (loose, not bagged).",
+      "notes": "Plastic bags, film, and foam are not accepted curbside.",
+      "provenance": ["KDHE recycling materials guide", "Local recycling programs"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Kansas has no statewide deposit/refund program for beverage containers.",
+      "bin": "Recycle in local curbside or drop-off bin.",
+      "notes": "No CRV system in effect.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries through HHW programs or collection sites.",
+      "bin": "Hazardous waste or battery drop-off center.",
+      "notes": "Do not dispose of batteries in trash or curbside bins.",
+      "provenance": ["KDHE Household Hazardous Waste Program"]
+    },
+    "e_waste": {
+      "guidance": "E-waste collection events are supported by KDHE grants; recycling not mandated statewide.",
+      "bin": "Drop-off at e-waste collection site or event.",
+      "notes": "Accepted items vary; check local listings.",
+      "provenance": ["KDHE e-waste collection program", "City of Lawrence e-waste guide"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film are not recyclable curbside.",
+      "bin": "Return to participating store drop-offs.",
+      "notes": "Keep out of recycling bins to prevent contamination.",
+      "provenance": ["KDHE recycling contamination prevention guide"]
+    },
+    "bulky_items": {
+      "guidance": "Large items must be scheduled for pickup or dropped off at landfill/transfer station.",
+      "bin": "Not accepted in regular bins.",
+      "notes": "Fees or scheduled collection days apply in most cities.",
+      "provenance": ["City of Wichita bulky item pickup rules", "Local solid waste programs"]
+    }
+  }
+}
