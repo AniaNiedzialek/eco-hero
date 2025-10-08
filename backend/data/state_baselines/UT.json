@@ -1,0 +1,70 @@
+{
+
+    "jurisdiction": "UT",
+    "state": "UT",
+    "last_verified_at": "2024-05-20",
+    "source_note": "State baseline derived from Utah DEQ rules and statutes; local rules may vary.",
+    "rules": {
+        "organics": {
+            "guidance": "Recycling or composting facilities must submit operations plans and may be regulated under solid waste rules. :contentReference[oaicite:0]{index=0}",
+            "bin": "Green/organics cart or facility bin (if available via local program).",
+            "notes": "No statewide requirement for residential organics collection.",
+            "provenance": ["Utah Admin. Code R315-312-2", "Utah Solid Waste Rules (DEQ)"]
+        },
+        "paper_cardboard": {
+            "guidance": "Recycle clean, dry paper, cardboard, and cartons via curbside or drop-off programs. :contentReference[oaicite:1]{index=1}",
+            "bin": "Blue recycling bin or mixed paper bin.",
+            "notes": "Exclude soiled paper and waxed or greasy containers.",
+            "provenance": ["Utah DEQ Recycling/Waste Reduction Guidelines", "RecycleUtah materials list"] 
+        },
+        "glass_containers": {
+            "guidance": "Recycle glass bottles and jars (rinse before dropping in).",
+            "bin": "Mixed recycling bin or separate glass bin if local program supports it.",
+            "notes": "Broken glass or non-container glass often not accepted. :contentReference[oaicite:2]{index=2}",
+            "provenance": ["Local municipal recycling guidelines (e.g. Saratoga Springs)"] 
+        },
+        "metal_containers": {
+            "guidance": "Recycle aluminum and steel cans (empty and rinsed).",
+            "bin": "Mixed recycling bin.",
+            "notes": "Labels are okay; no scrap metal in curbside bins.",
+            "provenance": ["Local recycle programs (e.g. Salt Lake City accepted materials) :contentReference[oaicite:3]{index=3}"] 
+        },
+        "plastics": {
+            "guidance": "Recycle rigid plastic containers (#1, #2, #4, #5) depending on local acceptance. :contentReference[oaicite:4]{index=4}",
+            "bin": "Mixed recycling bin (loose, not bagged).",
+            "notes": "Plastic bags, film, foam, and certain “other” plastics often not accepted. :contentReference[oaicite:5]{index=5}",
+            "provenance": ["Salt Lake City recycling program", "Utah curbside recycling guides"] 
+        },
+        "beverage_containers_crv": {
+            "guidance": "Utah does **not** have a state beverage container refund (CRV) program.",
+            "bin": "Include in regular recycling where accepted.",
+            "notes": "No state deposit/refund requirement for containers.",
+            "provenance": ["Utah e-waste/electronics law summaries (state policy overviews)"] 
+        },
+        "household_batteries": {
+            "guidance": "Manage batteries under universal waste rules; rechargeable batteries should be recycled. :contentReference[oaicite:6]{index=6}",
+            "bin": "Drop-off at battery or hazardous waste collection sites.",
+            "notes": "Do not place in trash or regular recycling bins due to fire risk.",
+            "provenance": ["Utah Universal Waste / Hazardous Waste Rules"] 
+        },
+        "e_waste": {
+            "guidance": "Under Utah’s Disposal of Electronic Waste Act, manufacturers must offer programs for collecting consumer electronics. :contentReference[oaicite:7]{index=7}",
+            "bin": "Drop off at e-waste collection sites or mail-back programs where applicable.",
+            "notes": "The law does not mandate recycling by households; reporting and education are required. :contentReference[oaicite:8]{index=8}",
+            "provenance": ["Utah Disposal of Electronic Waste Act (SB 184)", "Utah DEQ e-waste guidance"] 
+        },
+        "plastic_bags_and_film": {
+            "guidance": "Plastic bags and film are generally *not* accepted in curbside recycling.",
+            "bin": "Return to store drop-off bins (grocery or retail) if available.",
+            "notes": "They clog sorting machinery and contaminate recycling. :contentReference[oaicite:9]{index=9}",
+            "provenance": ["Salt Lake City recycling rules", "Utah curbside recycling guidelines"] 
+        },
+        "bulky_items": {
+            "guidance": "Bulky items (furniture, appliances, mattresses) need special pickup or drop-off at local transfer facilities.",
+            "bin": "Not allowed in curbside bins.",
+            "notes": "Fees or restrictions may apply depending on city/county policy.",
+            "provenance": ["Local municipal waste programs, Utah DEQ solid waste rules"] 
+        }
+    }
+
+}

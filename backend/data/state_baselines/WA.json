@@ -1,0 +1,71 @@
+{
+    "jurisdiction": "WA",
+    "state": "WA",
+    "last_verified_at": "2024-05-20",
+    "source_note": "State baseline derived from Washington Ecology laws and guidelines; local rules may be more restrictive.",
+    "rules": {
+        "organics": {
+            "guidance": "Washington’s Organics Management Law (HB 1799) requires year-round residential organics collection and mandates that businesses divert food/yard waste starting with thresholds in 2024–2026. :contentReference[oaicite:0]{index=0}",
+            "bin": "Green or organics cart / bin (residential or business organics collection).",
+            "notes": "Compostable products must meet labeling requirements under WA’s Plastic Product Degradability Act. :contentReference[oaicite:1]{index=1}",
+            "provenance": ["WA Ecology Organics Management Law", "WA Ecology Composting & Food Waste Guidance", "WA Plastic Product Degradability Act"]
+        },
+        "paper_cardboard": {
+            "guidance": "Recycle clean and dry paper, cardboard, and cartons; flatten boxes.",
+            "bin": "Blue or mixed recycling bin.",
+            "notes": "Remove waxed liners or excessive grease.",
+            "provenance": ["WA state recycling guidelines", "Local municipality recycling guides"]
+        },
+        "glass_containers": {
+            "guidance": "Recycle glass bottles and jars (empty, rinsed).",
+            "bin": "Mixed recycling bin or glass-specific bin if local.",
+            "notes": "Broken glass or non-container glass often not accepted.",
+            "provenance": ["WA statewide recycling practices", "Local recycling program rules"]
+        },
+        "metal_containers": {
+            "guidance": "Recycle aluminum, steel, and tin cans (empty, rinsed).",
+            "bin": "Mixed recycling bin.",
+            "notes": "Exclude large scrap metal or pressurized containers.",
+            "provenance": ["WA recycling guidelines"]
+        },
+        "plastics": {
+            "guidance": "Recycle rigid plastics such as bottles, jugs, and tubs (check local acceptance).",
+            "bin": "Mixed recycling bin.",
+            "notes": "Plastic bags, film, and foam typically not accepted curbside.",
+            "provenance": ["WA recycling practices", "Local program rules"]
+        },
+        "beverage_containers_crv": {
+            "guidance": "Washington has no statewide beverage container deposit (CRV) program.",
+            "bin": "Include with recycling if accepted locally.",
+            "notes": "No statewide refund / deposit requirement.",
+            "provenance": ["State policy overviews"]
+        },
+        "household_batteries": {
+            "guidance": "Do not put batteries in trash or recycling; take them to hazardous waste or collection programs. :contentReference[oaicite:2]{index=2}",
+            "bin": "Drop-off at batteries or hazardous waste collection sites.",
+            "notes": "WA is implementing a producer-led battery collection stewardship program (by 2027). :contentReference[oaicite:3]{index=3}",
+            "provenance": ["WA Ecology Dangerous Waste / Battery Rules", "WA Battery Stewardship Law"]
+        },
+        "e_waste": {
+            "guidance": "Recycle electronics through the E-Cycle Washington program (free for qualifying items). :contentReference[oaicite:4]{index=4}",
+            "bin": "Drop-off at E-Cycle collection sites.",
+            "notes": "Manufacturers pay for collection; program covers TVs, computers, monitors, etc. :contentReference[oaicite:5]{index=5}",
+            "provenance": ["E-Cycle Washington Program", "WA Ecology electronics guidance"]
+        },
+        "plastic_bags_and_film": {
+            "guidance": "Plastic bags and film are not accepted in curbside recycling.",
+            "bin": "Return to grocery / store drop-off bins (if available).",
+            "notes": "Film and flexible plastics often cause contamination issues.",
+            "provenance": ["Local recycling rules", "WA Ecology contamination reduction efforts"] 
+        },
+        "bulky_items": {
+            "guidance": "Schedule special pickup or bring bulky waste (furniture, mattresses, appliances) to local transfer or drop-off sites.",
+            "bin": "Not in curbside bins.",
+            "notes": "Fees or limits often apply depending on city or county.",
+            "provenance": ["Municipal bulky waste disposal guidelines"] 
+        }
+    }
+
+
+
+}

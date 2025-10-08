@@ -1,0 +1,70 @@
+{
+
+    "jurisdiction": "AZ",
+    "state": "AZ",
+    "last_verified_at": "2024-05-20",
+    "source_note": "State baseline derived from Arizona DEQ and municipal recycling rules; local variation is common.",
+    "rules": {
+        "organics": {
+            "guidance": "ADEQ allows composting of food, yard, manure, and agricultural wastes; larger operations may require permits (e.g. DOA, AZPDES, aquifer protection). :contentReference[oaicite:0]{index=0}",
+            "bin": "Green / yard waste cart or drop-off where local service exists.",
+            "notes": "Not all cities provide curbside organics collection; check local program availability.",
+            "provenance": ["ADEQ Composting Program (AZDEQ)"]
+        },
+        "paper_cardboard": {
+            "guidance": "Recycle clean paper and cardboard; flatten boxes and remove liners. :contentReference[oaicite:1]{index=1}",
+            "bin": "Blue / mixed recycling bin (loose, not bagged). :contentReference[oaicite:2]{index=2}",
+            "notes": "Greasy pizza boxes, waxed paper, and heavily soiled paper are often excluded. :contentReference[oaicite:3]{index=3}",
+            "provenance": ["City recycling guidelines (e.g. Phoenix, Scottsdale) :contentReference[oaicite:4]{index=4}", "ADEQ Recycling Program :contentReference[oaicite:5]{index=5}"]
+        },
+        "glass_containers": {
+            "guidance": "Recycle glass bottles and jars (clear, green, amber), rinsed and with lids removed. :contentReference[oaicite:6]{index=6}",
+            "bin": "Mixed recycling bin or separate glass bin, if supported locally. :contentReference[oaicite:7]{index=7}",
+            "notes": "Non-container glass, broken glass, ceramics usually not accepted. :contentReference[oaicite:8]{index=8}",
+            "provenance": ["Municipal glass recycling rules in AZ (Scottsdale, Phoenix) :contentReference[oaicite:9]{index=9}"]
+        },
+        "metal_containers": {
+            "guidance": "Recycle clean aluminum, steel, tin cans (empty, rinsed). :contentReference[oaicite:10]{index=10}",
+            "bin": "Blue / mixed recycling bin.",
+            "notes": "No large scrap metal or hazardous containers (paint, chemicals) in curbside bins. :contentReference[oaicite:11]{index=11}",
+            "provenance": ["Local city recycling rules (Scottsdale, Phoenix etc.) :contentReference[oaicite:12]{index=12}"]
+        },
+        "plastics": {
+            "guidance": "Recycle rigid plastic containers (e.g. bottles, jugs, tubs) as accepted locally. :contentReference[oaicite:13]{index=13}",
+            "bin": "Blue / mixed recycling bin (loose). :contentReference[oaicite:14]{index=14}",
+            "notes": "Plastic bags, film, and foam typically *not* accepted in curbside bins — use store drop-offs. :contentReference[oaicite:15]{index=15}",
+            "provenance": ["AZDEQ recycling program information :contentReference[oaicite:16]{index=16}", "Local city programs (e.g. Phoenix) :contentReference[oaicite:17]{index=17}"]
+        },
+        "beverage_containers_crv": {
+            "guidance": "Arizona does **not** have a statewide beverage container deposit / refund (CRV) program.",
+            "bin": "Include in local recycling where accepted.",
+            "notes": "No state-level deposit or refund system for drink containers.",
+            "provenance": ["State recycling policy summaries, absence in municipal rules"]
+        },
+        "household_batteries": {
+            "guidance": "Arizona follows federal Universal Waste rules for rechargeable and lead-acid batteries; drop-off options vary by locality. :contentReference[oaicite:18]{index=18}",
+            "bin": "Take to hazardous waste / battery drop-off events or facilities.",
+            "notes": "Do not place batteries in trash or regular recycling bins due to fire/hazard risk. :contentReference[oaicite:19]{index=19}",
+            "provenance": ["Call2Recycle state battery regulation summary :contentReference[oaicite:20]{index=20}", "Arizona hazardous waste / battery disposal rules via ADEQ"] 
+        },
+        "e_waste": {
+            "guidance": "Arizona law prohibits disposal of covered electronic devices in landfills (since Jan 1, 2013). :contentReference[oaicite:21]{index=21} Recent legislation (e.g. SB 1419) is expanding manufacturer-led e-waste collection programs. :contentReference[oaicite:22]{index=22}",
+            "bin": "Drop-off at certified e-waste collection sites or events. :contentReference[oaicite:23]{index=23}",
+            "notes": "Use R2 / e-Stewards certified recyclers for best practice. :contentReference[oaicite:24]{index=24}",
+            "provenance": ["Arizona law HB 2614 on e-waste disposal prohibition :contentReference[oaicite:25]{index=25}", "ADEQ e-waste program info :contentReference[oaicite:26]{index=26}", "Newer e-waste stewardship bills (SB 1419) :contentReference[oaicite:27]{index=27}"]
+        },
+        "plastic_bags_and_film": {
+            "guidance": "Plastic bags, wraps, and film are not accepted in curbside recycling in most AZ cities. :contentReference[oaicite:28]{index=28}",
+            "bin": "Return them to store drop-off bins (e.g. grocery stores). :contentReference[oaicite:29]{index=29}",
+            "notes": "They often jam recycling machinery and cause contamination.",
+            "provenance": ["Arizona recycling guides (RosieOnTheHouse) :contentReference[oaicite:30]{index=30}", "AZDEQ recycling info :contentReference[oaicite:31]{index=31}"]
+        },
+        "bulky_items": {
+            "guidance": "Bulky items (furniture, mattresses, appliances) require special pickup or drop off at local transfer stations or waste facilities.",
+            "bin": "Not allowed in standard bins.",
+            "notes": "Fees or appointments may apply depending on jurisdiction.",
+            "provenance": ["Municipal waste & recycling service rules (various AZ cities)", "Waste Connections AZ disposal guides :contentReference[oaicite:32]{index=32}"]
+        }
+    }
+
+}
