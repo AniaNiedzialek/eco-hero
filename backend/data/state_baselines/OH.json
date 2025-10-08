@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "OH",
+  "state": "OH",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Ohio EPA Division of Materials Management and city recycling programs.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting of yard waste required by many municipalities; food waste composting expanding under Ohio EPA guidance.",
+      "bin": "Green/yard waste bin or compost drop-off site.",
+      "notes": "Cleveland and Columbus operate yard waste programs.",
+      "provenance": ["Ohio EPA Organics and Composting Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten before recycling.",
+      "bin": "Blue or mixed recycling bin.",
+      "notes": "No waxed or wet paper.",
+      "provenance": ["Ohio EPA recycling resources"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars (rinsed, no lids).",
+      "bin": "Mixed recycling bin.",
+      "notes": "No window or broken glass.",
+      "provenance": ["City of Columbus recycling info"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum, steel, and tin cans (clean and empty).",
+      "bin": "Blue bin or drop-off center.",
+      "notes": "Exclude scrap metal or aerosol cans.",
+      "provenance": ["Ohio EPA recycling guide"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles, jugs, and tubs labeled #1–#2; local rules apply for others.",
+      "bin": "Blue recycling bin.",
+      "notes": "No film, bags, or foam curbside.",
+      "provenance": ["Ohio EPA plastics recycling info"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Ohio does not have a statewide container deposit law.",
+      "bin": "Recycle in local curbside or drop-off bin.",
+      "notes": "No CRV refund program.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle batteries through HHW programs or retail collection sites.",
+      "bin": "Battery drop-off or HHW center.",
+      "notes": "Keep out of trash and curbside recycling.",
+      "provenance": ["Ohio EPA HHW guidance"]
+    },
+    "e_waste": {
+      "guidance": "E-waste recycling offered via local programs and events; no statewide landfill ban.",
+      "bin": "Drop-off at electronics recycling site.",
+      "notes": "Accepted items vary by location.",
+      "provenance": ["Ohio EPA e-waste program"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted curbside.",
+      "bin": "Return to store drop-offs.",
+      "notes": "Plastic film causes contamination at facilities.",
+      "provenance": ["Ohio EPA contamination prevention info"]
+    },
+    "bulky_items": {
+      "guidance": "Bulky waste requires special pickup or landfill drop-off.",
+      "bin": "Not accepted in standard carts.",
+      "notes": "Fees and scheduling vary by municipality.",
+      "provenance": ["City of Columbus bulky item collection", "Cleveland waste division"]
+    }
+  }
+}

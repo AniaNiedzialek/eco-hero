@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "MI",
+  "state": "MI",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Michigan EGLE recycling and solid waste guidance; local collection rules vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting of food and yard waste allowed under EGLE rules; many municipalities operate yard waste programs.",
+      "bin": "Green bin or compost drop-off.",
+      "notes": "Ann Arbor and Grand Rapids offer curbside composting.",
+      "provenance": ["Michigan EGLE Organics Recycling Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper and cardboard; flatten before recycling.",
+      "bin": "Blue recycling bin.",
+      "notes": "Exclude waxed or food-soiled paper.",
+      "provenance": ["Michigan EGLE recycling guide", "City of Detroit recycling info"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars (rinsed, no lids).",
+      "bin": "Mixed recycling bin or drop-off.",
+      "notes": "Not all curbside programs accept glass.",
+      "provenance": ["Michigan recycling programs"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle clean aluminum and steel/tin cans.",
+      "bin": "Blue recycling bin.",
+      "notes": "No scrap metal or aerosol cans.",
+      "provenance": ["Michigan EGLE recycling guidance"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles, jugs, and tubs labeled #1–#7 depending on local program.",
+      "bin": "Blue bin (loose, not bagged).",
+      "notes": "Plastic film and foam not accepted curbside.",
+      "provenance": ["Michigan EGLE plastics recycling info"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Michigan has a 10¢ beverage container deposit law (Bottle Bill).",
+      "bin": "Return to retailer for refund.",
+      "notes": "Covers aluminum, glass, and plastic drink containers.",
+      "provenance": ["Michigan Beverage Containers Law (MCL §445.571)"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries through Call2Recycle or HHW events.",
+      "bin": "Battery drop-off or HHW site.",
+      "notes": "Keep batteries out of trash.",
+      "provenance": ["Michigan EGLE HHW Program"]
+    },
+    "e_waste": {
+      "guidance": "Electronics recycling supported by EGLE partnerships and local events.",
+      "bin": "Drop-off at e-waste collection site.",
+      "notes": "Accepted items vary; TVs may have fees.",
+      "provenance": ["EGLE electronics recycling resources"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted in curbside recycling.",
+      "bin": "Return to store drop-off.",
+      "notes": "Film creates contamination issues at MRFs.",
+      "provenance": ["EGLE recycling contamination prevention"]
+    },
+    "bulky_items": {
+      "guidance": "Bulky items must be taken to landfill or scheduled for pickup.",
+      "bin": "Not accepted in curbside bins.",
+      "notes": "Fees and rules vary by city.",
+      "provenance": ["Detroit bulky item pickup info", "Grand Rapids refuse rules"]
+    }
+  }
+}

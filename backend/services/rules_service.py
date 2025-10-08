@@ -25,6 +25,15 @@ KS_baseline_PATH = DATA_DIR / "state_baselines" / "KS.json"
 OK_baseline_PATH = DATA_DIR / "state_baselines" / "OK.json"
 AK_baseline_PATH = DATA_DIR / "state_baselines" / "AK.json"
 HI_baseline_PATH = DATA_DIR / "state_baselines" / "HI.json"
+WI_baseline_PATH = DATA_DIR / "state_baselines" / "WI.json"
+MN_baseline_PATH = DATA_DIR / "state_baselines" / "MN.json"
+IL_baseline_PATH = DATA_DIR / "state_baselines" / "IL.json"
+IN_baseline_PATH = DATA_DIR / "state_baselines" / "IN.json"
+OH_baseline_PATH = DATA_DIR / "state_baselines" / "OH.json"
+IA_baseline_PATH = DATA_DIR / "state_baselines" / "IA.json"
+MO_baseline_PATH = DATA_DIR / "state_baselines" / "MO.json"
+MI_baseline_PATH = DATA_DIR / "state_baselines" / "MI.json"
+
 # -------- Models --------
 class RegionInfo:
     def __init__(self, zip_code: str, state_code: str, city: Optional[str]):
@@ -155,6 +164,54 @@ def _load_hi_baseline() -> Dict[str, Any]:
     if not HI_baseline_PATH.exists():
         raise FileNotFoundError(f"HI baseline not found at {HI_baseline_PATH}")
     return json.loads(HI_baseline_PATH.read_text(encoding="utf-8"))     
+# for WI
+@lru_cache(maxsize=1)
+def _load_wi_baseline() -> Dict[str, Any]:        
+    if not WI_baseline_PATH.exists():
+        raise FileNotFoundError(f"WI baseline not found at {WI_baseline_PATH}")
+    return json.loads(WI_baseline_PATH.read_text(encoding="utf-8")) 
+# for MN
+@lru_cache(maxsize=1)
+def _load_mn_baseline() -> Dict[str, Any]:
+    if not MN_baseline_PATH.exists():
+        raise FileNotFoundError(f"MN baseline not found at {MN_baseline_PATH}")
+    return json.loads(MN_baseline_PATH.read_text(encoding="utf-8"))
+# for IL
+@lru_cache(maxsize=1)
+def _load_il_baseline() -> Dict[str, Any]:          
+    if not IL_baseline_PATH.exists():
+        raise FileNotFoundError(f"IL baseline not found at {IL_baseline_PATH}")
+    return json.loads(IL_baseline_PATH.read_text(encoding="utf-8"))
+# for IN
+@lru_cache(maxsize=1)
+def _load_in_baseline() -> Dict[str, Any]:
+    if not IN_baseline_PATH.exists():
+        raise FileNotFoundError(f"IN baseline not found at {IN_baseline_PATH}")
+    return json.loads(IN_baseline_PATH.read_text(encoding="utf-8"))
+# for OH
+@lru_cache(maxsize=1)
+def _load_oh_baseline() -> Dict[str, Any]:
+    if not OH_baseline_PATH.exists():
+        raise FileNotFoundError(f"OH baseline not found at {OH_baseline_PATH}")
+    return json.loads(OH_baseline_PATH.read_text(encoding="utf-8"))
+# for IA
+@lru_cache(maxsize=1)
+def _load_ia_baseline() -> Dict[str, Any]:  
+    if not IA_baseline_PATH.exists():
+        raise FileNotFoundError(f"IA baseline not found at {IA_baseline_PATH}")
+    return json.loads(IA_baseline_PATH.read_text(encoding="utf-8"))
+# for MO
+@lru_cache(maxsize=1)
+def _load_mo_baseline() -> Dict[str, Any]:
+    if not MO_baseline_PATH.exists():
+        raise FileNotFoundError(f"MO baseline not found at {MO_baseline_PATH}")
+    return json.loads(MO_baseline_PATH.read_text(encoding="utf-8"))
+# for MI
+@lru_cache(maxsize=1)
+def _load_mi_baseline() -> Dict[str, Any]:  
+    if not MI_baseline_PATH.exists():
+        raise FileNotFoundError(f"MI baseline not found at {MI_baseline_PATH}")
+    return json.loads(MI_baseline_PATH.read_text(encoding="utf-8"))     
 
 
 # ----Finish adding the states here----
@@ -344,8 +401,65 @@ def extract_rules_for_zip(zip_code: str) -> Dict[str, Any]:
                 _merge_rules(merged_rules, hi["rules"]) 
                 summary_parts.append("Applied Hawaii statewide baseline.") # Add to summary
                 match_level = "state" # Set match level
-                match_name = "HI" # Set match name                              
+                match_name = "HI" # Set match name  
+        case "WI": # Wisconsin
+            wi = _load_wi_baseline()        
+            if wi and wi.get("rules"):  # Merge wi rules to merged_rules        
+                _merge_rules(merged_rules, wi["rules"]) 
+                summary_parts.append("Applied Wisconsin statewide baseline.") # Add to summary
+                match_level = "state" # Set match level
+                match_name = "WI" # Set match name  
+        case "MN": # Minnesota
+            mn = _load_mn_baseline()        
+            if mn and mn.get("rules"):  # Merge mn rules to merged_rules                
+                _merge_rules(merged_rules, mn["rules"]) 
+                summary_parts.append("Applied Minnesota statewide baseline.") # Add to summary
+                match_level = "state" # Set match level
+                match_name = "MN" # Set match name  
+        case "IL": # Illinois
+            il = _load_il_baseline()        
+            if il and il.get("rules"):  # Merge il rules to merged_rules        
+                _merge_rules(merged_rules, il["rules"]) 
+                summary_parts.append("Applied Illinois statewide baseline.") # Add to summary
+                match_level = "state" # Set match level
+                match_name = "IL" # Set match name              
 
+        case "IN": # Indiana    
+            ind = _load_in_baseline()        
+            if ind and ind.get("rules"):  # Merge in rules to merged_rules        
+                _merge_rules(merged_rules, ind["rules"]) 
+                summary_parts.append("Applied Indiana statewide baseline.") # Add to summary
+                match_level = "state" # Set match level
+                match_name = "IN" # Set match name          
+        case "OH": # Ohio    
+            oh = _load_oh_baseline()
+            if oh and oh.get("rules"):  # Merge oh rules to merged_rules        
+                _merge_rules(merged_rules, oh["rules"]) 
+                summary_parts.append("Applied Ohio statewide baseline.") # Add to summary
+                match_level = "state" # Set match level
+                match_name = "OH" # Set match name                            
+        case "IA": # Iowa    
+            ia = _load_ia_baseline()        
+            if ia and ia.get("rules"):  # Merge ia rules to merged_rules    
+                _merge_rules(merged_rules, ia["rules"]) 
+                summary_parts.append("Applied Iowa statewide baseline.") # Add to summary
+                match_level = "state" # Set match level
+                match_name = "IA" # Set match name      
+        case "MO": # Missouri    
+            mo = _load_mo_baseline()        
+            if mo and mo.get("rules"):  # Merge mo rules to merged_rules        
+                _merge_rules(merged_rules, mo["rules"]) 
+                summary_parts.append("Applied Missouri statewide baseline.") # Add to summary
+                match_level = "state" # Set match level
+                match_name = "MO" # Set match name
+        case "MI": # Michigan    
+            mi = _load_mi_baseline()        
+            if mi and mi.get("rules"):  # Merge mi rules to merged_rules    
+                _merge_rules(merged_rules, mi["rules"]) 
+                summary_parts.append("Applied Michigan statewide baseline.") # Add to summary
+                match_level = "state" # Set match level
+                match_name = "MI" # Set match name      
+        
         case _: # Invalid state code
             summary_parts.append(f"No baseline rules for state {region.state_code}.")
 
