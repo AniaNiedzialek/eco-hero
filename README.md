@@ -6,6 +6,13 @@ cd backend && pip install -r requirements.txt
 python -m playwright install chromium
 ```
 
+## Set environment variables
+```
+cd backend && touch .env
+echo "RESEND_API_KEY=YOUR_API_KEY" > .env 
+```
+Change YOUR_API_KEY to your resend api key (https://resend.com/)
+
 ## Run the backend
 
 ```
@@ -45,7 +52,7 @@ uvicorn main:app --reload --port 8000
             }
         }
         ```
-## Schedule API
+## Schedule API (Only works with San Jose)
 
 -   **GET /api/collection/schedule?address=...&zip_code=...**
     ```
@@ -79,3 +86,11 @@ uvicorn main:app --reload --port 8000
         "state": "CA"
         }
         ```
+
+-   **POST /api/collection/notify?email=...&address=...&zip_code=...**
+    ```
+    curl -s -X POST 'http://127.0.0.1:8000/api/collection/notify' \
+    -H 'Content-Type: application/json' \
+    -d '{"email":"you@example.com","address":"200 E Santa Clara St","zip_code":"95112"}'
+    ```
+    -   Send collection schedule to email
