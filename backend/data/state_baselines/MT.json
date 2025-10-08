@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "MT",
+  "state": "MT",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Montana DEQ guidance; local rules may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "No statewide organics mandate; backyard and site-permitted composting allowed per DEQ guidance.",
+      "bin": "Green/yard waste cart or drop-off where offered.",
+      "notes": "Acceptance of food scraps varies by city/county.",
+      "provenance": ["Montana DEQ Solid Waste & Composting guidance"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper and cardboard; flatten boxes.",
+      "bin": "Blue/mixed recycling bin or local drop-off.",
+      "notes": "Exclude greasy or waxed cardboard.",
+      "provenance": ["MT municipal recycling guides"]
+    },
+    "glass_containers": {
+      "guidance": "Glass bottles/jars only; rinse and remove lids.",
+      "bin": "Separate glass or drop-off if available.",
+      "notes": "Non-container glass often not accepted.",
+      "provenance": ["Local program rules in MT"]
+    },
+    "metal_containers": {
+      "guidance": "Aluminum and steel/tin cans, empty and rinsed.",
+      "bin": "Mixed recycling bin.",
+      "notes": "No pressurized/aerosol cans unless specifically accepted.",
+      "provenance": ["MT city/county recycling lists"]
+    },
+    "plastics": {
+      "guidance": "Bottles, jugs, and some tubs as accepted locally.",
+      "bin": "Mixed recycling bin (loose, not bagged).",
+      "notes": "No film, bags, or foam in curbside bins.",
+      "provenance": ["MT municipal recycling guidance"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "No statewide container-deposit program.",
+      "bin": "Recycle with curbside/drop-off if accepted.",
+      "notes": "No state refund on containers.",
+      "provenance": ["State policy overviews"]
+    },
+    "household_batteries": {
+      "guidance": "Handle under universal-waste best practices; recycle rechargeables/lead-acid.",
+      "bin": "Drop-off at battery/HHW sites.",
+      "notes": "Keep batteries out of trash and curbside recycling.",
+      "provenance": ["Montana DEQ HHW guidance"]
+    },
+    "e_waste": {
+      "guidance": "Use e-waste collection events or electronics recyclers.",
+      "bin": "Take to approved e-waste drop-offs.",
+      "notes": "Accepted items vary by site; wipe data before recycling.",
+      "provenance": ["Montana DEQ electronics recycling info"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Not accepted in curbside recycling.",
+      "bin": "Return to retail/store drop-offs if available.",
+      "notes": "Film clogs sorting equipment.",
+      "provenance": ["MT recycling contamination guidance"]
+    },
+    "bulky_items": {
+      "guidance": "Schedule special pickup or haul to transfer station/landfill.",
+      "bin": "Not allowed in standard carts.",
+      "notes": "Fees and rules vary by jurisdiction.",
+      "provenance": ["Local solid-waste program rules in MT"]
+    }
+  }
+}

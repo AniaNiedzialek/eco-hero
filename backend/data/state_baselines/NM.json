@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "NM",
+  "state": "NM",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from New Mexico Environment Department (NMED) and local solid waste programs; local rules may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting of yard and food waste permitted under NMED Solid Waste rules; encouraged statewide but not mandated.",
+      "bin": "Green/yard waste bin or compost drop-off where available.",
+      "notes": "Curbside composting limited to certain municipalities.",
+      "provenance": ["NMED Solid Waste Bureau", "Santa Fe County composting program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper, cardboard, and cartons.",
+      "bin": "Blue/mixed recycling bin or drop-off center.",
+      "notes": "Greasy or wet paper not accepted.",
+      "provenance": ["City of Albuquerque recycling program", "NMED recycling resources"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle glass bottles and jars; rinse and remove lids.",
+      "bin": "Glass-only bin or drop-off (varies by city).",
+      "notes": "Broken or non-container glass not accepted.",
+      "provenance": ["City of Santa Fe recycling info", "Albuquerque Solid Waste Management Department"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel cans; empty and rinse.",
+      "bin": "Blue recycling bin.",
+      "notes": "No large scrap metal or aerosol cans.",
+      "provenance": ["NMED recycling guide"]
+    },
+    "plastics": {
+      "guidance": "Recycle plastic bottles and jugs labeled #1–#2; some areas accept #5.",
+      "bin": "Blue recycling bin.",
+      "notes": "Plastic bags, film, and Styrofoam not accepted curbside.",
+      "provenance": ["Albuquerque recycling guidelines", "Santa Fe County waste programs"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "No statewide deposit or refund system for beverage containers.",
+      "bin": "Recycle with curbside bin if accepted locally.",
+      "notes": "No CRV program in effect.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries through drop-off sites or HHW collection events.",
+      "bin": "Hazardous waste or battery collection site.",
+      "notes": "Do not dispose of in trash or blue bin.",
+      "provenance": ["NMED Household Hazardous Waste Program"]
+    },
+    "e_waste": {
+      "guidance": "Electronics recycling available through local drop-offs or collection events; not mandated statewide.",
+      "bin": "Drop-off at e-waste recycler or event.",
+      "notes": "Accepted items vary; check local listings.",
+      "provenance": ["NMED e-waste guidance", "City of Albuquerque e-waste collection"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted in curbside recycling.",
+      "bin": "Return to store drop-off if available.",
+      "notes": "Albuquerque and Santa Fe have single-use plastic bag bans.",
+      "provenance": ["City of Albuquerque Clean & Green Ordinance", "Santa Fe plastic reduction ordinance"]
+    },
+    "bulky_items": {
+      "guidance": "Schedule bulky item pickup or deliver to collection center.",
+      "bin": "Not accepted in standard bins.",
+      "notes": "Fees or proof of residency may be required.",
+      "provenance": ["Albuquerque bulky waste program", "Santa Fe County solid waste division"]
+    }
+  }
+}

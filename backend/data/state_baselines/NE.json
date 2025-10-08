@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "NE",
+  "state": "NE",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Nebraska DEE Solid Waste Management Program and municipal recycling services; local rules may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting of yard and food waste is encouraged; regulated under NDEE Compost Facility Guidelines.",
+      "bin": "Green waste bin or compost drop-off site.",
+      "notes": "Lincoln and Omaha operate yard waste composting programs.",
+      "provenance": ["Nebraska Department of Environment & Energy (NDEE) composting guidance"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper and cardboard; flatten boxes before recycling.",
+      "bin": "Blue recycling bin or community drop-off center.",
+      "notes": "No waxed, wet, or food-soiled paper.",
+      "provenance": ["City of Lincoln recycling info", "Omaha recycling program"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle glass bottles and jars; rinse and remove lids.",
+      "bin": "Glass drop-off bins (most cities do not allow glass in curbside recycling).",
+      "notes": "Broken glass not accepted.",
+      "provenance": ["City of Omaha glass recycling drop-offs", "Nebraska Recycling Council"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel/tin cans (empty and rinsed).",
+      "bin": "Blue/mixed recycling bin or drop-off center.",
+      "notes": "No pressurized or paint cans curbside.",
+      "provenance": ["NDEE recycling guidance", "Lincoln recycling program"]
+    },
+    "plastics": {
+      "guidance": "Recycle plastic bottles, jugs, and tubs labeled #1–#2; acceptance of other types varies locally.",
+      "bin": "Blue bin or drop-off (loose, not bagged).",
+      "notes": "No plastic bags, film, or Styrofoam curbside.",
+      "provenance": ["NDEE materials recycling list", "Omaha Waste Management"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Nebraska does not have a statewide beverage container deposit law.",
+      "bin": "Recycle in curbside or drop-off bin if accepted.",
+      "notes": "No refund or deposit program in place.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries through HHW programs or drop-offs.",
+      "bin": "Battery collection or HHW site.",
+      "notes": "Avoid putting batteries in trash or blue bin.",
+      "provenance": ["NDEE Household Hazardous Waste guidance"]
+    },
+    "e_waste": {
+      "guidance": "E-waste recycling available at local drop-offs or events; NDEE supports collection programs.",
+      "bin": "Take to e-waste recycler or event.",
+      "notes": "Accepted items vary; TVs and monitors may have fees.",
+      "provenance": ["NDEE electronics recycling program", "Nebraska Recycling Council resources"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film are not accepted curbside.",
+      "bin": "Return to retail store drop-off bins.",
+      "notes": "Keep film and wraps out of blue bins to reduce contamination.",
+      "provenance": ["NDEE contamination prevention guide"]
+    },
+    "bulky_items": {
+      "guidance": "Arrange large item pickup or drop off at transfer station or landfill.",
+      "bin": "Not accepted in standard trash/recycling bins.",
+      "notes": "Some municipalities offer free bulky pickup days.",
+      "provenance": ["Omaha and Lincoln bulky waste collection policies"]
+    }
+  }
+}

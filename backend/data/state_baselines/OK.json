@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "OK",
+  "state": "OK",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Oklahoma DEQ solid waste rules and major municipal recycling programs; local rules may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting and mulch operations are regulated under Oklahoma DEQ Solid Waste Management rules; backyard composting allowed without permit.",
+      "bin": "Green waste or compost drop-off bin where available.",
+      "notes": "Curbside organics collection offered only in select cities like Norman.",
+      "provenance": ["Oklahoma DEQ Solid Waste Management Rules", "City of Norman composting program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper and cardboard; flatten boxes.",
+      "bin": "Blue/mixed recycling bin or drop-off center.",
+      "notes": "Greasy, waxed, or wet cardboard not accepted.",
+      "provenance": ["Oklahoma City recycling guide", "Tulsa recycling program"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle glass bottles and jars (rinsed, lids removed).",
+      "bin": "Glass-only drop-off sites; limited curbside service.",
+      "notes": "Broken or non-container glass not accepted.",
+      "provenance": ["City of Tulsa glass recycling info", "Oklahoma DEQ recycling overview"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum, steel, and tin cans (empty, rinsed).",
+      "bin": "Blue/mixed recycling bin.",
+      "notes": "No large scrap metal or pressurized containers.",
+      "provenance": ["Oklahoma City recycling materials list"]
+    },
+    "plastics": {
+      "guidance": "Recycle plastic bottles, jugs, and tubs labeled #1–#2; other types depend on local program.",
+      "bin": "Blue recycling bin or drop-off.",
+      "notes": "Plastic bags, film, and foam are not accepted curbside.",
+      "provenance": ["Oklahoma DEQ recycling resources", "City of Norman recycling rules"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Oklahoma has no statewide container deposit or refund law.",
+      "bin": "Recycle with local curbside or drop-off program.",
+      "notes": "No CRV system in effect.",
+      "provenance": ["Oklahoma DEQ policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries via HHW programs or drop-off sites.",
+      "bin": "Take to hazardous waste or recycling center.",
+      "notes": "Keep batteries out of regular trash and recycling bins.",
+      "provenance": ["Oklahoma DEQ Household Hazardous Waste Program"]
+    },
+    "e_waste": {
+      "guidance": "Electronics can be recycled through local e-waste events and drop-offs; no statewide mandate.",
+      "bin": "Drop-off at e-waste recycling facility or HHW event.",
+      "notes": "Accepted devices vary; check local listings.",
+      "provenance": ["Oklahoma DEQ e-waste management guidance"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film are not accepted in curbside recycling.",
+      "bin": "Return to participating retail stores for recycling.",
+      "notes": "Some local ordinances restrict single-use bags.",
+      "provenance": ["Oklahoma DEQ recycling contamination reduction info"]
+    },
+    "bulky_items": {
+      "guidance": "Schedule bulky waste pickup or deliver items to transfer station/landfill.",
+      "bin": "Not accepted in standard bins.",
+      "notes": "Fees or scheduled collection required in most cities.",
+      "provenance": ["Oklahoma City bulky waste rules", "Tulsa bulky waste guidelines"]
+    }
+  }
+}
