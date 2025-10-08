@@ -1,6 +1,9 @@
 uvicorn
 fastapi
 pgeocode
+zxing-cpp
+opencv-python
+pytest
 httpx
 playwright
 dotenv
