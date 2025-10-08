@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "MN",
+  "state": "MN",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Minnesota Pollution Control Agency (MPCA) and county recycling programs; local rules may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting and organics recycling are strongly supported by MPCA; businesses and residents in certain counties must separate food waste.",
+      "bin": "Green or organics recycling bin.",
+      "notes": "Hennepin and Ramsey counties require organics collection for some businesses.",
+      "provenance": ["MPCA Organics Recycling Program", "Hennepin County organics rules"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper and cardboard; flatten boxes.",
+      "bin": "Blue or mixed recycling bin.",
+      "notes": "Exclude wax-coated or greasy cardboard.",
+      "provenance": ["MPCA recycling guide", "Minneapolis recycling program"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle glass bottles and jars (empty, rinsed).",
+      "bin": "Mixed recycling bin.",
+      "notes": "No window glass or ceramics.",
+      "provenance": ["MPCA recycling materials list"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum, steel, and tin cans (empty and clean).",
+      "bin": "Mixed recycling bin.",
+      "notes": "Do not include scrap metal or aerosol cans.",
+      "provenance": ["MPCA recycling rules", "Minneapolis accepted materials"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles, jugs, tubs, and containers labeled #1–#7 depending on local acceptance.",
+      "bin": "Blue recycling bin.",
+      "notes": "Plastic film, bags, and foam are not accepted curbside.",
+      "provenance": ["MPCA plastics recycling guide"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Minnesota does not have a statewide container deposit program.",
+      "bin": "Recycle in curbside bin if accepted.",
+      "notes": "No CRV or refund system in effect.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle batteries through HHW programs or Call2Recycle locations.",
+      "bin": "Battery drop-off or hazardous waste site.",
+      "notes": "Keep out of regular trash or recycling bins.",
+      "provenance": ["MPCA Household Hazardous Waste Program"]
+    },
+    "e_waste": {
+      "guidance": "Electronics are banned from landfills; recycle via county or retailer collection programs.",
+      "bin": "Drop-off at certified e-waste site.",
+      "notes": "Includes TVs, monitors, computers, and printers.",
+      "provenance": ["Minnesota E-Waste Law (MN Stat. §115A.1310)", "MPCA e-waste program"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted in curbside recycling.",
+      "bin": "Return to grocery store drop-off.",
+      "notes": "Film and wraps cause contamination in recycling centers.",
+      "provenance": ["MPCA recycling contamination info"]
+    },
+    "bulky_items": {
+      "guidance": "Bulky items must be taken to drop-off sites or scheduled for pickup.",
+      "bin": "Not accepted in regular bins.",
+      "notes": "Fees and scheduling vary by city/county.",
+      "provenance": ["Minneapolis bulky waste program", "Saint Paul Public Works"]
+    }
+  }
+}

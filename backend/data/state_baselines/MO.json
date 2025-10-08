@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "MO",
+  "state": "MO",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Missouri Department of Natural Resources (DNR) Solid Waste Management Program and local recycling programs.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting of yard and food waste allowed under DNR rules; home composting exempt from regulation.",
+      "bin": "Green waste bin or compost drop-off site.",
+      "notes": "Kansas City and St. Louis offer yard waste collection; food waste programs limited.",
+      "provenance": ["Missouri DNR Solid Waste Management Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes before placing in bins.",
+      "bin": "Blue recycling bin or drop-off center.",
+      "notes": "Greasy or waxed materials not accepted.",
+      "provenance": ["Missouri DNR recycling guide", "St. Louis City recycling program"]
+    },
+    "glass_containers": {
+      "guidance": "Glass bottles and jars accepted at drop-offs; rinse and remove lids.",
+      "bin": "Glass-only bin or drop-off location.",
+      "notes": "Not all curbside programs accept glass.",
+      "provenance": ["Ripple Glass program (Kansas City)", "Missouri DNR recycling info"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel/tin cans; rinse clean.",
+      "bin": "Blue/mixed recycling bin.",
+      "notes": "No large scrap metal or aerosol cans.",
+      "provenance": ["Missouri DNR recycling information"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles, jugs, and tubs labeled #1–#2; local programs vary for other plastics.",
+      "bin": "Blue recycling bin.",
+      "notes": "Plastic bags, film, and foam not accepted curbside.",
+      "provenance": ["Missouri DNR recycling guide"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "No statewide bottle deposit law in Missouri.",
+      "bin": "Recycle with curbside or drop-off bin if accepted.",
+      "notes": "No CRV program or refund system.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries via HHW programs or collection sites.",
+      "bin": "Battery drop-off or HHW center.",
+      "notes": "Keep out of household trash and recycling bins.",
+      "provenance": ["Missouri DNR HHW management guidelines"]
+    },
+    "e_waste": {
+      "guidance": "Recycle electronics through the Missouri Electronics Recycling Program or local events.",
+      "bin": "Drop-off at e-waste recycling facility.",
+      "notes": "Includes TVs, computers, and monitors; landfill disposal banned for covered devices.",
+      "provenance": ["Missouri Electronics Scrap Management Rule (10 CSR 25-19.010)"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film are not accepted curbside.",
+      "bin": "Return to retail store collection bins.",
+      "notes": "Film creates contamination issues in MRFs.",
+      "provenance": ["Missouri DNR recycling contamination info"]
+    },
+    "bulky_items": {
+      "guidance": "Bulky waste must be scheduled for pickup or dropped at transfer station or landfill.",
+      "bin": "Not accepted in curbside bins.",
+      "notes": "Fees and limits vary by city or hauler.",
+      "provenance": ["Kansas City bulky item pickup rules", "St. Louis Refuse Division"]
+    }
+  }
+}

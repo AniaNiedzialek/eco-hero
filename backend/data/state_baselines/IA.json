@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "IA",
+  "state": "IA",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Iowa DNR Solid Waste and Recycling Program and local city services; local rules vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Yard waste composting and drop-offs regulated under Iowa DNR rules; food waste composting encouraged but not required.",
+      "bin": "Yard waste cart or compost drop-off.",
+      "notes": "Some cities like Iowa City offer curbside compost collection.",
+      "provenance": ["Iowa DNR Solid Waste and Composting rules"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten and keep dry.",
+      "bin": "Blue recycling bin or drop-off center.",
+      "notes": "Exclude waxed or heavily soiled materials.",
+      "provenance": ["Iowa DNR recycling resources", "Des Moines recycling guide"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle glass bottles and jars (rinsed, lids off).",
+      "bin": "Glass-only drop-off bins or mixed recycling where accepted.",
+      "notes": "Not all curbside programs accept glass.",
+      "provenance": ["City of Des Moines recycling information"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle clean aluminum and steel/tin cans.",
+      "bin": "Blue or mixed recycling bin.",
+      "notes": "Do not include pressurized containers.",
+      "provenance": ["Iowa DNR recycling list"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles and jugs labeled #1–#2; check local acceptance for #5.",
+      "bin": "Blue bin (loose, not bagged).",
+      "notes": "Plastic film, bags, and foam not accepted curbside.",
+      "provenance": ["Iowa DNR recycling guidance", "City recycling programs"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Iowa has a statewide 5¢ deposit (Iowa Bottle Bill) for eligible containers.",
+      "bin": "Return to redemption centers or retailers.",
+      "notes": "Includes beer, soda, and water containers.",
+      "provenance": ["Iowa Beverage Container Deposit Law (Iowa Code §455C)"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries via HHW or collection programs.",
+      "bin": "Drop-off at HHW site or Call2Recycle.",
+      "notes": "Keep batteries out of curbside bins.",
+      "provenance": ["Iowa DNR HHW Program"]
+    },
+    "e_waste": {
+      "guidance": "Electronics recycling supported through Iowa DNR programs and local events.",
+      "bin": "Drop-off at e-waste collection site.",
+      "notes": "Accepted items vary; TVs and monitors may have fees.",
+      "provenance": ["Iowa DNR e-waste recycling info"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted curbside.",
+      "bin": "Return to retail store drop-off bins.",
+      "notes": "Plastic bag recycling available through store programs only.",
+      "provenance": ["Iowa DNR recycling contamination resources"]
+    },
+    "bulky_items": {
+      "guidance": "Schedule bulky waste pickup or deliver to landfill/transfer station.",
+      "bin": "Not accepted in curbside bins.",
+      "notes": "Most cities charge per-item or appointment fees.",
+      "provenance": ["Des Moines bulky waste program", "Cedar Rapids Solid Waste & Recycling"]
+    }
+  }
+}

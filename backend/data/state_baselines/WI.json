@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "WI",
+  "state": "WI",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Wisconsin DNR Recycling Program; local collection rules may vary by municipality.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting and organics diversion encouraged under DNR Solid Waste rules; food waste programs expanding in major cities.",
+      "bin": "Green/organics bin or compost drop-off site.",
+      "notes": "Madison and Milwaukee have food scrap and yard waste programs.",
+      "provenance": ["Wisconsin DNR Organics Management", "City of Madison recycling guide"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper, cardboard, and cartons; flatten boxes.",
+      "bin": "Blue recycling bin or local drop-off.",
+      "notes": "No waxed, wet, or greasy cardboard.",
+      "provenance": ["Wisconsin DNR recycling guide", "Milwaukee recycling program"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle glass bottles and jars (rinsed, no lids).",
+      "bin": "Mixed recycling bin or glass drop-off site.",
+      "notes": "No window glass, ceramics, or drinking glasses.",
+      "provenance": ["Wisconsin DNR accepted materials list"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle clean aluminum and steel/tin cans.",
+      "bin": "Blue recycling bin.",
+      "notes": "No scrap metal or pressurized containers.",
+      "provenance": ["Wisconsin DNR recycling requirements"]
+    },
+    "plastics": {
+      "guidance": "Recycle plastic bottles, jugs, and tubs labeled #1–#7; local programs vary.",
+      "bin": "Blue recycling bin (loose, not bagged).",
+      "notes": "Plastic film and foam not accepted curbside.",
+      "provenance": ["Wisconsin DNR plastics recycling guidance"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "No statewide deposit or refund law in Wisconsin.",
+      "bin": "Recycle with curbside or drop-off program.",
+      "notes": "No CRV refund system.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries through HHW or retail collection.",
+      "bin": "Battery drop-off or HHW facility.",
+      "notes": "Keep out of trash and curbside bins.",
+      "provenance": ["Wisconsin DNR HHW and battery recycling"]
+    },
+    "e_waste": {
+      "guidance": "State law bans landfilling of electronics; use E-Cycle Wisconsin registered recyclers.",
+      "bin": "Drop-off at certified e-waste site.",
+      "notes": "Includes TVs, computers, monitors, and printers.",
+      "provenance": ["E-Cycle Wisconsin Program (Wis. Stat. §287.17)"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted in curbside recycling.",
+      "bin": "Return to retail store collection bins.",
+      "notes": "Film can jam sorting equipment.",
+      "provenance": ["Wisconsin DNR recycling contamination info"]
+    },
+    "bulky_items": {
+      "guidance": "Bulky items require scheduled pickup or landfill delivery.",
+      "bin": "Not accepted in regular bins.",
+      "notes": "Fees and disposal rules vary by municipality.",
+      "provenance": ["City of Madison bulky item collection", "Milwaukee bulky waste rules"]
+    }
+  }
+}

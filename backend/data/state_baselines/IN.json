@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "IN",
+  "state": "IN",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Indiana Department of Environmental Management (IDEM) recycling programs and city rules.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting regulated by IDEM; residents encouraged to compost yard and food waste.",
+      "bin": "Green/yard waste cart or compost drop-off.",
+      "notes": "Indianapolis and Bloomington have limited composting programs.",
+      "provenance": ["IDEM Solid Waste and Composting Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper and cardboard; flatten boxes.",
+      "bin": "Blue recycling bin.",
+      "notes": "Greasy or waxed materials not accepted.",
+      "provenance": ["IDEM recycling guide"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle glass bottles and jars (rinsed, no lids).",
+      "bin": "Mixed recycling bin or drop-off site.",
+      "notes": "Broken glass not accepted.",
+      "provenance": ["Indianapolis DPW recycling info"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum, steel, and tin cans; empty and rinse.",
+      "bin": "Blue recycling bin.",
+      "notes": "Do not include scrap metal or pressurized containers.",
+      "provenance": ["IDEM recycling materials list"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles, jugs, and tubs labeled #1–#2; local programs vary for others.",
+      "bin": "Blue bin (loose, not bagged).",
+      "notes": "Plastic film and foam not accepted.",
+      "provenance": ["IDEM recycling guidance"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Indiana has no container deposit law.",
+      "bin": "Recycle via curbside or drop-off program.",
+      "notes": "No CRV refund system.",
+      "provenance": ["State policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries through HHW programs.",
+      "bin": "Battery or HHW collection site.",
+      "notes": "Keep out of trash bins.",
+      "provenance": ["IDEM HHW guidance"]
+    },
+    "e_waste": {
+      "guidance": "E-waste recycling available through IDEM-registered facilities; TVs banned from landfills.",
+      "bin": "Drop-off at certified e-waste site.",
+      "notes": "Includes TVs, monitors, and computers.",
+      "provenance": ["Indiana E-Waste Law (329 IAC 16)"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted curbside.",
+      "bin": "Return to store collection bins.",
+      "notes": "Film contaminates recycling streams.",
+      "provenance": ["IDEM recycling contamination resources"]
+    },
+    "bulky_items": {
+      "guidance": "Arrange pickup or bring bulky items to landfill or transfer station.",
+      "bin": "Not accepted in regular carts.",
+      "notes": "Fees apply; varies by hauler.",
+      "provenance": ["Indianapolis bulky item program", "Bloomington sanitation info"]
+    }
+  }
+}
