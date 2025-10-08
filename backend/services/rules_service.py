@@ -94,7 +94,7 @@ def extract_rules_for_zip(zip_code: str) -> Dict[str, Any]:
         case "OR": # Oregon
             ore = _load_or_baseline()
             if ore and ore.get("rules"):
-                _merge_rules(merged_rules, ca["rules"]) # Merge or rules to merged_rules
+                _merge_rules(merged_rules, ore["rules"]) # Merge or rules to merged_rules
                 summary_parts.append("Applied Oregon statewide bsaeline.") # Add to summary
                 match_level = "state" # Set match level
                 match_name = "OR" # Set match name
