@@ -1,0 +1,70 @@
+{
+
+    "jurisdiction": "ID",
+    "state": "ID",
+    "last_verified_at": "2024-05-20",
+    "source_note": "State baseline derived from Idaho DEQ solid waste rules and local recycling practices; local rules may vary.",
+    "rules": {
+        "organics": {
+            "guidance": "Backyard composting is allowed under IDAPA 58.01.06 for residential waste; commercial composting must follow DEQ facility guidance. :contentReference[oaicite:0]{index=0}",
+            "bin": "Green bin or yard waste cart (where local service available).",
+            "notes": "No statewide mandate for organics diversion; local composting programs vary. :contentReference[oaicite:1]{index=1}",
+            "provenance": ["IDAPA 58.01.06 Solid Waste Management Rules", "Idaho DEQ Composting Facility Guidance"]
+        },
+        "paper_cardboard": {
+            "guidance": "Recycle clean paper, cardboard, cartons; flatten boxes. :contentReference[oaicite:2]{index=2}",
+            "bin": "Blue recycling bin or local mixed paper bin.",
+            "notes": "No waxed or heavily soiled paper products. :contentReference[oaicite:3]{index=3}",
+            "provenance": ["Ada County / Boise recycling guidelines", "Valley County recycling rules"]
+        },
+        "glass_containers": {
+            "guidance": "Recycle glass bottles and jars (empty, rinsed). :contentReference[oaicite:4]{index=4}",
+            "bin": "Mixed recycling bin or local drop-off glass containers.",
+            "notes": "Some areas don’t accept broken glass, ceramics, or light bulbs. :contentReference[oaicite:5]{index=5}",
+            "provenance": ["City of Boise recycling rules", "Idaho Falls recycling program"]
+        },
+        "metal_containers": {
+            "guidance": "Recycle aluminum, steel, and tin cans (empty, rinsed). :contentReference[oaicite:6]{index=6}",
+            "bin": "Mixed recycling bin.",
+            "notes": "Labels OK; no large scrap metal or hazardous containers. :contentReference[oaicite:7]{index=7}",
+            "provenance": ["Kootenai County recycling rules", "City of Boise recycling guide"]
+        },
+        "plastics": {
+            "guidance": "Recycle plastic bottles and jugs labeled #1 or #2 (some programs accept #5). :contentReference[oaicite:8]{index=8}",
+            "bin": "Mixed recycling bin (loose, not bagged).",
+            "notes": "No plastic bags, film, or Styrofoam in most curbside programs. :contentReference[oaicite:9]{index=9}",
+            "provenance": ["Ada County Waste Diversion Guide", "Boise recycling rules"]
+        },
+        "beverage_containers_crv": {
+            "guidance": "Idaho does *not* have a statewide beverage container deposit law. :contentReference[oaicite:10]{index=10}",
+            "bin": "Include in curbside recycling if accepted locally.",
+            "notes": "No state refund deposit program.",
+            "provenance": ["Idaho recycling policy summaries"]
+        },
+        "household_batteries": {
+            "guidance": "Lead-acid batteries must be recycled; other household batteries ideally go to battery drop-off or HHW collection. :contentReference[oaicite:11]{index=11}",
+            "bin": "Take to battery recycling or hazardous waste site.",
+            "notes": "Do not place batteries in regular trash or recycling bins (fire risk).",
+            "provenance": ["Idaho waste management / battery disposal rules"]
+        },
+        "e_waste": {
+            "guidance": "Recycle electronics via local e-waste collection events or drop-off recycling sites.",
+            "bin": "Local e-waste drop-off or collection center.",
+            "notes": "Acceptance and rules vary by county.",
+            "provenance": ["Idaho DEQ solid waste / recycling guidance"]
+        },
+        "plastic_bags_and_film": {
+            "guidance": "Plastic bags and film are not accepted in most curbside recycling.",
+            "bin": "Return to participating stores (bag drop-off).",
+            "notes": "They cause contamination and equipment issues. :contentReference[oaicite:12]{index=12}",
+            "provenance": ["Ada County waste diversion guidelines", "Boise recycling rules"]
+        },
+        "bulky_items": {
+            "guidance": "Bulky items (furniture, mattresses, appliances) require special pickup or drop-off at a disposal facility.",
+            "bin": "Not allowed in standard bins.",
+            "notes": "Fees or appointments often required at local transfer stations.",
+            "provenance": ["Idaho DEQ solid waste facility rules", "Local municipal waste policy"]
+        }
+    }
+
+}
