@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "WY",
+  "state": "WY",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Wyoming DEQ and local program guidance; local rules may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "No statewide organics requirement; composting of yard/food waste permitted under local/site rules.",
+      "bin": "Green/yard waste cart or drop-off where offered.",
+      "notes": "Programs are locality-specific; check city/county services.",
+      "provenance": ["Wyoming DEQ solid-waste guidance"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Blue/mixed recycling bin or community drop-off.",
+      "notes": "Greasy or wax-coated paper is not accepted.",
+      "provenance": ["WY city/county recycling guides"]
+    },
+    "glass_containers": {
+      "guidance": "Bottles and jars only; rinse and remove lids.",
+      "bin": "Separate glass bin or drop-off if available.",
+      "notes": "Many towns do glass by drop-off only.",
+      "provenance": ["Local program rules in WY"]
+    },
+    "metal_containers": {
+      "guidance": "Empty, rinsed aluminum and steel/tin cans.",
+      "bin": "Mixed recycling bin.",
+      "notes": "Exclude scrap metal and pressurized containers.",
+      "provenance": ["WY municipal recycling info"]
+    },
+    "plastics": {
+      "guidance": "Recycle rigid containers accepted locally (commonly #1–#2; others vary).",
+      "bin": "Mixed recycling bin (loose).",
+      "notes": "No plastic bags, film, or foam curbside.",
+      "provenance": ["WY city recycling guidance"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "No statewide beverage container deposit/refund.",
+      "bin": "Recycle with curbside/drop-off if accepted.",
+      "notes": "No state CRV program.",
+      "provenance": ["State policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Treat as universal waste; recycle rechargeables and lead-acid.",
+      "bin": "Battery/HHW collection sites or events.",
+      "notes": "Do not place in trash or curbside recycling.",
+      "provenance": ["Wyoming DEQ HHW guidance"]
+    },
+    "e_waste": {
+      "guidance": "Use local e-waste events or certified recyclers; some landfills run take-back programs.",
+      "bin": "Drop-off at designated e-waste collection sites.",
+      "notes": "Accepted device lists vary by site.",
+      "provenance": ["WY DEQ/local landfill program pages"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Not accepted in curbside recycling.",
+      "bin": "Return to retail/store drop-offs if available.",
+      "notes": "Keep film out of blue bins to prevent jams.",
+      "provenance": ["WY municipal recycling guidance"]
+    },
+    "bulky_items": {
+      "guidance": "Arrange special pickup or take to transfer station/landfill.",
+      "bin": "Do not place in standard carts.",
+      "notes": "Fees/limits depend on locality and hauler.",
+      "provenance": ["Local solid-waste program rules in WY"]
+    }
+  }
+}

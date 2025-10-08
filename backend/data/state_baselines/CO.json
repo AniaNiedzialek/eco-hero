@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "CO",
+  "state": "CO",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Colorado Department of Public Health & Environment (CDPHE) and local recycling programs; local rules may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting and organics recycling are encouraged statewide under CDPHE Organics Diversion Plan; some cities require food scrap separation.",
+      "bin": "Green/organics bin or drop-off site.",
+      "notes": "Denver, Boulder, and Fort Collins offer curbside composting programs.",
+      "provenance": ["CDPHE Organics Management Plan", "Denver Recycles guidance"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper and cardboard; flatten boxes.",
+      "bin": "Blue recycling bin.",
+      "notes": "Greasy or waxed paper not accepted.",
+      "provenance": ["CDPHE recycling guide", "Denver Recycles accepted materials list"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle glass bottles and jars; rinse and remove lids.",
+      "bin": "Mixed recycling bin or glass drop-off (depending on city).",
+      "notes": "Broken glass and Pyrex not accepted.",
+      "provenance": ["Boulder County recycling info", "Denver Recycles"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum, tin, and steel cans; empty and rinse.",
+      "bin": "Blue recycling bin.",
+      "notes": "No aerosol cans or scrap metal curbside.",
+      "provenance": ["CDPHE recycling materials list"]
+    },
+    "plastics": {
+      "guidance": "Recycle plastic bottles, jugs, and tubs labeled #1–#7 depending on local program.",
+      "bin": "Blue recycling bin.",
+      "notes": "Plastic bags, film, and foam not accepted curbside.",
+      "provenance": ["CDPHE Plastic Recycling Guidance", "Denver Recycles"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Colorado does not have a statewide container deposit law.",
+      "bin": "Recycle with curbside bin if accepted locally.",
+      "notes": "No deposit/refund program.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries at drop-off locations or HHW facilities.",
+      "bin": "Drop-off at hazardous waste or battery collection site.",
+      "notes": "Do not place batteries in regular trash or recycling.",
+      "provenance": ["CDPHE Household Hazardous Waste Program"]
+    },
+    "e_waste": {
+      "guidance": "State law prohibits landfill disposal of most electronics (SB 12-133).",
+      "bin": "Take to certified e-waste recycler or local drop-off.",
+      "notes": "Includes TVs, computers, monitors, and printers.",
+      "provenance": ["Colorado E-Waste Ban (SB 12-133)", "CDPHE e-waste recycling info"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted curbside; statewide bag fee in effect since 2023.",
+      "bin": "Return to retail store drop-off if available.",
+      "notes": "Plastic Pollution Reduction Act bans single-use bags and polystyrene statewide (2024).",
+      "provenance": ["Colorado Plastic Pollution Reduction Act (HB 21-1162)"]
+    },
+    "bulky_items": {
+      "guidance": "Bulky waste must be scheduled for pickup or taken to drop-off centers.",
+      "bin": "Not allowed in standard recycling or trash carts.",
+      "notes": "Fees or appointment required in most municipalities.",
+      "provenance": ["Denver bulky item collection rules", "Local solid waste programs"]
+    }
+  }
+}
