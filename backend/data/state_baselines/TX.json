@@ -1,0 +1,69 @@
+{
+    "jurisdiction": "TX",
+    "state": "TX",
+    "last_verified_at": "2024-05-20",
+    "source_note": "Statewide baseline derived from Texas TCEQ rules and statutes; local rules may vary.",
+    "rules": {
+        "organics": {
+            "guidance": "Composting or mulching of source-separated yard waste, vegetative material, paper, or manure is exempt; composting meat, grease, mixed MSW requires notification or permit under 30 TAC 332.3. :contentReference[oaicite:0]{index=0}",
+            "bin": "Green or compost bin (if local service exists).",
+            "notes": "Home or exempt composting operations must still meet general operating and nuisance standards. :contentReference[oaicite:1]{index=1}",
+            "provenance": ["Texas Composting / Mulching Rules (30 TAC 332)", "TCEQ composting guidance"]
+        },
+        "paper_cardboard": {
+            "guidance": "Recycle clean paper, cardboard, and cartons; flatten boxes.",
+            "bin": "Blue or mixed recycling bin.",
+            "notes": "No soiled paper (e.g. greasy pizza boxes).",
+            "provenance": ["TCEQ recycling rules (30 TAC 328)", "Texas Facilities Commission recycling list :contentReference[oaicite:2]{index=2}"]
+        },
+        "glass_containers": {
+            "guidance": "Recycle glass bottles and jars; remove lids.",
+            "bin": "Mixed recycling bin or local drop-off.",
+            "notes": "No broken glass or non-container glass.",
+            "provenance": ["TCEQ recycling rules (30 TAC 328)"]
+        },
+        "metal_containers": {
+            "guidance": "Recycle aluminum and steel cans, empty and rinsed.",
+            "bin": "Mixed recycling bin.",
+            "notes": "No large scrap metal or aerosols with propellant.",
+            "provenance": ["TCEQ recycling rules (30 TAC 328)"]
+        },
+        "plastics": {
+            "guidance": "Recycle rigid plastics like bottles and jugs (check local acceptance).",
+            "bin": "Mixed recycling bin.",
+            "notes": "No plastic bags, film, or Styrofoam in most curbside programs.",
+            "provenance": ["TCEQ recycling rules (30 TAC 328)", "local recycling guides e.g. San Antonio :contentReference[oaicite:3]{index=3}"]
+        },
+        "beverage_containers_crv": {
+            "guidance": "Texas does not have a statewide beverage container refund (CRV) program.",
+            "bin": "Include with recycling if accepted locally.",
+            "notes": "No state-level container deposit law.",
+            "provenance": ["No Texas CRV program (policy summaries)"]
+        },
+        "household_batteries": {
+            "guidance": "Recycle rechargeable batteries at collection sites; single-use batteries often go in trash or special collection.",
+            "bin": "Drop-off at hazardous waste or battery collection sites.",
+            "notes": "Do not place in curbside bins due to fire hazard.",
+            "provenance": ["TCEQ universal waste / battery rules (30 TAC 335)"]
+        },
+        "e_waste": {
+            "guidance": "Recycle electronics via manufacturer take-back programs under Texas Recycles Computers/TVs.",
+            "bin": "Drop-off at approved e-waste collection sites.",
+            "notes": "Electronic waste may be regulated as “universal waste.” :contentReference[oaicite:4]{index=4}",
+            "provenance": ["Texas Recycles Computers and TVs program", "TCEQ e-waste rules"]
+        },
+        "plastic_bags_and_film": {
+            "guidance": "Do not place plastic bags or film in curbside recycling.",
+            "bin": "Return to grocery / retail drop-offs if accepted.",
+            "notes": "Many local recycling programs reject plastic bags.",
+            "provenance": ["Local recycling guidelines (e.g. San Antonio) :contentReference[oaicite:5]{index=5}"]
+        },
+        "bulky_items": {
+            "guidance": "Schedule special pickup or take to transfer station for large items (furniture, mattresses, etc.).",
+            "bin": "Not curbside bins.",
+            "notes": "Fees and rules vary by city and hauler.",
+            "provenance": ["Municipal waste disposal policies in Texas cities"]
+        }
+    }
+
+}
