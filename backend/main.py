@@ -1,6 +1,9 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from routers.rules import router as rule_router # rules router
+
+# routers
+from routers.rules import router as rule_router # rules 
+from routers.collection import router as collection_router
 
 app = FastAPI(title="Eco Hero API", version="1.0.0")
 
@@ -14,8 +17,9 @@ app.add_middleware(
 
 # routes
 app.include_router(rule_router, prefix="/api")
+app.include_router(collection_router, prefix="/api")
 
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
