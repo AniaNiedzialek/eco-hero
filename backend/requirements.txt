@@ -3,3 +3,5 @@ fastapi
 pgeocode
 httpx
 playwright
+dotenv
+resend

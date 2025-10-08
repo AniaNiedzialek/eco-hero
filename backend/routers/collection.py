@@ -1,9 +1,18 @@
 from __future__ import annotations
 from fastapi import APIRouter, HTTPException
 from scrapers.san_jose import get_san_jose_schedule
+from services.notification_service import send_notification
 import pgeocode
+from pydantic import BaseModel
 
 router = APIRouter(prefix="/collection", tags=["collection"])
+
+# -------- Models --------
+class NotifyRequest(BaseModel):
+    email: str
+    address: str
+    zip_code: str | None = None
+
 
 # -------- Helpers --------
 def resolve_region(zip_code: str) -> str:
@@ -62,3 +71,24 @@ async def get_collection_schedule(address: str = None, zip_code: str = None) -> 
         "city": city,
         "state": state
     }
+
+
+@router.post("/notify")
+async def send_schedule_notification(req: NotifyRequest):
+    # Get the schedule first
+    schedule_data = await get_collection_schedule(req.address, req.zip_code)
+    
+    # Check if we found a schedule
+    if not schedule_data.get("schedule"):
+        raise HTTPException(400, "No schedule found to send")
+    
+    # Send notification
+    try:
+        result = send_notification(req.email, schedule_data)
+        return {
+            "success": True,
+            "message": f"Schedule sent to {req.email}",
+            "email_id": result.get("id") if isinstance(result, dict) else None
+        }
+    except Exception as e:
+        raise HTTPException(500, f"Failed to send email: {str(e)}")
