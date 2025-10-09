@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "WV",
+  "state": "WV",
+  "last_verified_at": "2024-05-20",
+  "source_note": "Baseline from West Virginia DEP Rehabilitation/Environmental programs and municipal guidance; local rules vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting of yard/food waste permitted; programs are local.",
+      "bin": "Yard waste cart or compost drop-off where offered.",
+      "notes": "Home composting encouraged; limited curbside food scrap service.",
+      "provenance": ["WV DEP Solid Waste Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Blue/mixed recycling bin or drop-off.",
+      "notes": "No waxed or soiled cardboard.",
+      "provenance": ["WV DEP recycling resources", "City programs (Charleston, Morgantown)"]
+    },
+    "glass_containers": {
+      "guidance": "Bottles and jars only; rinse and remove lids.",
+      "bin": "Glass drop-off or separate collection where available.",
+      "notes": "Not widely accepted curbside.",
+      "provenance": ["Local WV recycling guidance"]
+    },
+    "metal_containers": {
+      "guidance": "Aluminum and steel/tin cans, empty and rinsed.",
+      "bin": "Blue recycling bin.",
+      "notes": "No scrap metal or pressurized cans.",
+      "provenance": ["WV municipal materials lists"]
+    },
+    "plastics": {
+      "guidance": "Bottles and jugs (#1–#2 commonly).",
+      "bin": "Blue bin (loose).",
+      "notes": "No bags, film, or foam.",
+      "provenance": ["WV DEP plastics info"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "No container deposit system.",
+      "bin": "Recycle via local program.",
+      "notes": "No refund/CRV.",
+      "provenance": ["State policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries via HHW or retail sites.",
+      "bin": "Battery/HHW drop-off.",
+      "notes": "Keep out of trash and curbside recycling.",
+      "provenance": ["WV DEP HHW guidance"]
+    },
+    "e_waste": {
+      "guidance": "Use county e-waste events or recyclers; some landfill bans for specific items.",
+      "bin": "Drop-off at e-waste site.",
+      "notes": "Accepted items vary; check county solid waste authority.",
+      "provenance": ["WV Electronics Recycling guidance"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Not accepted curbside.",
+      "bin": "Return to retail store drop-offs.",
+      "notes": "Film causes jams at facilities.",
+      "provenance": ["WV DEP contamination prevention info"]
+    },
+    "bulky_items": {
+      "guidance": "Arrange special pickup or deliver to transfer station/landfill.",
+      "bin": "Not accepted in standard carts.",
+      "notes": "Fees and policies set locally.",
+      "provenance": ["County solid waste authorities in WV"]
+    }
+  }
+}

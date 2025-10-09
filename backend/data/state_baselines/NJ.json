@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "NJ",
+  "state": "NJ",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from New Jersey DEP mandatory recycling law and municipal solid waste programs.",
+  "rules": {
+    "organics": {
+      "guidance": "Commercial food waste recycling required under NJ Food Waste Recycling Law (P.L.2017, c.136).",
+      "bin": "Green/organics bin or compost drop-off.",
+      "notes": "Many municipalities offer yard waste collection; food scrap programs expanding.",
+      "provenance": ["NJDEP Food Waste Recycling Law", "Local municipal recycling guides"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper and cardboard; flatten boxes.",
+      "bin": "Blue/mixed recycling bin.",
+      "notes": "No waxed or greasy paper.",
+      "provenance": ["NJDEP recycling requirements"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars (rinsed, no lids).",
+      "bin": "Mixed recycling bin or separate glass container.",
+      "notes": "Broken glass not accepted curbside.",
+      "provenance": ["NJDEP accepted materials list"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and tin cans (clean and empty).",
+      "bin": "Blue recycling bin.",
+      "notes": "Aerosol cans only if completely empty.",
+      "provenance": ["NJDEP recycling rules"]
+    },
+    "plastics": {
+      "guidance": "Recycle rigid plastics labeled #1–#5; check local programs for others.",
+      "bin": "Blue recycling bin.",
+      "notes": "Plastic bags and foam not accepted curbside.",
+      "provenance": ["NJDEP plastics recycling guidance"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "No statewide deposit/refund system for beverage containers.",
+      "bin": "Recycle curbside or drop-off.",
+      "notes": "No CRV refund available.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries at collection points or HHW sites.",
+      "bin": "Battery or HHW drop-off.",
+      "notes": "Keep out of trash and recycling bins.",
+      "provenance": ["NJDEP Household Hazardous Waste Program"]
+    },
+    "e_waste": {
+      "guidance": "E-waste recycling mandated statewide under NJ Electronic Waste Management Act.",
+      "bin": "Drop-off at certified e-waste site.",
+      "notes": "Includes TVs, monitors, computers, and printers.",
+      "provenance": ["NJ E-Waste Management Act (N.J.S.A. 13:1E-99.94)"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Statewide ban on plastic and paper carryout bags effective 2022.",
+      "bin": "Reusable bags required; film accepted at store drop-offs.",
+      "notes": "Applies to retail and grocery stores.",
+      "provenance": ["NJ Plastic Pollution Reduction Law (P.L.2020, c.117)"]
+    },
+    "bulky_items": {
+      "guidance": "Arrange bulk pickup or drop-off at municipal facility.",
+      "bin": "Not accepted in curbside bins.",
+      "notes": "Local programs set collection schedules.",
+      "provenance": ["Municipal solid waste program rules"]
+    }
+  }
+}

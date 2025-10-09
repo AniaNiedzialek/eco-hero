@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "MS",
+  "state": "MS",
+  "last_verified_at": "2024-05-20",
+  "source_note": "Baseline from Mississippi DEQ Solid Waste Program and municipal guidance; local rules may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting allowed and encouraged; no statewide mandate.",
+      "bin": "Yard waste/organics cart or drop-off if available.",
+      "notes": "Backyard composting widely permitted.",
+      "provenance": ["Mississippi DEQ Solid Waste Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Blue/mixed recycling bin or drop-off.",
+      "notes": "Exclude waxed/soiled paper.",
+      "provenance": ["MS DEQ recycling resources", "City programs (Jackson, Gulfport)"]
+    },
+    "glass_containers": {
+      "guidance": "Glass accepted in limited programs; bottles/jars only.",
+      "bin": "Glass drop-off where offered.",
+      "notes": "Many areas do not collect glass curbside.",
+      "provenance": ["Local MS recycling guides"]
+    },
+    "metal_containers": {
+      "guidance": "Aluminum and steel cans, empty and rinsed.",
+      "bin": "Blue/mixed recycling bin.",
+      "notes": "No scrap metal or pressurized cans.",
+      "provenance": ["MS DEQ materials list"]
+    },
+    "plastics": {
+      "guidance": "Bottles and jugs (#1–#2) commonly accepted.",
+      "bin": "Blue bin (loose).",
+      "notes": "No film, bags, or foam curbside.",
+      "provenance": ["MS municipal recycling info"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "No container deposit/refund program.",
+      "bin": "Recycle via local program.",
+      "notes": "No CRV.",
+      "provenance": ["State policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeables/lead-acid at HHW or retailers.",
+      "bin": "Battery or HHW drop-off.",
+      "notes": "Keep out of trash/recycling carts.",
+      "provenance": ["MS DEQ HHW guidance"]
+    },
+    "e_waste": {
+      "guidance": "Use local e-waste events or certified recyclers.",
+      "bin": "Drop-off at e-waste site.",
+      "notes": "Accepted devices vary by site.",
+      "provenance": ["MS DEQ electronics recycling info"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Not accepted curbside.",
+      "bin": "Return to retail drop-offs.",
+      "notes": "Film causes MRF jams.",
+      "provenance": ["MS DEQ contamination guidance"]
+    },
+    "bulky_items": {
+      "guidance": "Arrange special pickup or haul to landfill/transfer station.",
+      "bin": "Not allowed in standard carts.",
+      "notes": "Fees/schedules set locally.",
+      "provenance": ["Local solid waste departments in MS"]
+    }
+  }
+}

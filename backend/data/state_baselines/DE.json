@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "DE",
+  "state": "DE",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Delaware Solid Waste Authority (DSWA) programs and state recycling laws.",
+  "rules": {
+    "organics": {
+      "guidance": "Food waste recycling encouraged through DSWA Organics Recycling Program; not mandatory statewide.",
+      "bin": "Green or organics drop-off bin.",
+      "notes": "Some businesses required to separate food waste.",
+      "provenance": ["DSWA Organics Recycling Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Single-stream recycling bin.",
+      "notes": "No waxed or food-soiled cardboard.",
+      "provenance": ["DSWA recycling guide"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars (rinsed, no lids).",
+      "bin": "Mixed recycling bin.",
+      "notes": "No broken or heat-resistant glass.",
+      "provenance": ["Delaware DSWA accepted recyclables"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel/tin cans (empty and rinsed).",
+      "bin": "Recycling bin.",
+      "notes": "Exclude pressurized cans.",
+      "provenance": ["DSWA materials list"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles, jugs, and tubs labeled #1–#7.",
+      "bin": "Single-stream recycling bin.",
+      "notes": "Plastic film not accepted curbside.",
+      "provenance": ["DSWA single-stream recycling program"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Delaware repealed its deposit law in 2010; no refund system in place.",
+      "bin": "Recycle via single-stream collection.",
+      "notes": "No CRV refund program.",
+      "provenance": ["Delaware Universal Recycling Law (7 Del. C. §6052)"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries via DSWA collection sites.",
+      "bin": "Battery collection or HHW site.",
+      "notes": "Do not place in trash or curbside bins.",
+      "provenance": ["DSWA HHW and battery recycling"]
+    },
+    "e_waste": {
+      "guidance": "E-waste accepted at DSWA collection events and facilities.",
+      "bin": "Drop-off at DSWA e-waste site.",
+      "notes": "Includes TVs, computers, and printers.",
+      "provenance": ["DSWA electronics recycling program"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic carryout bags banned at most retail stores statewide.",
+      "bin": "Return film to store drop-off bins.",
+      "notes": "Reusable or paper bags required.",
+      "provenance": ["Delaware Plastic Carryout Bag Ban (7 Del. C. §6099)"]
+    },
+    "bulky_items": {
+      "guidance": "Bulky waste must be scheduled for pickup or dropped off at DSWA facility.",
+      "bin": "Not accepted in standard bins.",
+      "notes": "Fees apply by item or weight.",
+      "provenance": ["DSWA bulky waste and landfill information"]
+    }
+  }
+}

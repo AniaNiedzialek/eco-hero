@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "NH",
+  "state": "NH",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from New Hampshire DES Solid Waste Management Program; recycling handled at local level.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting and organics diversion encouraged under DES rules; not required statewide.",
+      "bin": "Green/yard waste bin or compost site.",
+      "notes": "Home composting permitted without regulation.",
+      "provenance": ["NH DES Solid Waste Management Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Blue/mixed recycling bin or transfer station drop-off.",
+      "notes": "No waxed or wet cardboard.",
+      "provenance": ["NH DES recycling guidance"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars (rinsed, no lids).",
+      "bin": "Separate glass bin or drop-off.",
+      "notes": "Broken glass not accepted curbside.",
+      "provenance": ["NH DES recycling materials info"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle clean aluminum and steel/tin cans.",
+      "bin": "Mixed recycling bin.",
+      "notes": "No aerosol or pressurized cans.",
+      "provenance": ["NH DES recycling information"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles and containers labeled #1–#2; acceptance of others varies locally.",
+      "bin": "Blue bin (loose, not bagged).",
+      "notes": "Plastic film and foam not accepted curbside.",
+      "provenance": ["NH DES recycling guide"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "New Hampshire does not have a bottle deposit system.",
+      "bin": "Recycle curbside or at transfer station.",
+      "notes": "No refund or CRV program.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries via HHW programs.",
+      "bin": "Battery drop-off or HHW event.",
+      "notes": "Keep batteries out of regular trash.",
+      "provenance": ["NH DES HHW recycling info"]
+    },
+    "e_waste": {
+      "guidance": "E-waste accepted at transfer stations or special events; no statewide mandate.",
+      "bin": "Drop-off at designated facility.",
+      "notes": "Accepted items vary by town.",
+      "provenance": ["NH DES e-waste recycling"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted curbside.",
+      "bin": "Return to retail store collection bins.",
+      "notes": "Film can jam sorting machinery.",
+      "provenance": ["NH DES recycling contamination info"]
+    },
+    "bulky_items": {
+      "guidance": "Bring bulky waste to landfill or transfer station.",
+      "bin": "Not accepted in regular bins.",
+      "notes": "Fees apply by volume or item.",
+      "provenance": ["Local solid waste district programs"]
+    }
+  }
+}

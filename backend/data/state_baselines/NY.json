@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "NY",
+  "state": "NY",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from NYSDEC Recycling Program and local city ordinances; collection rules vary by municipality.",
+  "rules": {
+    "organics": {
+      "guidance": "New York requires organics separation for large food generators under NYSDEC Part 350; NYC has citywide curbside composting.",
+      "bin": "Brown/green organics bin or food scrap drop-off.",
+      "notes": "Residential compost collection active in NYC, Westchester, and Tompkins counties.",
+      "provenance": ["NYSDEC Organics Recycling Regulations", "NYC Department of Sanitation (DSNY)"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Blue or mixed recycling bin.",
+      "notes": "Exclude food-soiled or waxed paper.",
+      "provenance": ["NYC DSNY recycling rules", "NYSDEC recycling guide"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle glass bottles and jars (rinsed, no lids).",
+      "bin": "Green recycling bin or mixed bin depending on locality.",
+      "notes": "Broken or non-container glass not accepted.",
+      "provenance": ["NYC DSNY recycling info"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum, steel, and tin cans; rinse before recycling.",
+      "bin": "Blue bin or mixed recycling container.",
+      "notes": "Aerosol cans accepted if empty.",
+      "provenance": ["NYC DSNY metal recycling guidelines"]
+    },
+    "plastics": {
+      "guidance": "Recycle rigid plastics labeled #1–#7 (bottles, jugs, tubs).",
+      "bin": "Blue recycling bin.",
+      "notes": "Plastic bags, film, and foam banned statewide.",
+      "provenance": ["NYS Plastic Bag Reduction Act", "NYC DSNY plastics guide"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "New York has a statewide 5¢ deposit on eligible beverage containers.",
+      "bin": "Return to redemption centers or retailers.",
+      "notes": "Covers most aluminum, glass, and plastic drink containers.",
+      "provenance": ["New York Returnable Container Act (Bottle Bill)"]
+    },
+    "household_batteries": {
+      "guidance": "Rechargeable batteries banned from trash disposal; must be recycled under NY Rechargeable Battery Law.",
+      "bin": "Battery collection boxes at retail or HHW events.",
+      "notes": "Lead-acid batteries must also be recycled by retailers.",
+      "provenance": ["New York Rechargeable Battery Recycling Act (ECL §27-1800)"]
+    },
+    "e_waste": {
+      "guidance": "State law prohibits disposal of electronic waste in trash; recycling required.",
+      "bin": "Drop-off at E-Waste Collection sites or retailers.",
+      "notes": "Includes TVs, computers, and monitors.",
+      "provenance": ["New York Electronic Equipment Recycling and Reuse Act"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic carryout bags banned statewide; stores must provide film drop-off.",
+      "bin": "Retail drop-off for film and wraps.",
+      "notes": "Reusable or paper bags required for checkout.",
+      "provenance": ["New York Plastic Bag Waste Reduction Act (2020)"]
+    },
+    "bulky_items": {
+      "guidance": "Schedule bulk pickup with local sanitation department or hauler.",
+      "bin": "Not accepted in standard bins.",
+      "notes": "NYC residents must schedule through DSNY Bulk Item service.",
+      "provenance": ["NYC DSNY Bulk Item Collection Rules"]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "ME",
+  "state": "ME",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Maine DEP recycling laws and extended producer responsibility (EPR) programs; municipal collection rules may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Food waste generators must divert organic material under LD 1534; residents encouraged to compost.",
+      "bin": "Green/organics bin or compost drop-off site.",
+      "notes": "Many towns provide curbside or drop-off composting; food waste banned from landfills by large generators.",
+      "provenance": ["Maine DEP Organics Management Program", "LD 1534 (2021)"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper, cardboard, and cartons; flatten boxes before placing in bins.",
+      "bin": "Blue or mixed recycling bin.",
+      "notes": "No waxed or greasy cardboard.",
+      "provenance": ["Maine DEP recycling guide"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars (rinsed, no lids or caps).",
+      "bin": "Blue recycling bin or bottle redemption center.",
+      "notes": "Window and Pyrex glass not accepted curbside.",
+      "provenance": ["Maine DEP accepted materials list"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum, steel, and tin cans (clean and empty).",
+      "bin": "Blue recycling bin.",
+      "notes": "Exclude pressurized or paint cans.",
+      "provenance": ["Maine DEP recycling and materials management"]
+    },
+    "plastics": {
+      "guidance": "Recycle rigid plastics labeled #1–#7 depending on local rules.",
+      "bin": "Blue bin (loose, not bagged).",
+      "notes": "Plastic bags, film, and foam not accepted curbside.",
+      "provenance": ["Maine DEP plastics recycling info"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Maine has a 5¢ or 15¢ beverage container deposit under the Bottle Bill.",
+      "bin": "Return to redemption center or retailer for refund.",
+      "notes": "Covers glass, plastic, and metal beverage containers.",
+      "provenance": ["Maine Beverage Container Redemption Program (32 M.R.S. §1861)"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable, single-use, and lead-acid batteries under Maine’s product stewardship laws.",
+      "bin": "Battery drop-off or HHW collection site.",
+      "notes": "Retailers must accept certain battery types for recycling.",
+      "provenance": ["Maine DEP Battery Recycling Program"]
+    },
+    "e_waste": {
+      "guidance": "Electronics recycling required statewide under Maine’s E-Waste Law.",
+      "bin": "Drop-off at e-waste collection or municipal transfer station.",
+      "notes": "Covers TVs, computers, monitors, and printers.",
+      "provenance": ["Maine E-Waste Law (38 M.R.S. §1610)"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Single-use plastic carryout bags banned statewide; stores must accept film for recycling.",
+      "bin": "Return film to retail drop-off; reusable or paper bags required.",
+      "notes": "Statewide ban enacted July 2021.",
+      "provenance": ["Maine Plastic Bag Ban (38 M.R.S. §1611)"]
+    },
+    "bulky_items": {
+      "guidance": "Bulky waste must be scheduled for pickup or dropped off at a local landfill or transfer station.",
+      "bin": "Not accepted in curbside bins.",
+      "notes": "Fees and acceptance vary by municipality.",
+      "provenance": ["Maine DEP Solid Waste Management Program"]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "AR",
+  "state": "AR",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Arkansas Department of Energy and Environment (ADEE) Division of Environmental Quality programs.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting and yard waste recycling encouraged; not required by state law.",
+      "bin": "Green bin or compost site.",
+      "notes": "Little Rock and Fayetteville support organics drop-offs.",
+      "provenance": ["ADEE Solid Waste Management Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten before placing in bins.",
+      "bin": "Blue bin or drop-off site.",
+      "notes": "Waxed or contaminated paper not accepted.",
+      "provenance": ["ADEE recycling guide"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars (rinsed, no lids) where accepted.",
+      "bin": "Separate glass bin or drop-off.",
+      "notes": "Glass not collected curbside in all cities.",
+      "provenance": ["ADEE materials management"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel/tin cans; rinse before recycling.",
+      "bin": "Blue recycling bin.",
+      "notes": "Exclude scrap and pressurized cans.",
+      "provenance": ["ADEE accepted materials list"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles and containers labeled #1–#2; check local programs for others.",
+      "bin": "Blue recycling bin.",
+      "notes": "Plastic film and foam not accepted.",
+      "provenance": ["ADEE recycling information"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "No container deposit or refund program in Arkansas.",
+      "bin": "Recycle curbside or at drop-off.",
+      "notes": "No CRV refund available.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable batteries through HHW or retail drop-offs.",
+      "bin": "Battery collection site.",
+      "notes": "Keep out of trash.",
+      "provenance": ["ADEE HHW program"]
+    },
+    "e_waste": {
+      "guidance": "E-waste accepted at local recycling events and facilities.",
+      "bin": "Drop-off at e-waste site.",
+      "notes": "Accepted items vary by city.",
+      "provenance": ["ADEE E-Waste Recycling Program"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted in curbside bins.",
+      "bin": "Return to store drop-offs.",
+      "notes": "Film can jam sorting machinery.",
+      "provenance": ["ADEE contamination prevention info"]
+    },
+    "bulky_items": {
+      "guidance": "Bulky waste must be scheduled for pickup or taken to landfill.",
+      "bin": "Not accepted in recycling bins.",
+      "notes": "Fees and rules vary locally.",
+      "provenance": ["Local solid waste district programs"]
+    }
+  }
+}

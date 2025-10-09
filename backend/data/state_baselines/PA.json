@@ -1,0 +1,68 @@
+ {
+  "jurisdiction": "PA",
+  "state": "PA",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Pennsylvania DEP Recycling Program and Act 101 guidelines; local programs may differ.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting and yard waste recycling required for many municipalities under Act 101; food waste composting expanding statewide.",
+      "bin": "Green organics bin or compost drop-off.",
+      "notes": "Philadelphia and Pittsburgh offer compost pilot programs.",
+      "provenance": ["PA DEP Recycling and Waste Reduction Program", "Act 101 of 1988"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper, cardboard, and cartons; flatten boxes.",
+      "bin": "Blue or mixed recycling bin.",
+      "notes": "No waxed, greasy, or wet cardboard.",
+      "provenance": ["PA DEP recycling guide"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars (rinsed, no lids).",
+      "bin": "Mixed recycling or separate glass bin depending on locality.",
+      "notes": "No broken glass or ceramics.",
+      "provenance": ["City of Philadelphia recycling info"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel/tin cans (clean and empty).",
+      "bin": "Blue bin or drop-off center.",
+      "notes": "Exclude pressurized containers.",
+      "provenance": ["PA DEP accepted recyclables list"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles, jugs, and tubs labeled #1–#2; local programs vary for others.",
+      "bin": "Blue recycling bin (loose, not bagged).",
+      "notes": "Plastic film and foam not accepted curbside.",
+      "provenance": ["PA DEP plastics recycling info"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "No statewide bottle deposit law in Pennsylvania.",
+      "bin": "Recycle via local curbside or drop-off program.",
+      "notes": "No refund program in place.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle batteries through HHW programs or Call2Recycle drop-offs.",
+      "bin": "Battery drop-off or HHW site.",
+      "notes": "Do not place batteries in trash or recycling carts.",
+      "provenance": ["PA DEP Household Hazardous Waste program"]
+    },
+    "e_waste": {
+      "guidance": "Electronics recycling required under the Covered Device Recycling Act (CDRA).",
+      "bin": "Drop-off at certified e-waste collection sites.",
+      "notes": "Includes TVs, monitors, computers, and printers.",
+      "provenance": ["PA CDRA (Act 108 of 2010)"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted curbside.",
+      "bin": "Return to participating retail stores.",
+      "notes": "Plastic film causes contamination in recycling facilities.",
+      "provenance": ["PA DEP recycling contamination guide"]
+    },
+    "bulky_items": {
+      "guidance": "Bulky items must be scheduled for pickup or dropped at landfill/transfer station.",
+      "bin": "Not accepted in standard carts.",
+      "notes": "Local hauler or city sets collection rules and fees.",
+      "provenance": ["Philadelphia Streets Department", "Pittsburgh Environmental Services"]
+    }
+  }
+}

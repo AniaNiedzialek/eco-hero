@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "CT",
+  "state": "CT",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Connecticut DEEP recycling and organics programs; municipal rules may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Commercial food scraps recycling required under CGS §22a-226e; residential composting encouraged.",
+      "bin": "Green/organics bin or compost drop-off.",
+      "notes": "Several towns offer curbside or drop-off food scrap collection.",
+      "provenance": ["Connecticut DEEP Organics Recycling Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes before placing in bins.",
+      "bin": "Blue/mixed recycling bin.",
+      "notes": "Exclude waxed or greasy paper.",
+      "provenance": ["CT DEEP recycling guide"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars (rinsed, no lids).",
+      "bin": "Blue/mixed recycling bin.",
+      "notes": "No ceramics or window glass.",
+      "provenance": ["CT DEEP What’s IN, What’s OUT list"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle clean aluminum and steel/tin cans.",
+      "bin": "Blue recycling bin.",
+      "notes": "No aerosol or paint cans unless empty.",
+      "provenance": ["CT DEEP recycling requirements"]
+    },
+    "plastics": {
+      "guidance": "Recycle plastic bottles, jugs, and tubs labeled #1–#7; loose, not bagged.",
+      "bin": "Blue recycling bin.",
+      "notes": "Plastic bags, film, and foam not accepted curbside.",
+      "provenance": ["CT DEEP mixed recycling list"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Connecticut has a 10¢ bottle deposit on eligible containers.",
+      "bin": "Return to redemption centers or retailers.",
+      "notes": "Covers most beverage bottles and cans under 3 liters.",
+      "provenance": ["Connecticut Bottle Bill (CGS §22a-243–245)"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries at collection sites.",
+      "bin": "Battery drop-off or HHW center.",
+      "notes": "Keep batteries out of regular trash.",
+      "provenance": ["CT DEEP Household Hazardous Waste guidelines"]
+    },
+    "e_waste": {
+      "guidance": "State law mandates e-waste recycling under the CT E-Waste Recycling Law.",
+      "bin": "Drop-off at participating town collection sites.",
+      "notes": "Includes TVs, monitors, computers, and printers.",
+      "provenance": ["CT E-Waste Law (CGS §22a-629)"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic carryout bags banned statewide since 2021.",
+      "bin": "Return film to retail store drop-offs.",
+      "notes": "Reusable or paper bags required.",
+      "provenance": ["CT Plastic Bag Ban (PA 19-117)"]
+    },
+    "bulky_items": {
+      "guidance": "Bulky waste requires scheduled pickup or drop-off at transfer station.",
+      "bin": "Not accepted in curbside bins.",
+      "notes": "Fees and policies vary by town.",
+      "provenance": ["Municipal solid waste disposal rules"]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "KY",
+  "state": "KY",
+  "last_verified_at": "2024-05-20",
+  "source_note": "Baseline from Kentucky Division of Waste Management and major municipal programs; local rules may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Yard/food waste composting encouraged; not mandated statewide.",
+      "bin": "Green/yard waste cart or compost drop-off where offered.",
+      "notes": "Availability varies by city (e.g., Lexington yard waste collection).",
+      "provenance": ["KY Division of Waste Management", "Lexington-Fayette Urban County Government"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean, dry paper and cardboard; flatten boxes.",
+      "bin": "Blue/mixed recycling bin or drop-off center.",
+      "notes": "No waxed/greasy cardboard.",
+      "provenance": ["KY DWM recycling guidance", "Louisville Metro Public Works"]
+    },
+    "glass_containers": {
+      "guidance": "Bottles and jars only; rinse and remove lids.",
+      "bin": "Separate glass bin or drop-off if accepted.",
+      "notes": "Not all curbside programs take glass.",
+      "provenance": ["Lexington and Louisville recycling info"]
+    },
+    "metal_containers": {
+      "guidance": "Aluminum and steel/tin cans, empty and rinsed.",
+      "bin": "Blue/mixed recycling bin.",
+      "notes": "No pressurized/aerosol cans unless accepted.",
+      "provenance": ["KY municipal recycling guides"]
+    },
+    "plastics": {
+      "guidance": "Bottles, jugs, and some tubs (commonly #1–#2).",
+      "bin": "Blue bin (loose, not bagged).",
+      "notes": "No film, bags, or foam curbside.",
+      "provenance": ["KY DWM materials list"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "No statewide container deposit.",
+      "bin": "Recycle via curbside/drop-off if accepted.",
+      "notes": "No refund program.",
+      "provenance": ["State policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeables/lead-acid via HHW or retailers.",
+      "bin": "Battery drop-off or HHW site.",
+      "notes": "Keep batteries out of trash and blue bins.",
+      "provenance": ["KY HHW guidance"]
+    },
+    "e_waste": {
+      "guidance": "Use e-waste events or recyclers; not mandated statewide.",
+      "bin": "Drop-off at approved e-waste site.",
+      "notes": "Accepted items vary; fees possible.",
+      "provenance": ["KY e-waste program pages"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Not accepted curbside.",
+      "bin": "Return to store drop-offs.",
+      "notes": "Film tangles sorting equipment.",
+      "provenance": ["KY contamination prevention info"]
+    },
+    "bulky_items": {
+      "guidance": "Schedule special pickup or take to transfer station/landfill.",
+      "bin": "Not allowed in standard carts.",
+      "notes": "Fees and limits vary by locality.",
+      "provenance": ["Local solid waste program rules in KY"]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "LA",
+  "state": "LA",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Louisiana DEQ Solid Waste and Recycling Program; municipal participation varies widely.",
+  "rules": {
+    "organics": {
+      "guidance": "Yard waste recycling and composting encouraged under LDEQ guidelines.",
+      "bin": "Green bin or compost site.",
+      "notes": "Some parishes accept yard debris curbside.",
+      "provenance": ["LDEQ Solid Waste Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Blue/mixed recycling bin.",
+      "notes": "No food-soiled cardboard.",
+      "provenance": ["LDEQ recycling guide"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars at drop-off sites; limited curbside options.",
+      "bin": "Drop-off or glass recycling center.",
+      "notes": "No window or Pyrex glass.",
+      "provenance": ["LDEQ materials management"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel/tin cans.",
+      "bin": "Blue bin or recycling center.",
+      "notes": "Empty and rinse before recycling.",
+      "provenance": ["LDEQ accepted materials list"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles labeled #1–#2; check local rules for others.",
+      "bin": "Blue bin (loose, not bagged).",
+      "notes": "Plastic film and foam not accepted.",
+      "provenance": ["LDEQ recycling program"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "No beverage container deposit system in Louisiana.",
+      "bin": "Recycle curbside or drop-off.",
+      "notes": "No CRV refund system.",
+      "provenance": ["State recycling policies"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries through collection sites.",
+      "bin": "Battery drop-off or HHW event.",
+      "notes": "Keep batteries out of trash.",
+      "provenance": ["LDEQ HHW and recycling program"]
+    },
+    "e_waste": {
+      "guidance": "Electronics accepted at parish collection centers and events.",
+      "bin": "Drop-off at e-waste recycler.",
+      "notes": "Accepted items vary by parish.",
+      "provenance": ["LDEQ E-Waste Program"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted curbside.",
+      "bin": "Return to retail store bins.",
+      "notes": "Film clogs recycling equipment.",
+      "provenance": ["LDEQ contamination prevention"]
+    },
+    "bulky_items": {
+      "guidance": "Arrange bulky pickup through local sanitation department.",
+      "bin": "Not accepted in curbside bins.",
+      "notes": "Fees vary by parish.",
+      "provenance": ["Municipal solid waste programs"]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "RI",
+  "state": "RI",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Rhode Island Resource Recovery Corporation (RIRRC) and state recycling laws.",
+  "rules": {
+    "organics": {
+      "guidance": "Food scrap recycling required for large generators under R.I. Gen. Laws §23-18.9-17; residents encouraged to compost.",
+      "bin": "Green bin or food scrap drop-off.",
+      "notes": "Municipal composting expanding under RIRRC support.",
+      "provenance": ["RIRRC Organics Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Blue cart or drop-off center.",
+      "notes": "Exclude waxed or wet paper.",
+      "provenance": ["RIRRC Mixed Recycling Guidelines"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle glass bottles and jars (rinsed, no lids).",
+      "bin": "Blue bin with other recyclables.",
+      "notes": "No ceramics or window glass.",
+      "provenance": ["RIRRC accepted recyclables list"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel/tin cans (clean and empty).",
+      "bin": "Blue bin.",
+      "notes": "No scrap or aerosol cans.",
+      "provenance": ["RIRRC recycling guide"]
+    },
+    "plastics": {
+      "guidance": "Recycle rigid plastics labeled #1–#7; keep loose, not bagged.",
+      "bin": "Blue bin.",
+      "notes": "Plastic bags and film not accepted curbside.",
+      "provenance": ["RIRRC recycling rules"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Rhode Island has no container deposit program.",
+      "bin": "Recycle through municipal system.",
+      "notes": "No CRV refund available.",
+      "provenance": ["State policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries through HHW events or retail drop-offs.",
+      "bin": "Battery or HHW collection site.",
+      "notes": "Keep batteries out of trash.",
+      "provenance": ["RIRRC Household Hazardous Waste info"]
+    },
+    "e_waste": {
+      "guidance": "E-waste recycling required under the RI E-Waste Recycling Program.",
+      "bin": "Drop-off at municipal collection sites.",
+      "notes": "Includes TVs, computers, and monitors.",
+      "provenance": ["RI General Laws §23-24.10"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags banned in most municipalities; film accepted at store drop-offs.",
+      "bin": "Retail drop-off for film and wraps.",
+      "notes": "Reusable bags required in retail stores.",
+      "provenance": ["Municipal plastic bag bans; RIRRC recycling info"]
+    },
+    "bulky_items": {
+      "guidance": "Bulky waste must be scheduled for pickup or delivered to landfill.",
+      "bin": "Not accepted in curbside bins.",
+      "notes": "Collection handled through local DPWs.",
+      "provenance": ["RIRRC Bulky Waste Disposal Guidelines"]
+    }
+  }
+}
