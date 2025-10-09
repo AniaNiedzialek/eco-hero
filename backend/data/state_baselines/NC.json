@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "NC",
+  "state": "NC",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from North Carolina DEQ Division of Environmental Assistance and Customer Service (DEACS).",
+  "rules": {
+    "organics": {
+      "guidance": "Yard waste banned from landfills; food waste composting expanding under DEQ programs.",
+      "bin": "Green/yard waste bin or compost site.",
+      "notes": "Composting programs available in Raleigh, Charlotte, and Asheville.",
+      "provenance": ["NC DEQ Solid Waste and Organics Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Blue recycling bin.",
+      "notes": "No waxed or greasy paper products.",
+      "provenance": ["NC DEQ recycling guide"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars (rinsed, no lids).",
+      "bin": "Blue or mixed recycling bin.",
+      "notes": "No window or broken glass.",
+      "provenance": ["NC DEQ materials list"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel/tin cans.",
+      "bin": "Blue recycling bin.",
+      "notes": "Rinse and empty before recycling.",
+      "provenance": ["NC DEQ recycling info"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles, jugs, and tubs labeled #1–#7.",
+      "bin": "Blue recycling bin (loose).",
+      "notes": "Plastic film and foam not accepted curbside.",
+      "provenance": ["NC DEQ plastics recycling"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "North Carolina does not have a deposit law.",
+      "bin": "Recycle through curbside or drop-off.",
+      "notes": "No CRV refund system.",
+      "provenance": ["State recycling summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries through collection or HHW programs.",
+      "bin": "Battery drop-off or auto parts store.",
+      "notes": "Keep batteries out of trash.",
+      "provenance": ["NC DEQ HHW recycling info"]
+    },
+    "e_waste": {
+      "guidance": "Electronics banned from landfills under NC General Statutes §130A-309.10.",
+      "bin": "Drop-off at e-waste site.",
+      "notes": "Includes TVs, monitors, and computers.",
+      "provenance": ["NC Electronics Recycling Law"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted curbside.",
+      "bin": "Return to store drop-offs.",
+      "notes": "Retailers must offer bag collection in coastal counties.",
+      "provenance": ["NC Plastic Bag Management Act (2009)"]
+    },
+    "bulky_items": {
+      "guidance": "Schedule pickup or deliver bulky items to landfill or transfer station.",
+      "bin": "Not accepted in curbside bins.",
+      "notes": "Fees vary by municipality.",
+      "provenance": ["Local solid waste programs"]
+    }
+  }
+}

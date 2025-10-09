@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "VA",
+  "state": "VA",
+  "last_verified_at": "2024-05-20",
+  "source_note": "Baseline from Virginia DEQ Recycling Program and regional authorities; local rules vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting and yard waste diversion encouraged; large generators increasingly use commercial composters.",
+      "bin": "Green/organics cart or drop-off site.",
+      "notes": "Arlington/Fairfax/Richmond areas have expanding food scrap programs.",
+      "provenance": ["Virginia DEQ Materials Management", "Local authority guides"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper, cardboard, and cartons; flatten boxes.",
+      "bin": "Blue/mixed recycling bin.",
+      "notes": "No waxed/greasy cardboard.",
+      "provenance": ["VA DEQ recycling resources"]
+    },
+    "glass_containers": {
+      "guidance": "Bottles and jars only; rinse.",
+      "bin": "Glass-only “purple bin” drop-offs in NOVA or mixed where accepted.",
+      "notes": "Non-container glass not accepted.",
+      "provenance": ["NOVA Glass Purple Can Program", "Local recycling pages"]
+    },
+    "metal_containers": {
+      "guidance": "Aluminum and steel/tin cans, empty and clean.",
+      "bin": "Blue recycling bin.",
+      "notes": "Exclude scrap and pressurized cans.",
+      "provenance": ["VA DEQ materials list"]
+    },
+    "plastics": {
+      "guidance": "Bottles, jugs, and tubs (commonly #1–#2; others vary).",
+      "bin": "Blue bin (loose).",
+      "notes": "No film, bags, or foam curbside.",
+      "provenance": ["VA DEQ plastics guidance"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "No statewide deposit/refund law.",
+      "bin": "Recycle curbside/drop-off.",
+      "notes": "No CRV.",
+      "provenance": ["State policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable/lead-acid via HHW or retail sites.",
+      "bin": "Battery collection or HHW facility.",
+      "notes": "Keep out of trash and blue carts.",
+      "provenance": ["VA DEQ HHW guidance"]
+    },
+    "e_waste": {
+      "guidance": "Use regional e-cycling events and certified recyclers.",
+      "bin": "Drop-off at e-waste site.",
+      "notes": "Accepted devices vary by locality.",
+      "provenance": ["VA DEQ electronics recycling info"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Not accepted curbside; many local bag taxes/fees in effect.",
+      "bin": "Return film to retail drop-offs.",
+      "notes": "Avoid bagging recyclables.",
+      "provenance": ["Local ordinances; VA DEQ contamination info"]
+    },
+    "bulky_items": {
+      "guidance": "Schedule bulk pickup or take to transfer station/landfill.",
+      "bin": "Not allowed in standard carts.",
+      "notes": "Fees/schedules set by locality or authority.",
+      "provenance": ["Regional solid waste authorities (NOVA, CVWMA, HRSD)"]
+    }
+  }
+}

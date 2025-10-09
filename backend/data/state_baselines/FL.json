@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "FL",
+  "state": "FL",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Florida Department of Environmental Protection (FDEP) recycling programs.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting and yard waste recycling encouraged under FDEP rules; not required statewide.",
+      "bin": "Green/yard waste bin or compost drop-off.",
+      "notes": "Many counties offer yard debris and compost collection.",
+      "provenance": ["FDEP Recycling Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Blue bin or drop-off center.",
+      "notes": "Exclude food-soiled paper.",
+      "provenance": ["FDEP recycling guidance"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle glass bottles and jars (rinsed, no lids).",
+      "bin": "Blue or mixed recycling bin.",
+      "notes": "No ceramics or broken glass.",
+      "provenance": ["FDEP accepted materials list"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle clean aluminum and steel/tin cans.",
+      "bin": "Blue recycling bin.",
+      "notes": "Exclude aerosol cans and scrap metal.",
+      "provenance": ["FDEP recycling rules"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles, jugs, and tubs labeled #1–#2; check local rules for others.",
+      "bin": "Blue recycling bin.",
+      "notes": "Plastic film and foam not accepted curbside.",
+      "provenance": ["FDEP plastics recycling info"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Florida does not have a container deposit law.",
+      "bin": "Recycle curbside or at drop-off.",
+      "notes": "No CRV or refund system.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries at HHW sites.",
+      "bin": "Battery drop-off or HHW facility.",
+      "notes": "Keep batteries out of household trash.",
+      "provenance": ["FDEP HHW program"]
+    },
+    "e_waste": {
+      "guidance": "E-waste accepted at local HHW and collection centers.",
+      "bin": "Drop-off at e-waste site.",
+      "notes": "Accepted items vary by county.",
+      "provenance": ["FDEP e-waste recycling guidance"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted curbside.",
+      "bin": "Return to store drop-off bins.",
+      "notes": "Film recycling supported statewide by retailers.",
+      "provenance": ["FDEP contamination prevention info"]
+    },
+    "bulky_items": {
+      "guidance": "Arrange bulky item pickup or take to landfill.",
+      "bin": "Not accepted in curbside bins.",
+      "notes": "Local waste management sets schedules and fees.",
+      "provenance": ["County solid waste programs"]
+    }
+  }
+}

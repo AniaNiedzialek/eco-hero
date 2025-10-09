@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "AL",
+  "state": "AL",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Alabama Department of Environmental Management (ADEM) recycling guidance; municipal programs may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting and yard waste recycling encouraged; not required statewide.",
+      "bin": "Green bin or compost drop-off site.",
+      "notes": "Some cities like Huntsville and Birmingham offer yard waste pickup.",
+      "provenance": ["ADEM Solid Waste Management Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Blue or mixed recycling bin.",
+      "notes": "Exclude waxed or greasy materials.",
+      "provenance": ["ADEM recycling guide"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars where accepted; rinse before recycling.",
+      "bin": "Mixed recycling or drop-off center.",
+      "notes": "Glass not accepted curbside in all areas.",
+      "provenance": ["Municipal recycling programs"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel/tin cans (clean and empty).",
+      "bin": "Blue bin.",
+      "notes": "No aerosol or paint cans.",
+      "provenance": ["ADEM accepted recyclables list"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles and jugs labeled #1–#2; other plastics vary locally.",
+      "bin": "Blue recycling bin.",
+      "notes": "Plastic film and foam not accepted curbside.",
+      "provenance": ["ADEM plastics recycling info"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Alabama has no container deposit law.",
+      "bin": "Recycle via curbside or drop-off program.",
+      "notes": "No refund program.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries at HHW sites.",
+      "bin": "Battery drop-off or auto shop.",
+      "notes": "Keep out of trash and curbside bins.",
+      "provenance": ["ADEM HHW program"]
+    },
+    "e_waste": {
+      "guidance": "E-waste accepted at local collection events or drop-off centers.",
+      "bin": "Drop-off at electronics recycler.",
+      "notes": "Accepted items vary by locality.",
+      "provenance": ["ADEM e-waste guidance"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted curbside.",
+      "bin": "Return to retail store bins.",
+      "notes": "Plastic film clogs recycling equipment.",
+      "provenance": ["ADEM recycling contamination info"]
+    },
+    "bulky_items": {
+      "guidance": "Bulky waste must be scheduled for pickup or taken to landfill.",
+      "bin": "Not accepted in regular bins.",
+      "notes": "Contact local sanitation department for details.",
+      "provenance": ["Municipal solid waste guidelines"]
+    }
+  }
+}

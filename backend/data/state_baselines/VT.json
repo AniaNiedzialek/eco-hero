@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "VT",
+  "state": "VT",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Vermont Universal Recycling Law (Act 148) and ANR solid waste guidance.",
+  "rules": {
+    "organics": {
+      "guidance": "Statewide ban on food scraps in trash under Act 148; composting required for all residents and businesses.",
+      "bin": "Green organics bin or backyard compost system.",
+      "notes": "Food scraps must be separated from trash statewide.",
+      "provenance": ["Vermont Universal Recycling Law (Act 148)"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Blue recycling bin or drop-off center.",
+      "notes": "Greasy or waxed paper not accepted.",
+      "provenance": ["VT ANR recycling guidance"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars (rinsed, no lids).",
+      "bin": "Blue bin or local drop-off.",
+      "notes": "No window glass or ceramics.",
+      "provenance": ["Vermont ANR materials list"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and tin cans (empty and clean).",
+      "bin": "Blue recycling bin.",
+      "notes": "Exclude pressurized containers.",
+      "provenance": ["Vermont ANR recycling info"]
+    },
+    "plastics": {
+      "guidance": "Recycle rigid plastics labeled #1–#7.",
+      "bin": "Blue recycling bin.",
+      "notes": "Plastic film and foam not accepted curbside.",
+      "provenance": ["VT ANR Universal Recycling materials guide"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Vermont has a 5¢ or 15¢ deposit on beverage containers depending on type.",
+      "bin": "Return to redemption center or retailer.",
+      "notes": "Covers most glass, metal, and plastic containers.",
+      "provenance": ["Vermont Bottle Bill (10 V.S.A. §1521)"]
+    },
+    "household_batteries": {
+      "guidance": "Batteries accepted statewide through Call2Recycle and HHW facilities.",
+      "bin": "Battery drop-off or collection site.",
+      "notes": "All battery types accepted for recycling.",
+      "provenance": ["Vermont ANR HHW and battery recycling"]
+    },
+    "e_waste": {
+      "guidance": "Covered electronic devices banned from disposal under Vermont E-Cycles law.",
+      "bin": "Drop-off at free E-Cycles collection site.",
+      "notes": "Includes TVs, monitors, and computers.",
+      "provenance": ["Vermont E-Cycles Law (10 V.S.A. §7551)"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags, foam containers, and straws banned statewide since 2020.",
+      "bin": "Use reusable bags; film return at store drop-offs only.",
+      "notes": "Single-use plastics prohibited under Act 69.",
+      "provenance": ["Vermont Single-Use Products Law (Act 69 of 2019)"]
+    },
+    "bulky_items": {
+      "guidance": "Schedule pickup or bring bulky items to transfer station.",
+      "bin": "Not accepted curbside.",
+      "notes": "Local solid waste districts manage bulky collection.",
+      "provenance": ["Vermont Solid Waste Management Program"]
+    }
+  }
+}

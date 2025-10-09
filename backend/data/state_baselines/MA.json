@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "MA",
+  "state": "MA",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from MassDEP Recycling and Waste Ban regulations; local programs may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Commercial food waste banned from disposal under 310 CMR 19.017; residential composting encouraged.",
+      "bin": "Green bin or compost drop-off site.",
+      "notes": "Boston, Cambridge, and others have curbside composting programs.",
+      "provenance": ["MassDEP Waste Ban Regulations", "MassDEP Organics Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Blue/mixed recycling bin.",
+      "notes": "Waxed or contaminated paper not accepted.",
+      "provenance": ["MassDEP Recycle Smart MA Guide"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars (rinsed, no lids).",
+      "bin": "Mixed recycling bin.",
+      "notes": "No broken glass or ceramics.",
+      "provenance": ["Recycle Smart MA accepted materials"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel/tin cans (empty and clean).",
+      "bin": "Blue recycling bin.",
+      "notes": "No scrap or hazardous containers.",
+      "provenance": ["MassDEP recycling list"]
+    },
+    "plastics": {
+      "guidance": "Recycle plastic bottles, jugs, and tubs labeled #1–#7.",
+      "bin": "Blue recycling bin.",
+      "notes": "Plastic bags and foam not accepted curbside.",
+      "provenance": ["Recycle Smart MA plastics guidance"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Massachusetts has a 5¢ bottle deposit on eligible containers.",
+      "bin": "Return to redemption center or retailer.",
+      "notes": "Covers most glass, metal, and plastic beverage containers.",
+      "provenance": ["Massachusetts Bottle Bill (M.G.L. c.94, §321)"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries via HHW or Call2Recycle.",
+      "bin": "Battery or HHW drop-off.",
+      "notes": "Keep batteries out of trash or curbside bins.",
+      "provenance": ["MassDEP HHW and battery recycling"]
+    },
+    "e_waste": {
+      "guidance": "E-waste banned from disposal under MassDEP Waste Ban regulations.",
+      "bin": "Drop-off at e-waste collection or HHW site.",
+      "notes": "Includes TVs, computers, and monitors.",
+      "provenance": ["MassDEP Waste Ban (310 CMR 19.017)"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bag bans in effect in most municipalities; film accepted at store drop-offs.",
+      "bin": "Return film to retail collection bins.",
+      "notes": "Reusable bags required for checkout.",
+      "provenance": ["MassDEP and municipal plastic bag ordinances"]
+    },
+    "bulky_items": {
+      "guidance": "Schedule bulky item pickup or drop off at transfer station.",
+      "bin": "Not accepted in curbside bins.",
+      "notes": "Fees vary by municipality.",
+      "provenance": ["Boston Public Works bulky item collection", "MassDEP waste management"]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "TN",
+  "state": "TN",
+  "last_verified_at": "2024-05-20",
+  "source_note": "Baseline from Tennessee Department of Environment & Conservation (TDEC) and city programs; local rules may vary.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting and yard waste diversion encouraged under TDEC guidance.",
+      "bin": "Green/yard waste cart or compost drop-off.",
+      "notes": "Some cities (e.g., Chattanooga, Knoxville) offer yard waste collection.",
+      "provenance": ["TDEC Materials Management"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Blue/mixed recycling bin.",
+      "notes": "No waxed or food-soiled paper.",
+      "provenance": ["TDEC recycling guide", "Nashville/Knoxville program pages"]
+    },
+    "glass_containers": {
+      "guidance": "Glass bottles and jars only; rinse.",
+      "bin": "Drop-off or separate glass bin if available.",
+      "notes": "Many curbside programs exclude glass.",
+      "provenance": ["Local TN recycling rules"]
+    },
+    "metal_containers": {
+      "guidance": "Aluminum and steel/tin cans, empty and clean.",
+      "bin": "Blue recycling bin.",
+      "notes": "No aerosol/pressurized cans unless accepted.",
+      "provenance": ["TDEC materials lists"]
+    },
+    "plastics": {
+      "guidance": "Bottles, jugs, and some tubs (#1–#2 common).",
+      "bin": "Blue bin (loose).",
+      "notes": "No film, bags, or foam.",
+      "provenance": ["TDEC plastics guidance"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "No bottle deposit law.",
+      "bin": "Recycle with curbside/drop-off.",
+      "notes": "No refund.",
+      "provenance": ["State policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeables/lead-acid at HHW sites or retailers.",
+      "bin": "Battery/HHW drop-off.",
+      "notes": "Keep out of trash and blue bins.",
+      "provenance": ["TDEC HHW Program"]
+    },
+    "e_waste": {
+      "guidance": "Electronics recycling via county/city events and recyclers.",
+      "bin": "Drop-off at e-waste site.",
+      "notes": "Accepted items vary; data-wipe recommended.",
+      "provenance": ["TDEC electronics recycling info"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Not accepted curbside.",
+      "bin": "Retail store drop-offs.",
+      "notes": "Film clogs sorting equipment.",
+      "provenance": ["TDEC contamination reduction"]
+    },
+    "bulky_items": {
+      "guidance": "Schedule bulky pickup or deliver to drop-off/landfill.",
+      "bin": "Not accepted in standard carts.",
+      "notes": "Fees and limits vary.",
+      "provenance": ["Local solid waste program pages in TN"]
+    }
+  }
+}

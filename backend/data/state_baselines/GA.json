@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "GA",
+  "state": "GA",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Georgia Environmental Protection Division (EPD) recycling programs.",
+  "rules": {
+    "organics": {
+      "guidance": "Composting and yard waste recycling encouraged under EPD rules.",
+      "bin": "Green bin or compost drop-off site.",
+      "notes": "Atlanta and Athens-Clarke County offer organics programs.",
+      "provenance": ["Georgia EPD Solid Waste Program"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Blue recycling bin.",
+      "notes": "No waxed or greasy cardboard.",
+      "provenance": ["Georgia EPD recycling guide"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars (rinsed, no lids).",
+      "bin": "Blue/mixed recycling bin.",
+      "notes": "Glass not accepted in all curbside programs.",
+      "provenance": ["Georgia EPD materials info"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel/tin cans (clean and empty).",
+      "bin": "Blue bin or drop-off.",
+      "notes": "Exclude pressurized containers.",
+      "provenance": ["Georgia EPD recycling info"]
+    },
+    "plastics": {
+      "guidance": "Recycle bottles and containers labeled #1–#2; check local rules for others.",
+      "bin": "Blue recycling bin.",
+      "notes": "Plastic film not accepted curbside.",
+      "provenance": ["Georgia EPD plastics recycling guide"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "No statewide container deposit program.",
+      "bin": "Recycle curbside or at drop-off site.",
+      "notes": "No refund system in Georgia.",
+      "provenance": ["State recycling summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable batteries through HHW events or retailers.",
+      "bin": "Battery collection bin.",
+      "notes": "Keep batteries out of trash.",
+      "provenance": ["Georgia HHW and recycling programs"]
+    },
+    "e_waste": {
+      "guidance": "Electronics accepted at drop-off events or recyclers.",
+      "bin": "Drop-off at e-waste site.",
+      "notes": "Accepted items vary locally.",
+      "provenance": ["Georgia EPD electronics recycling"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags and film not accepted curbside.",
+      "bin": "Return to store drop-offs.",
+      "notes": "Film can jam recycling machines.",
+      "provenance": ["Georgia EPD contamination prevention"]
+    },
+    "bulky_items": {
+      "guidance": "Schedule bulky pickup or bring to landfill.",
+      "bin": "Not accepted in curbside bins.",
+      "notes": "Rules vary by city or county.",
+      "provenance": ["Local waste collection programs"]
+    }
+  }
+}

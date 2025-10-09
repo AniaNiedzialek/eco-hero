@@ -1,0 +1,68 @@
+{
+  "jurisdiction": "MD",
+  "state": "MD",
+  "last_verified_at": "2024-05-20",
+  "source_note": "State baseline derived from Maryland Department of the Environment (MDE) recycling requirements and county programs.",
+  "rules": {
+    "organics": {
+      "guidance": "Food waste recycling required for large generators under HB 264; residential composting encouraged.",
+      "bin": "Green organics bin or compost drop-off.",
+      "notes": "Montgomery County and Baltimore offer curbside composting pilots.",
+      "provenance": ["Maryland Food Residuals Diversion Law (HB 264)", "MDE recycling guidance"]
+    },
+    "paper_cardboard": {
+      "guidance": "Recycle clean paper and cardboard; flatten boxes.",
+      "bin": "Blue recycling cart.",
+      "notes": "Exclude waxed or contaminated paper.",
+      "provenance": ["MDE recycling resources"]
+    },
+    "glass_containers": {
+      "guidance": "Recycle bottles and jars (rinsed, no lids).",
+      "bin": "Mixed recycling bin.",
+      "notes": "No ceramics or window glass.",
+      "provenance": ["Montgomery County recycling guide"]
+    },
+    "metal_containers": {
+      "guidance": "Recycle aluminum and steel/tin cans; rinse before placing in bin.",
+      "bin": "Blue recycling bin.",
+      "notes": "No pressurized or paint cans.",
+      "provenance": ["MDE recycling materials guide"]
+    },
+    "plastics": {
+      "guidance": "Recycle rigid plastics labeled #1–#7 depending on local acceptance.",
+      "bin": "Blue recycling bin.",
+      "notes": "Plastic film and foam not accepted curbside.",
+      "provenance": ["Maryland recycling contamination guide"]
+    },
+    "beverage_containers_crv": {
+      "guidance": "Maryland has no statewide deposit system.",
+      "bin": "Recycle curbside or drop-off.",
+      "notes": "No refund or CRV law.",
+      "provenance": ["State recycling policy summaries"]
+    },
+    "household_batteries": {
+      "guidance": "Recycle rechargeable and lead-acid batteries through collection programs.",
+      "bin": "Battery drop-off or HHW center.",
+      "notes": "Keep batteries out of household trash.",
+      "provenance": ["MDE Household Hazardous Waste guidelines"]
+    },
+    "e_waste": {
+      "guidance": "Electronics recycling required under Maryland E-Waste Program for manufacturers.",
+      "bin": "Drop-off at e-waste collection or HHW event.",
+      "notes": "Includes TVs, monitors, and computers.",
+      "provenance": ["Maryland Electronics Recycling Program (Env. Art. §9-1727)"]
+    },
+    "plastic_bags_and_film": {
+      "guidance": "Plastic bags banned in Montgomery County and several localities.",
+      "bin": "Return film to store drop-offs; use reusable bags.",
+      "notes": "No curbside acceptance.",
+      "provenance": ["Local county plastic bag ordinances"]
+    },
+    "bulky_items": {
+      "guidance": "Schedule bulk pickup or drop-off at county waste facility.",
+      "bin": "Not accepted in regular bins.",
+      "notes": "Fees and scheduling vary by county.",
+      "provenance": ["Baltimore DPW bulky item program", "Montgomery County solid waste"]
+    }
+  }
+}
