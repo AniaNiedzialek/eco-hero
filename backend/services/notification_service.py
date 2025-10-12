@@ -58,8 +58,18 @@ def send_notification(email: str, schedule: dict):
     state = schedule.get("state", "Unknown")
     items = schedule.get("schedule", [])  
     
-    # Generate HTML email
-    html_content = _render_html(address, city, state, items)
+    if city == "san jose" or city == "San José" or city == "San Jose":
+        # Generate HTML email
+        html_content = _render_html(address, city, state, items)
+    else:
+        html_content = f"""
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <h2>Waste Collection Schedule</h2>
+            <p><strong>Address:</strong> {address}</p>
+            <p><strong>Location:</strong> {city}, {state}</p>
+            <p>Your collection schedule can be found here: <a href="{items}">{items}</a></p>
+        </div>
+        """
     
     # Send email
     r = resend.Emails.send({

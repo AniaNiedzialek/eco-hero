@@ -51,6 +51,12 @@ async def get_collection_schedule(address: str = None, zip_code: str = None) -> 
     match city:
         case "San Jose" | "san jose" | "San José":
             schedule = await get_san_jose_schedule(address)
+        case "Santa Clara" | "santa clara":
+            schedule = "https://www.recology.com/recology-south-bay/santa-clara-county-residential/collection-calendar/"
+        case "Cupertino" | "cupertino":
+            schedule = "https://www.recology.com/recology-south-bay/cupertino/collection-calendar/"
+        case "San Francisco" | "san francisco":
+            schedule = "https://www.recology.com/recology-san-francisco/collection-calendar/"
         # TODO: Add more cities
         case _:
             raise HTTPException(
