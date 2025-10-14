@@ -10,3 +10,4 @@ playwright-stealth
 python-dotenv
 resend
 selenium
+sqlalchemy

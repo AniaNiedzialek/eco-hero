@@ -16,7 +16,7 @@ Change YOUR_API_KEY to your resend api key (https://resend.com/)
 ## Run the backend
 
 ```
-uvicorn main:app --reload --port 8000
+cd backend && uvicorn main:app --reload --port 8000
 ```
 
 ## Rules API

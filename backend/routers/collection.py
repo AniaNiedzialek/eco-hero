@@ -4,6 +4,7 @@ from scrapers.san_jose import get_san_jose_schedule
 from services.notification_service import send_notification
 import pgeocode
 from pydantic import BaseModel
+from services.schedule_service import *
 
 router = APIRouter(prefix="/collection", tags=["collection"])
 
@@ -48,21 +49,26 @@ async def get_collection_schedule(address: str = None, zip_code: str = None) -> 
         city, state = resolve_region(zip_code)
         print(f"City: {city}")
 
-    match city:
-        case "San Jose" | "san jose" | "San José":
-            schedule = await get_san_jose_schedule(address)
-        case "Santa Clara" | "santa clara":
-            schedule = "https://www.recology.com/recology-south-bay/santa-clara-county-residential/collection-calendar/"
-        case "Cupertino" | "cupertino":
-            schedule = "https://www.recology.com/recology-south-bay/cupertino/collection-calendar/"
-        case "San Francisco" | "san francisco":
-            schedule = "https://www.recology.com/recology-san-francisco/collection-calendar/"
-        # TODO: Add more cities
-        case _:
-            raise HTTPException(
-                status_code=400,
-                detail="No available collection schedule found."
-            )
+    # Check if schedule already exists
+    cached_schedule = get_schedule_by_address_and_zip(address, zip_code)
+    if cached_schedule and cached_schedule.schedule:
+        schedule = cached_schedule.schedule
+    else:
+        match city:
+            case "San Jose" | "san jose" | "San José":
+                schedule = await get_san_jose_schedule(address)
+            case "Santa Clara" | "santa clara":
+                schedule = "https://www.recology.com/recology-south-bay/santa-clara-county-residential/collection-calendar/"
+            case "Cupertino" | "cupertino":
+                schedule = "https://www.recology.com/recology-south-bay/cupertino/collection-calendar/"
+            case "San Francisco" | "san francisco":
+                schedule = "https://www.recology.com/recology-san-francisco/collection-calendar/"
+            # TODO: Add more cities
+            case _:
+                raise HTTPException(
+                    status_code=400,
+                    detail="No available collection schedule found."
+                )
     
     if not schedule:
         return {
@@ -70,14 +76,23 @@ async def get_collection_schedule(address: str = None, zip_code: str = None) -> 
             "schedule": [],
             "message": "No collection schedule found for this address. Please verify the address is correct and in San Jose, California."
         }
-    
+
+    # Add schedule to database only if it wasn't cached
+    if not cached_schedule:
+        add_schedule({
+            "address": address,
+            "city": city,
+            "state": state,
+            "zip_code": zip_code,
+            "schedule": schedule
+        })
+
     return {
         "address": address,
         "schedule": schedule,
         "city": city,
         "state": state
     }
-
 
 @router.post("/notify")
 async def send_schedule_notification(req: NotifyRequest):
