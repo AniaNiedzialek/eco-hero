@@ -1,6 +1,7 @@
 from __future__ import annotations
 from fastapi import APIRouter, HTTPException
 from scrapers.san_jose import get_san_jose_schedule
+from scrapers.santa_clara import fetch_calendar as get_santa_clara_schedule
 from services.notification_service import send_notification
 import pgeocode
 from pydantic import BaseModel
@@ -58,7 +59,7 @@ async def get_collection_schedule(address: str = None, zip_code: str = None) -> 
             case "San Jose" | "san jose" | "San José":
                 schedule = await get_san_jose_schedule(address)
             case "Santa Clara" | "santa clara":
-                schedule = "https://www.recology.com/recology-south-bay/santa-clara-county-residential/collection-calendar/"
+                schedule = await get_santa_clara_schedule(address)
             case "Cupertino" | "cupertino":
                 schedule = "https://www.recology.com/recology-south-bay/cupertino/collection-calendar/"
             case "San Francisco" | "san francisco":
