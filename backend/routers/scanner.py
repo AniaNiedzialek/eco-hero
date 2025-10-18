@@ -14,7 +14,6 @@ async def create_upload_file(zip_code: str, file: UploadFile):
             "message": "Invalid file type ",
             "payload": file.content_type
         })
-    
     barcode = scan_barcode(file.file)
     if not barcode:
         raise HTTPException(status_code=404, detail={

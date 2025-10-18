@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 # routers
 from routers.rules import router as rule_router # rules 
 from routers.collection import router as collection_router
+from routers.scanner import router as scanner_router
 
 app = FastAPI(title="Eco Hero API", version="1.0.0")
 
@@ -18,6 +19,7 @@ app.add_middleware(
 # routes
 app.include_router(rule_router, prefix="/api")
 app.include_router(collection_router, prefix="/api")
+app.include_router(scanner_router, prefix="/api")
 
 if __name__ == "__main__":
     import uvicorn

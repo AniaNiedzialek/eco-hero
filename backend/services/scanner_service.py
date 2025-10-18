@@ -8,6 +8,8 @@ import os
 from dotenv import load_dotenv
 from typing import Dict
 from urllib.parse import urlencode
+import tempfile
+import numpy as np
 
 # -------- Mock --------
 load_dotenv()
@@ -29,6 +31,9 @@ class BarcodeInfo:
 # TODO: fix to only take in one barcode (to align with get_recycling_resources)
 def scan_barcode(img_source=CA_BASELINE_PATH) -> list:
     img = cv2.imread(img_source) if isinstance(img_source, Path) else img_source
+    image_bytes = img.read()
+    nparr = np.frombuffer(image_bytes, np.uint8)
+    img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
     barcode_data = zxingcpp.read_barcodes(img)
     if barcode_data:
         barcode = barcode_data[0]
