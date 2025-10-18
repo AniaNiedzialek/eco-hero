@@ -8,6 +8,8 @@ import os
 from dotenv import load_dotenv
 from typing import Dict
 from urllib.parse import urlencode
+import tempfile
+import numpy as np
 
 # -------- Mock --------
 load_dotenv()
@@ -26,9 +28,21 @@ class BarcodeInfo:
         self.category = 'None'
 
 # -------- Helpers --------
-# TODO: fix to only take in one barcode (to align with get_recycling_resources)
-def scan_barcode(img_source=CA_BASELINE_PATH) -> list:
-    img = cv2.imread(img_source) if isinstance(img_source, Path) else img_source
+def scan_barcode(img_source=CA_BASELINE_PATH) -> BarcodeInfo:
+    # Case 1: img_source is a path (str or Path)
+    if isinstance(img_source, (str, Path)):
+        img = cv2.imread(str(img_source))
+        if img is None:
+            raise ValueError(f"Could not read image from path: {img_source}")
+
+    # Case 2: img_source is a file-like object (e.g., tempfile or UploadFile.file)
+    else:
+        image_bytes = img_source.read()
+        nparr = np.frombuffer(image_bytes, np.uint8)
+        img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+        if img is None:
+            raise ValueError("Could not decode image from file-like object")
+
     barcode_data = zxingcpp.read_barcodes(img)
     if barcode_data:
         barcode = barcode_data[0]
@@ -39,16 +53,15 @@ def scan_barcode(img_source=CA_BASELINE_PATH) -> list:
     return None
 
 def get_recycling_resources(cat: str, zipcode: int) -> Dict[str, str]:
-    if cat == 'None':
-        return None
+    if cat is None:
+        return cat
     return _scrape_resources(cat, zipcode)
 
 # Webscrape
 def _set_category(barcode: BarcodeInfo):
-    barcode.category = _scrape_cat(barcode.text) if not MOCK else _scrape_cat('5449000009067')
+    barcode.category = scrape_cat(barcode.text) if not MOCK else scrape_cat('5449000009067')
 
-
-def _scrape_cat(code: str) -> str:
+def scrape_cat(code: str) -> str:
     url = f"https://www.barcodelookup.com/{code}"
     if MOCK:
         soup = BeautifulSoup(open('mock_data/barcode_page.html').read(), 'html.parser')
@@ -61,7 +74,7 @@ def _scrape_cat(code: str) -> str:
         if div.get_text(strip=True).startswith('Category:'):
             category = div.find('span', class_='product-text').get_text(strip=True)
             return category
-    return 'None'
+    return None
 
 def _get_dynamic_page_source(url: str):
     driver = webdriver.Chrome()

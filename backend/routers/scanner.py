@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, File, UploadFile
-from services.scanner_service import scan_barcode, get_recycling_resources
+from services.scanner_service import scan_barcode, get_recycling_resources, scrape_cat
 
 router = APIRouter(prefix="/scanner", tags=["scanner"])
 
@@ -7,12 +7,17 @@ router = APIRouter(prefix="/scanner", tags=["scanner"])
 def get_status():
     return {"status": "ok"}
 
-@router.post("/uploadfile/")
-async def create_upload_file(zip_code: str, file: UploadFile):
+@router.post("/uploadfile")
+async def create_upload_file(zip_code: str = None, file: UploadFile = None):
     if not 'image' in file.content_type:
         raise HTTPException(status_code=404, detail={
-            "message": "Invalid file type ",
+            "message": "Invalid or missing file type ",
             "payload": file.content_type
+        })
+    if not zip_code or len(zip_code) < 4:
+        raise HTTPException(status_code=404, detail={
+            "message": "Invalid or missing zipcode ",
+            "payload": zip_code
         })
     
     barcode = scan_barcode(file.file)
@@ -22,7 +27,30 @@ async def create_upload_file(zip_code: str, file: UploadFile):
             "payload": barcode
         })
     
-    resources = get_recycling_resources(barcode, zip_code)
+    resources = get_recycling_resources(barcode.category, zip_code)
+    if not resources:
+        raise HTTPException(status_code=404, detail={
+            "message": "No valid resources found for barcode ",
+            "payload": resources
+        })
+    
+    return resources
+
+@router.get("/scanbarcode")
+async def create_upload_file(zip_code: str = None, barcode: str = None):
+    if not barcode:
+        raise HTTPException(status_code=404, detail={
+            "message": "Barcode code is required ",
+            "payload": barcode
+        })
+    if not zip_code or len(zip_code) < 4:
+        raise HTTPException(status_code=404, detail={
+            "message": "Invalid or missing zipcode ",
+            "payload": zip_code
+        })
+    
+    category = scrape_cat(barcode)
+    resources = get_recycling_resources(category, zip_code)
     if not resources:
         raise HTTPException(status_code=404, detail={
             "message": "No valid resources found for barcode ",
