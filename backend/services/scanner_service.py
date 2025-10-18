@@ -28,8 +28,7 @@ class BarcodeInfo:
         self.category = 'None'
 
 # -------- Helpers --------
-# TODO: fix to only take in one barcode (to align with get_recycling_resources)
-def scan_barcode(img_source=CA_BASELINE_PATH) -> list:
+def scan_barcode(img_source=CA_BASELINE_PATH) -> BarcodeInfo:
     # Case 1: img_source is a path (str or Path)
     if isinstance(img_source, (str, Path)):
         img = cv2.imread(str(img_source))
@@ -54,16 +53,15 @@ def scan_barcode(img_source=CA_BASELINE_PATH) -> list:
     return None
 
 def get_recycling_resources(cat: str, zipcode: int) -> Dict[str, str]:
-    if cat == 'None':
-        return None
+    if cat is None:
+        return cat
     return _scrape_resources(cat, zipcode)
 
 # Webscrape
 def _set_category(barcode: BarcodeInfo):
-    barcode.category = _scrape_cat(barcode.text) if not MOCK else _scrape_cat('5449000009067')
+    barcode.category = scrape_cat(barcode.text) if not MOCK else scrape_cat('5449000009067')
 
-
-def _scrape_cat(code: str) -> str:
+def scrape_cat(code: str) -> str:
     url = f"https://www.barcodelookup.com/{code}"
     if MOCK:
         soup = BeautifulSoup(open('mock_data/barcode_page.html').read(), 'html.parser')
@@ -76,7 +74,7 @@ def _scrape_cat(code: str) -> str:
         if div.get_text(strip=True).startswith('Category:'):
             category = div.find('span', class_='product-text').get_text(strip=True)
             return category
-    return 'None'
+    return None
 
 def _get_dynamic_page_source(url: str):
     driver = webdriver.Chrome()
