@@ -11,3 +11,5 @@ python-dotenv
 resend
 selenium
 sqlalchemy
+beautifulsoup4
+python-multipart 
