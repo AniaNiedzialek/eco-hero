@@ -94,3 +94,27 @@ cd backend && uvicorn main:app --reload --port 8000
     -d '{"email":"you@example.com","address":"200 E Santa Clara St","zip_code":"95112"}'
     ```
     -   Send collection schedule to email
+## Scanner API
+-   **POST /api/scanner/uploadfile/?zip_code=...**
+    ```
+    curl -s -X POST 'http://127.0.0.1:8000/api/scanner/uploadfile/?zip_code=95056' \
+    -F 'file=@data/barcodes/test_bc.png;type=image/png'
+    ```
+    -   **Example response**
+        ```
+        {
+        "City of Santa Clara Curbside Recycling Program":"https://search.earth911.com/program/Q1RQNVBbU1dAVQ/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
+        "Sunnyvale Materials Recovery and Transfer Station (SMaRT)":"https://search.earth911.com/location/Q1RQNVJYXF1GVQ/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
+        "SMaRT Recycling Center":"https://search.earth911.com/location/Q1RQNVBRUltGXQ/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
+        "San Jose Conservation Corps Recycling Drop-Off Center":"https://search.earth911.com/location/Q1RTNVBRWFlK/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
+        "1-800-Got-Junk? ":"https://search.earth911.com/program/Q1RQNVJZW19DUg/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
+        "Zanker Materials Recovery Facility":"https://search.earth911.com/location/Q1RQNVJYUllDXQ/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
+        "International Paper":"https://search.earth911.com/location/Q1RTNVNYXlZE/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
+        "Shoreway Environmental Center":"https://search.earth911.com/location/Q1RTNVVdWFdC/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
+        "Pleasanton Transfer Station":"https://search.earth911.com/location/Q1RTNVJeXF1H/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all"
+        }
+        ```
+-   **POST /api/scanner/uploadfile/?zip_code=...&barcode=...**
+    ```
+    curl -s 'http://127.0.0.1:8000/api/scanner/uploadfile/?zip_code=95112&barcode=5449000009067'
+    ```
