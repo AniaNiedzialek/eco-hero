@@ -4,6 +4,8 @@ import cv2
 import zxingcpp
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+import time
 import os
 from dotenv import load_dotenv
 from typing import Dict
@@ -77,8 +79,16 @@ def scrape_cat(code: str) -> str:
     return None
 
 def _get_dynamic_page_source(url: str):
-    driver = webdriver.Chrome()
+    options = Options()
+    options.add_argument('--headless=new')
+    options.add_argument(
+        "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+    )
+    
+    driver = webdriver.Chrome(options=options)
     driver.get(url)
+
     time.sleep(5)
     page_source = driver.page_source
     driver.quit()
