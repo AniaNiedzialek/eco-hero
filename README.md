@@ -114,7 +114,7 @@ cd backend && uvicorn main:app --reload --port 8000
         "Pleasanton Transfer Station":"https://search.earth911.com/location/Q1RTNVJeXF1H/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all"
         }
         ```
--   **POST /api/scanner/uploadfile/?zip_code=...&barcode=...**
+-   **POST /api/scanner/scanbarcode/?zip_code=...&barcode=...**
     ```
     curl -s 'http://127.0.0.1:8000/api/scanner/scanbarcode/?zip_code=95112&barcode=5449000009067'
     ```
