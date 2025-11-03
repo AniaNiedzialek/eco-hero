@@ -7,7 +7,7 @@ router = APIRouter(prefix="/scanner", tags=["scanner"])
 def get_status():
     return {"status": "ok"}
 
-@router.post("/uploadfile")
+@router.post("/uploadfile/")
 async def create_upload_file(zip_code: str = None, file: UploadFile = None):
     if not 'image' in file.content_type:
         raise HTTPException(status_code=404, detail={
@@ -36,7 +36,7 @@ async def create_upload_file(zip_code: str = None, file: UploadFile = None):
     
     return resources
 
-@router.get("/scanbarcode")
+@router.get("/scanbarcode/")
 async def create_upload_file(zip_code: str = None, barcode: str = None):
     if not barcode:
         raise HTTPException(status_code=404, detail={

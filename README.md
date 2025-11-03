@@ -52,7 +52,7 @@ cd backend && uvicorn main:app --reload --port 8000
             }
         }
         ```
-## Schedule API (Only works with San Jose)
+## Schedule API (Only works with San Jose + Santa Clara)
 
 -   **GET /api/collection/schedule?address=...&zip_code=...**
     ```
@@ -98,7 +98,7 @@ cd backend && uvicorn main:app --reload --port 8000
 -   **POST /api/scanner/uploadfile/?zip_code=...**
     ```
     curl -s -X POST 'http://127.0.0.1:8000/api/scanner/uploadfile/?zip_code=95056' \
-    -F 'file=@data/barcodes/test_bc.png;type=image/png'
+    -F 'file=@backend/data/barcodes/test_bc.png;type=image/png'
     ```
     -   **Example response**
         ```
@@ -116,5 +116,29 @@ cd backend && uvicorn main:app --reload --port 8000
         ```
 -   **POST /api/scanner/uploadfile/?zip_code=...&barcode=...**
     ```
-    curl -s 'http://127.0.0.1:8000/api/scanner/uploadfile/?zip_code=95112&barcode=5449000009067'
+    curl -s 'http://127.0.0.1:8000/api/scanner/scanbarcode/?zip_code=95112&barcode=5449000009067'
     ```
+
+## Bin Locations API (Find public bins near an address)
+-   **GET /api/bin/near?addr=...&radius_miles=...&max_results=...**
+    ```
+    curl -sG 'http://127.0.0.1:8000/api/bin/near' \
+    --data-urlencode 'addr=150 Alviso St, Santa Clara, CA' \
+    --data-urlencode 'radius_miles=5' \
+    --data-urlencode 'max_results=5'
+    ```
+    -   **Example response:**
+        ```
+        [
+            {
+                "id": 12610817977,
+                "lat": 37.3483783,
+                "lon": -121.9467481,
+                "tags": {
+                    "amenity": "waste_basket",
+                    "waste": "trash"
+                },
+                "distance_miles": 0.7
+            },...
+        ]
+        ```
