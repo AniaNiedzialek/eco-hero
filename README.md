@@ -102,17 +102,20 @@ cd backend && uvicorn main:app --reload --port 8000
     ```
     -   **Example response**
         ```
-        {
-        "City of Santa Clara Curbside Recycling Program":"https://search.earth911.com/program/Q1RQNVBbU1dAVQ/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
-        "Sunnyvale Materials Recovery and Transfer Station (SMaRT)":"https://search.earth911.com/location/Q1RQNVJYXF1GVQ/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
-        "SMaRT Recycling Center":"https://search.earth911.com/location/Q1RQNVBRUltGXQ/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
-        "San Jose Conservation Corps Recycling Drop-Off Center":"https://search.earth911.com/location/Q1RTNVBRWFlK/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
-        "1-800-Got-Junk? ":"https://search.earth911.com/program/Q1RQNVJZW19DUg/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
-        "Zanker Materials Recovery Facility":"https://search.earth911.com/location/Q1RQNVJYUllDXQ/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
-        "International Paper":"https://search.earth911.com/location/Q1RTNVNYXlZE/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
-        "Shoreway Environmental Center":"https://search.earth911.com/location/Q1RTNVVdWFdC/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all",
-        "Pleasanton Transfer Station":"https://search.earth911.com/location/Q1RTNVJeXF1H/?what=Food%2C+Beverages+%26+Tobacco&where=95051&max_distance=25&country=US&province=CA&city=Santa+Clara&region=Santa+Clara&postal_code=95051&latitude=37.346878776894&longitude=-121.98557937233&sponsor=&list_filter=all"
-        }
+        [
+            {
+                "program": "Santa Clara County Curbside Recycling Program",
+                "ref": "https://search.earth911.com/program/Q1RQNVJZXF1DVQ/?what=Food%2C+Beverages+%26+Tobacco&where=95112&max_distance=25&country=US&province=CA&city=San+Jose&region=Santa+Clara&postal_code=95112&latitude=37.343211847006&longitude=-121.88473880038&sponsor=&list_filter=all"
+            },
+            {
+                "program": "San Jose Conservation Corps Recycling Drop-Off Center",
+                "ref": "https://search.earth911.com/location/Q1RTNVBRWFlK/?what=Food%2C+Beverages+%26+Tobacco&where=95112&max_distance=25&country=US&province=CA&city=San+Jose&region=Santa+Clara&postal_code=95112&latitude=37.343211847006&longitude=-121.88473880038&sponsor=&list_filter=all"
+            },
+            {
+                "program": "1-800-Got-Junk? ",
+                "ref": "https://search.earth911.com/program/Q1RQNVJZW19DUg/?what=Food%2C+Beverages+%26+Tobacco&where=95112&max_distance=25&country=US&province=CA&city=San+Jose&region=Santa+Clara&postal_code=95112&latitude=37.343211847006&longitude=-121.88473880038&sponsor=&list_filter=all"
+            },...
+        ]
         ```
 -   **POST /api/scanner/scanbarcode/?zip_code=...&barcode=...**
     ```
