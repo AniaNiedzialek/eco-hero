@@ -10,8 +10,8 @@ import os
 from dotenv import load_dotenv
 from typing import Dict
 from urllib.parse import urlencode
-import tempfile
 import numpy as np
+import json
 
 # -------- Mock --------
 load_dotenv()
@@ -111,9 +111,9 @@ def _build_earth911_url(category: str, zipcode: int, max_distance=25):
     }
     return f"{base_url}?{urlencode(params)}"
 
-def _scrape_resources(category: str, zipcode: int) -> Dict[str, str]: 
+def _scrape_resources(category: str, zipcode: int) -> str: 
     url = _build_earth911_url(category, zipcode)
-    resources = dict()
+    resources = []
     if MOCK:
         soup = BeautifulSoup(open('mock_data/resources_page.html').read(), 'html.parser')
     else:
@@ -126,5 +126,10 @@ def _scrape_resources(category: str, zipcode: int) -> Dict[str, str]:
         ref = div.find('a')['href']
         if not MOCK:
             ref = 'https://search.earth911.com' + ref
-        resources[title] = ref
+        
+        resources.append({
+            "program": title,
+            "ref": ref
+        })
+    
     return resources

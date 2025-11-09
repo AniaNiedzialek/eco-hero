@@ -21,6 +21,7 @@ async def create_upload_file(zip_code: str = None, file: UploadFile = None):
         })
     
     barcode = scan_barcode(file.file)
+    print("DEBUG: barcode =", barcode.text)
     if not barcode:
         raise HTTPException(status_code=404, detail={
             "message": "No valid codes found for barcode ",
