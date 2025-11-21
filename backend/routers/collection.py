@@ -75,7 +75,7 @@ async def get_collection_schedule(address: str = None, zip_code: str = None) -> 
         return {
             "address": address,
             "schedule": [],
-            "message": "No collection schedule found for this address. Please verify the address is correct and in San Jose, California."
+            "message": f"No collection schedule found for this address. Please verify the address is correct and in {city if city else 'a supported city'}, California."
         }
 
     # Add schedule to database only if it wasn't cached
