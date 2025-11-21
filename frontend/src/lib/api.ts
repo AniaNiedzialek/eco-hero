@@ -29,14 +29,13 @@ export const api = {
     ).then(ok<any>),
 
   notify: (payload: { email: string; address: string; zip_code: string }) =>
-    fetch(
-      `${BASE}/api/collection/notify?email=${encodeURIComponent(
-        payload.email
-      )}&address=${encodeURIComponent(
-        payload.address
-      )}&zip_code=${encodeURIComponent(payload.zip_code)}`,
-      { method: "POST" }
-    ).then(ok<any>),
+    fetch(`${BASE}/api/collection/notify`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    }).then(ok<any>),
 
   scanUpload: (file: File, zip: string): Promise<Resource[]> => {
     const fd = new FormData();

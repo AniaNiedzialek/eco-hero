@@ -43,15 +43,21 @@ function ScheduleCard({ item }: { item: ScheduleItem }) {
 export default function SchedulePage() {
   const [address, setAddress] = React.useState("");
   const [zip, setZip] = React.useState("");
+  const [email, setEmail] = React.useState("");
   const [result, setResult] = React.useState<ScheduleResponse | null>(null);
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
+  const [sendingEmail, setSendingEmail] = React.useState(false);
+  const [emailSuccess, setEmailSuccess] = React.useState(false);
+  const [showEmailForm, setShowEmailForm] = React.useState(false);
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
     setError(null);
     setResult(null);
+    setEmailSuccess(false);
+    setShowEmailForm(false);
 
     try {
       const data = await api.schedule({ address, zip_code: zip });
@@ -60,6 +66,23 @@ export default function SchedulePage() {
       setError(err?.message || "Failed to fetch schedule.");
     } finally {
       setLoading(false);
+    }
+  }
+
+  async function sendScheduleToEmail(e: React.FormEvent) {
+    e.preventDefault();
+    setSendingEmail(true);
+    setError(null);
+    setEmailSuccess(false);
+
+    try {
+      await api.notify({ email, address, zip_code: zip });
+      setEmailSuccess(true);
+      setShowEmailForm(false);
+    } catch (err: any) {
+      setError(err?.message || "Failed to send email.");
+    } finally {
+      setSendingEmail(false);
     }
   }
 
@@ -98,17 +121,65 @@ export default function SchedulePage() {
         </div>
       )}
 
+      {emailSuccess && (
+        <div className="card p-4 text-green-700 bg-green-50 border-green-200">
+          ✓ Schedule sent to {email} successfully!
+        </div>
+      )}
+
       {result && (
         <div className="space-y-6">
           {/* Address Info */}
           <div className="card p-5 bg-eco-50 border-eco-200">
-            <div className="text-xs uppercase tracking-wide text-eco-600 font-semibold mb-2">
-              Location
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="text-xs uppercase tracking-wide text-eco-600 font-semibold mb-2">
+                  Location
+                </div>
+                <div className="text-slate-800 font-medium">{result.address}</div>
+                <div className="text-sm text-slate-600 mt-1">
+                  {result.city}, {result.state}
+                </div>
+              </div>
+              {typeof result.schedule !== 'string' && result.schedule && Array.isArray(result.schedule) && result.schedule.length > 0 && (
+                <button 
+                  onClick={() => setShowEmailForm(!showEmailForm)}
+                  className="btn-secondary text-sm"
+                >
+                  📧 Email schedule
+                </button>
+              )}
             </div>
-            <div className="text-slate-800 font-medium">{result.address}</div>
-            <div className="text-sm text-slate-600 mt-1">
-              {result.city}, {result.state}
-            </div>
+
+            {/* Email Form */}
+            {showEmailForm && (
+              <form onSubmit={sendScheduleToEmail} className="mt-4 pt-4 border-t border-eco-300">
+                <div className="flex gap-3">
+                  <input
+                    type="email"
+                    className="input flex-1"
+                    placeholder="your@email.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                  <button 
+                    type="submit" 
+                    className="btn"
+                    disabled={sendingEmail}
+                  >
+                    {sendingEmail ? "Sending..." : "Send"}
+                  </button>
+                  <button 
+                    type="button" 
+                    onClick={() => setShowEmailForm(false)}
+                    className="btn-secondary"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </form>
+            )}
           </div>
 
           {/* Schedule */}
