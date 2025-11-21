@@ -2,6 +2,26 @@
 
 export type Resource = { program: string; ref: string };
 
+export type ScanResult = {
+  product_name: string;
+  category: string;
+  material: string;
+  recyclable: boolean;
+  recycling_guidance: string;
+  bin_type: string;
+  special_notes: string;
+  data_source?: string;
+  places?: Array<{
+    name: string;
+    address: string;
+    rating?: number;
+    user_ratings_total?: number;
+    lat: number;
+    lng: number;
+    place_id: string;
+  }>;
+};
+
 const BASE = import.meta.env.VITE_API_BASE ?? "";
 console.log("[api] BASE =", BASE); // temporary debug
 
@@ -37,22 +57,22 @@ export const api = {
       body: JSON.stringify(payload),
     }).then(ok<any>),
 
-  scanUpload: (file: File, zip: string): Promise<Resource[]> => {
+  scanUpload: (file: File, zip: string): Promise<ScanResult> => {
     const fd = new FormData();
     fd.append("file", file);
     return fetch(
       `${BASE}/api/scanner/uploadfile/?zip_code=${encodeURIComponent(zip)}`,
       { method: "POST", body: fd }
-    ).then(ok<Resource[]>);
+    ).then(ok<ScanResult>);
   },
 
-  scanBarcode: (barcode: string, zip: string): Promise<Resource[]> =>
+  scanBarcode: (barcode: string, zip: string): Promise<ScanResult> =>
     fetch(
       `${BASE}/api/scanner/scanbarcode/?zip_code=${encodeURIComponent(
         zip
       )}&barcode=${encodeURIComponent(barcode)}`,
       { method: "POST" }
-    ).then(ok<Resource[]>),
+    ).then(ok<ScanResult>),
 
   binsNear: (addr: string, radius = 5, max = 10) =>
     fetch(
@@ -61,3 +81,6 @@ export const api = {
       )}&radius_miles=${radius}&max_results=${max}`
     ).then(ok<any>),
 };
+
+
+

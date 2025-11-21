@@ -2,6 +2,7 @@ import React from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import { Icon } from "leaflet";
 import { api } from "../lib/api";
+import { Link } from "react-router-dom";
 import "leaflet/dist/leaflet.css";
 
 // Fix for default marker icons in Leaflet with Vite
@@ -101,7 +102,12 @@ export default function BinsPage() {
   return (
     <section className="space-y-6">
       <div className="card p-6">
-        <h2 className="text-2xl font-semibold mb-4 text-slate-800">Find nearby bins</h2>
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="text-2xl font-semibold text-slate-800">Find nearby bins</h2>
+          <Link to="/report" className="btn-secondary px-4 py-2 text-sm">
+            Add New Bin
+          </Link>
+        </div>
         <form onSubmit={onSubmit} className="grid sm:grid-cols-[2fr_1fr_auto] gap-3">
           <input
             className="input"
@@ -182,14 +188,22 @@ export default function BinsPage() {
                         <div className="text-slate-500 mt-1">
                           {bin.distance_miles} miles away
                         </div>
+                        <div className="mt-2 flex flex-wrap gap-2">
                           <a
                             href={`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(address)}&destination=${bin.lat},${bin.lon}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-block mt-2 px-3 py-1 bg-eco-100 text-eco-700 rounded hover:bg-eco-200 text-xs font-semibold"
+                            className="px-3 py-1 bg-eco-100 text-eco-700 rounded hover:bg-eco-200 text-xs font-semibold"
                           >
                             Get Directions
                           </a>
+                          <Link
+                            to={`/report?binId=${bin.id}`}
+                            className="px-3 py-1 bg-red-50 text-red-600 rounded hover:bg-red-100 text-xs font-semibold"
+                          >
+                            Report Issue
+                          </Link>
+                        </div>
                       </div>
                     </Popup>
                   </Marker>

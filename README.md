@@ -119,7 +119,7 @@ cd backend && uvicorn main:app --reload --port 8000
         ```
 -   **POST /api/scanner/scanbarcode/?zip_code=...&barcode=...**
     ```
-    curl -s 'http://127.0.0.1:8000/api/scanner/scanbarcode/?zip_code=95112&barcode=5449000009067'
+    curl -s -X POST 'http://127.0.0.1:8000/api/scanner/scanbarcode/?zip_code=95112&barcode=5449000009067'
     ```
 
 ## Bin Locations API (Find public bins near an address)

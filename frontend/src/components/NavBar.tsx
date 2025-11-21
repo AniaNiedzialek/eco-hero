@@ -26,6 +26,9 @@ export default function NavBar() {
           <NavLink to="/schedule" className={({isActive}) => `${link} ${isActive?active:""}`}><Calendar className="h-4 w-4"/>Schedule</NavLink>
           <NavLink to="/scanner" className={({isActive}) => `${link} ${isActive?active:""}`}><ScanBarcode className="h-4 w-4"/>Scanner</NavLink>
           <NavLink to="/bins" className={({isActive}) => `${link} ${isActive?active:""}`}><MapPin className="h-4 w-4"/>Nearby bins</NavLink>
+          {user && (
+            <NavLink to="/history" className={({isActive}) => `${link} ${isActive?active:""}`}>History</NavLink>
+          )}
         </nav>
         <div className="flex items-center gap-2">
           {!user ? (

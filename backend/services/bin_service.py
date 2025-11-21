@@ -6,13 +6,14 @@ from typing import List, Dict, Tuple, Optional
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 GOOGLE_GEOCODE_URL = "https://maps.googleapis.com/maps/api/geocode/json"
+GOOGLE_PLACES_URL = "https://maps.googleapis.com/maps/api/place/textsearch/json"
 GOOGLE_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY", "")
 
 def haversine_meters(lat1, lon1, lat2, lon2):
     R = 6371000.0 # Earth radius in meters
     phi1 = math.radians(lat1)
     phi2 = math.radians(lat2)
-    delta_phi = math.radians(lat2 - lat1)
+    delta_phi = math.radians(lon2 - lon1)
     delta_lambda = math.radians(lon2 - lon1)
     a = math.sin(delta_phi / 2) * math.sin(delta_phi / 2) + math.cos(phi1) * math.cos(phi2) * math.sin(delta_lambda / 2) * math.sin(delta_lambda / 2)
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
@@ -93,6 +94,42 @@ def find_bins_near(lat: float, lon: float, radius_miles: int = 20, max_results: 
     # Sort by distance
     results.sort(key=lambda r: r["distance_miles"])
     return results[:max_results]
+
+def find_recycling_places(query: str, location: str) -> List[Dict]:
+    """
+    Find recycling places using Google Places API.
+    """
+    if not GOOGLE_API_KEY:
+        print("GOOGLE_MAPS_API_KEY not set, skipping places search")
+        return []
+    
+    search_query = f"{query} near {location}"
+    params = {
+        "query": search_query,
+        "key": GOOGLE_API_KEY,
+    }
+    
+    try:
+        r = requests.get(GOOGLE_PLACES_URL, params=params, timeout=10)
+        r.raise_for_status()
+        data = r.json()
+        
+        results = []
+        if data.get("status") == "OK":
+            for place in data.get("results", [])[:5]: # Limit to 5
+                results.append({
+                    "name": place.get("name"),
+                    "address": place.get("formatted_address"),
+                    "rating": place.get("rating"),
+                    "user_ratings_total": place.get("user_ratings_total"),
+                    "lat": place["geometry"]["location"]["lat"],
+                    "lng": place["geometry"]["location"]["lng"],
+                    "place_id": place.get("place_id")
+                })
+        return results
+    except Exception as e:
+        print(f"Places search error: {e}")
+        return []
 
 if __name__ == "__main__":
     addr = "150 Alviso St, Santa Clara, CA"

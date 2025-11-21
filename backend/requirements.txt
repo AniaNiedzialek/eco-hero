@@ -8,6 +8,8 @@ opencv-python-headless
 zxing-cpp
 resend
 python-dotenv
+google-generativeai
+requests
 selenium
 playwright
 playwright-stealth

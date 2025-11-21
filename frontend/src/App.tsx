@@ -5,6 +5,8 @@ import RulesPage from "./pages/Rules";
 import SchedulePage from "./pages/Schedule";
 import ScannerPage from "./pages/Scanner";
 import BinsPage from "./pages/Bins";
+import HistoryPage from "./pages/History";
+import ReportPage from "./pages/Report";
 
 export default function App() {
   return (
@@ -15,6 +17,8 @@ export default function App() {
       {/* main is now flex-1 only; the hero below controls its own height */}
       <main className="flex-1">
         <Routes>
+          <Route path="/history" element={<HistoryPage />} />
+          <Route path="/report" element={<ReportPage />} />
           <Route
             index
             element={
