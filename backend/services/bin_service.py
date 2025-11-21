@@ -4,7 +4,7 @@ import time
 from typing import List, Dict, Tuple, Optional
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
-NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
+GEOCODE_URL = "https://geocode.maps.co/search"
 
 def haversine_meters(lat1, lon1, lat2, lon2):
     R = 6371000.0 # Earth radius in meters
@@ -20,31 +20,36 @@ def haversine_miles(lat1, lon1, lat2, lon2):
     return haversine_meters(lat1, lon1, lat2, lon2) / 1609.34
 
 def geocode_address(address: str) -> Optional[Tuple[float, float]]:
+    """
+    Geocode an address using geocode.maps.co (free tier, no API key needed).
+    Falls back to a simple retry mechanism for rate limiting.
+    """
     params = {
         "q": address,
         "format": "json",
-        "limit": "1",
-    }
-    headers = {
-        "User-Agent": "EcoHero/1.0 (eco-waste-management-app; contact: your-email@example.com)"
+        "limit": 1,
     }
     
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            r = requests.get(NOMINATIM_URL, params=params, headers=headers, timeout=10)
+            r = requests.get(GEOCODE_URL, params=params, timeout=10)
             r.raise_for_status()
             data = r.json()
             if not data:
                 return None
             return float(data[0]["lat"]), float(data[0]["lon"])
         except requests.exceptions.HTTPError as e:
-            if e.response.status_code == 503 and attempt < max_retries - 1:
-                wait_time = 2 ** attempt  
+            # Rate limited or other HTTP error
+            if e.response.status_code in [429, 503] and attempt < max_retries - 1:
+                wait_time = (2 ** attempt) + 1  # Exponential backoff: 2s, 3s, 5s
+                print(f"Rate limited, waiting {wait_time}s before retry...")
                 time.sleep(wait_time)
                 continue
+            print(f"Geocoding HTTP error: {e}")
             raise
-        except Exception:
+        except Exception as e:
+            print(f"Geocoding error: {e}")
             raise
     
     return None
