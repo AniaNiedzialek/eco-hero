@@ -167,15 +167,29 @@ export default function BinsPage() {
                   >
                     <Popup>
                       <div className="text-sm">
-                        <div className="font-semibold text-eco-700">
-                          {bin.tags?.amenity || "Recycling Bin"}
+                        <div className="flex items-center gap-1 font-semibold text-eco-700">
+                          <span className="text-lg">🗑️</span>
+                          <span>
+                            {bin.tags?.name || 
+                             (bin.tags?.amenity === "waste_basket" ? "Waste Basket" : 
+                              bin.tags?.amenity === "recycling" ? "Recycling Bin" : 
+                              "Public Bin")}
+                          </span>
                         </div>
-                        {bin.tags?.name && (
-                          <div className="text-slate-600">{bin.tags.name}</div>
+                        {bin.tags?.waste && (
+                          <div className="text-slate-600 mt-1">Type: {bin.tags.waste}</div>
                         )}
                         <div className="text-slate-500 mt-1">
                           {bin.distance_miles} miles away
                         </div>
+                          <a
+                            href={`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(address)}&destination=${bin.lat},${bin.lon}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block mt-2 px-3 py-1 bg-eco-100 text-eco-700 rounded hover:bg-eco-200 text-xs font-semibold"
+                          >
+                            Get Directions
+                          </a>
                       </div>
                     </Popup>
                   </Marker>
@@ -197,15 +211,26 @@ export default function BinsPage() {
                 >
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
-                      <div className="font-medium text-slate-800">
-                        {bin.tags?.name || bin.tags?.amenity || "Recycling Bin"}
+                      <div className="flex items-center gap-2 font-medium text-slate-800">
+                        <span className="text-2xl">🗑️</span>
+                        <span>
+                          {bin.tags?.name || 
+                           (bin.tags?.amenity === "waste_basket" ? "Waste Basket" : 
+                            bin.tags?.amenity === "recycling" ? "Recycling Bin" : 
+                            "Public Bin")}
+                        </span>
                       </div>
                       {bin.tags?.description && (
-                        <div className="text-sm text-slate-600 mt-1">
+                        <div className="text-sm text-slate-600 mt-1 ml-8">
                           {bin.tags.description}
                         </div>
                       )}
-                      <div className="text-sm text-slate-500 mt-2">
+                      {bin.tags?.waste && (
+                        <div className="text-sm text-slate-600 mt-1 ml-8">
+                          Type: {bin.tags.waste}
+                        </div>
+                      )}
+                      <div className="text-sm text-slate-500 mt-2 ml-8">
                         📍 {bin.lat.toFixed(5)}, {bin.lon.toFixed(5)}
                       </div>
                     </div>
