@@ -1,0 +1,12 @@
+**/__pycache__/
+**/*.pyc
+**/.DS_Store
+**/.git
+**/.venv*
+node_modules
+frontend
+target
+dist
+build
+.env
+*.db
