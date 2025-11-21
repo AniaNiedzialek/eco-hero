@@ -37,8 +37,8 @@ async def create_upload_file(zip_code: str = None, file: UploadFile = None):
     
     return resources
 
-@router.get("/scanbarcode/")
-async def create_upload_file(zip_code: str = None, barcode: str = None):
+@router.post("/scanbarcode/")
+async def scan_barcode_endpoint(zip_code: str = None, barcode: str = None):
     if not barcode:
         raise HTTPException(status_code=404, detail={
             "message": "Barcode code is required ",

@@ -50,7 +50,8 @@ export const api = {
     fetch(
       `${BASE}/api/scanner/scanbarcode/?zip_code=${encodeURIComponent(
         zip
-      )}&barcode=${encodeURIComponent(barcode)}`
+      )}&barcode=${encodeURIComponent(barcode)}`,
+      { method: "POST" }
     ).then(ok<Resource[]>),
 
   binsNear: (addr: string, radius = 5, max = 10) =>
