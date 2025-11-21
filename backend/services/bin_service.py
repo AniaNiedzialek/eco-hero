@@ -1,5 +1,6 @@
 import requests
 import math
+import time
 from typing import List, Dict, Tuple, Optional
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
@@ -24,13 +25,29 @@ def geocode_address(address: str) -> Optional[Tuple[float, float]]:
         "format": "json",
         "limit": "1",
     }
-    headers = {"User-Agent": "eco-hero/1.0"}
-    r = requests.get(NOMINATIM_URL, params=params, headers=headers, timeout=10)
-    r.raise_for_status()
-    data = r.json()
-    if not data:
-        return None
-    return float(data[0]["lat"]), float(data[0]["lon"])
+    headers = {
+        "User-Agent": "EcoHero/1.0 (eco-waste-management-app; contact: your-email@example.com)"
+    }
+    
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            r = requests.get(NOMINATIM_URL, params=params, headers=headers, timeout=10)
+            r.raise_for_status()
+            data = r.json()
+            if not data:
+                return None
+            return float(data[0]["lat"]), float(data[0]["lon"])
+        except requests.exceptions.HTTPError as e:
+            if e.response.status_code == 503 and attempt < max_retries - 1:
+                wait_time = 2 ** attempt  
+                time.sleep(wait_time)
+                continue
+            raise
+        except Exception:
+            raise
+    
+    return None
 
 def find_bins_near(lat: float, lon: float, radius_miles: int = 20, max_results: int = 10) -> List[Dict]:
     radius_m = radius_miles * 1609.34
