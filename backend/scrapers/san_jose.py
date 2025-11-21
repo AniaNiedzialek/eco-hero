@@ -20,6 +20,8 @@ async def get_san_jose_schedule(address: str) -> Optional[List[Dict]]:
             browser = await p.chromium.launch(
                 headless=True,
                 args=[
+                    '--no-sandbox',
+                    '--disable-setuid-sandbox',
                     '--disable-blink-features=AutomationControlled',
                     '--disable-web-security',
                     '--disable-features=IsolateOrigins,site-per-process'
