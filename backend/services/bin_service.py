@@ -1,10 +1,12 @@
 import requests
 import math
 import time
+import os
 from typing import List, Dict, Tuple, Optional
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
-GEOCODE_URL = "https://geocode.maps.co/search"
+GOOGLE_GEOCODE_URL = "https://maps.googleapis.com/maps/api/geocode/json"
+GOOGLE_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY", "")
 
 def haversine_meters(lat1, lon1, lat2, lon2):
     R = 6371000.0 # Earth radius in meters
@@ -21,36 +23,35 @@ def haversine_miles(lat1, lon1, lat2, lon2):
 
 def geocode_address(address: str) -> Optional[Tuple[float, float]]:
     """
-    Geocode an address using geocode.maps.co (free tier, no API key needed).
-    Falls back to a simple retry mechanism for rate limiting.
+    Geocode an address using Google Maps Geocoding API.
+    Requires GOOGLE_MAPS_API_KEY environment variable.
     """
+    if not GOOGLE_API_KEY:
+        raise ValueError("GOOGLE_MAPS_API_KEY environment variable not set")
+    
     params = {
-        "q": address,
-        "format": "json",
-        "limit": 1,
+        "address": address,
+        "key": GOOGLE_API_KEY,
     }
     
-    max_retries = 3
-    for attempt in range(max_retries):
-        try:
-            r = requests.get(GEOCODE_URL, params=params, timeout=10)
-            r.raise_for_status()
-            data = r.json()
-            if not data:
-                return None
-            return float(data[0]["lat"]), float(data[0]["lon"])
-        except requests.exceptions.HTTPError as e:
-            # Rate limited or other HTTP error
-            if e.response.status_code in [429, 503] and attempt < max_retries - 1:
-                wait_time = (2 ** attempt) + 1  # Exponential backoff: 2s, 3s, 5s
-                print(f"Rate limited, waiting {wait_time}s before retry...")
-                time.sleep(wait_time)
-                continue
-            print(f"Geocoding HTTP error: {e}")
-            raise
-        except Exception as e:
-            print(f"Geocoding error: {e}")
-            raise
+    try:
+        r = requests.get(GOOGLE_GEOCODE_URL, params=params, timeout=10)
+        r.raise_for_status()
+        data = r.json()
+        
+        if data.get("status") == "OK" and data.get("results"):
+            location = data["results"][0]["geometry"]["location"]
+            return float(location["lat"]), float(location["lng"])
+        elif data.get("status") == "ZERO_RESULTS":
+            print(f"Address not found: {address}")
+            return None
+        else:
+            print(f"Geocoding failed with status: {data.get('status')}")
+            return None
+            
+    except Exception as e:
+        print(f"Geocoding error: {e}")
+        raise
     
     return None
 
