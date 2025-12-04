@@ -69,25 +69,27 @@ export const getUserScanHistory = async (userId: string, limitCount = 20) => {
 
 export const getUserStats = async (userId: string) => {
   try {
-    // Note: For large datasets, aggregation queries are better. 
-    // For this scale, client-side counting of recent items is okay or a separate stats document.
-    // We'll fetch all history for now (assuming reasonable size) or just the last 100 for a "recent" stat.
+    // Single optimized query with limit - much faster than multiple queries
     const q = query(
       collection(db, "scan_history"),
       where("userId", "==", userId),
-      orderBy("timestamp", "desc")
+      orderBy("timestamp", "desc"),
+      limit(100)
     );
     
     const querySnapshot = await getDocs(q);
     const docs = querySnapshot.docs;
     
-    const totalScans = docs.length;
-    const recyclableCount = docs.filter(doc => doc.data().recyclable).length;
-    
-    // Calculate this month's scans
+    // Calculate stats from single query result
     const now = new Date();
     const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
-    const thisMonthCount = docs.filter(doc => doc.data().timestamp.toDate() >= startOfMonth).length;
+    
+    const totalScans = docs.length;
+    const recyclableCount = docs.filter(doc => doc.data().recyclable).length;
+    const thisMonthCount = docs.filter(doc => {
+      const timestamp = doc.data().timestamp?.toDate?.();
+      return timestamp && timestamp >= startOfMonth;
+    }).length;
 
     return {
       totalScans,

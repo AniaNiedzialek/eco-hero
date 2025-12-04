@@ -141,7 +141,12 @@ export default function SchedulePage() {
                   {result.city}, {result.state}
                 </div>
               </div>
-              {typeof result.schedule !== 'string' && result.schedule && Array.isArray(result.schedule) && result.schedule.length > 0 && (
+              {typeof result.schedule !== 'string' && result.schedule && Array.isArray(result.schedule) && 
+               result.schedule.some((item) => {
+                 const today = new Date();
+                 today.setHours(0, 0, 0, 0);
+                 return new Date(item.date) >= today;
+               }) && (
                 <button 
                   onClick={() => setShowEmailForm(!showEmailForm)}
                   className="btn-secondary text-sm"
@@ -201,16 +206,30 @@ export default function SchedulePage() {
               </a>
             </div>
           ) : result.schedule && Array.isArray(result.schedule) && result.schedule.length > 0 ? (
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-slate-800">
-                Upcoming Pickups
-              </h3>
-              <div className="space-y-3">
-                {result.schedule.map((item, index) => (
-                  <ScheduleCard key={index} item={item} />
-                ))}
-              </div>
-            </div>
+            (() => {
+              const today = new Date();
+              today.setHours(0, 0, 0, 0);
+              const upcomingPickups = result.schedule
+                .filter((item) => new Date(item.date) >= today)
+                .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+              
+              return upcomingPickups.length > 0 ? (
+                <div>
+                  <h3 className="text-xl font-semibold mb-4 text-slate-800">
+                    Upcoming Pickups
+                  </h3>
+                  <div className="space-y-3">
+                    {upcomingPickups.map((item, index) => (
+                      <ScheduleCard key={index} item={item} />
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <div className="card p-6 text-center text-slate-600">
+                  No upcoming pickups scheduled. Check back later for updated schedules.
+                </div>
+              );
+            })()
           ) : (
             <div className="card p-6 text-center text-slate-600">
               {result.message || "No scheduled pickups found for this address."}
