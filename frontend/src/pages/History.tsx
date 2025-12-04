@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { auth } from "../lib/firebase";
 import { getUserScanHistory, getUserStats, type ScanHistoryItem } from "../lib/firestore";
 import { Link } from "react-router-dom";
@@ -7,31 +7,82 @@ export default function HistoryPage() {
   const [history, setHistory] = useState<(ScanHistoryItem & { id: string })[]>([]);
   const [stats, setStats] = useState<{ totalScans: number; recyclableCount: number; thisMonthCount: number } | null>(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const fetchedRef = useRef(false);
+  const currentUserIdRef = useRef<string | null>(null);
 
   useEffect(() => {
+    let isMounted = true;
+    
     const unsubscribe = auth.onAuthStateChanged(async (user) => {
+      // Skip if already fetched for this user or component unmounted
+      if (!isMounted) return;
+      
       if (user) {
+        // Only fetch if we haven't fetched for this user yet
+        if (fetchedRef.current && currentUserIdRef.current === user.uid) {
+          return;
+        }
+        
+        currentUserIdRef.current = user.uid;
+        setLoading(true);
+        setError(null);
+        
         try {
           const [historyData, statsData] = await Promise.all([
             getUserScanHistory(user.uid),
             getUserStats(user.uid)
           ]);
-          setHistory(historyData as any);
-          setStats(statsData);
-        } catch (error) {
-          console.error("Error fetching history:", error);
+          
+          if (isMounted) {
+            setHistory(historyData as any);
+            setStats(statsData);
+            fetchedRef.current = true;
+          }
+        } catch (err) {
+          console.error("Error fetching history:", err);
+          if (isMounted) {
+            setError("Failed to load history. Please try again.");
+          }
         } finally {
-          setLoading(false);
+          if (isMounted) {
+            setLoading(false);
+          }
         }
       } else {
+        currentUserIdRef.current = null;
+        fetchedRef.current = false;
+        setHistory([]);
+        setStats(null);
         setLoading(false);
       }
     });
 
-    return () => unsubscribe();
+    return () => {
+      isMounted = false;
+      unsubscribe();
+    };
   }, []);
 
-  if (loading) return <div className="container py-8">Loading...</div>;
+  if (loading) {
+    return (
+      <div className="container py-8 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-eco-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading your history...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="container py-8 text-center">
+        <div className="text-red-600 mb-4">{error}</div>
+        <button onClick={() => window.location.reload()} className="btn px-6 py-3">Retry</button>
+      </div>
+    );
+  }
 
   if (!auth.currentUser) {
     return (
